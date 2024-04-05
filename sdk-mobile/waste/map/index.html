@@ -1,0 +1,1037 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://maps.vietmap.vn/docs/sdk-mobile/waste/map/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+    
+    
+      
+        <title>Vietmap Flutter GL - Flutter map SDK - MAPS API DOCS</title>
+      
+    
+    
+  
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.3e8bd608.min.css">
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vietmap-flutter-gl-flutter-map-sdk" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MAPS API DOCS" class="md-header__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MAPS API DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vietmap Flutter GL - Flutter map SDK
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../map-api/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  MAPS API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../sdk-web-gl/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  SDK WEB GL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../sdk-android/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  SDK MOBILE
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MAPS API DOCS" class="md-nav__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    MAPS API DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../map-api/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MAPS API
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../sdk-web-gl/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    SDK WEB GL
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sdk-android/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    SDK MOBILE
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#android-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Android configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ios-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      iOS configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main characteristics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main characteristics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#show-the-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show the map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map Interactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Map Interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zoom-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zoom Controls
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zoom Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#target" class="md-nav__link">
+    <span class="md-ellipsis">
+      Target
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tilt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tilt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bearing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bearing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zoom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zoom
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map Events
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Map Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#map-clicklong-click" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map Click/Long click
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map-overlays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map Overlays
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Map Overlays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-marker-marked-a-point-in-the-map-with-a-custom-widget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Marker (Marked a point in the map with a custom widget)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-linepolyline-a-line-connects-2-points-on-the-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Line/Polyline (A line connects 2 points on the map)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-a-polyline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove a Polyline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-polyline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove all Polyline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-fillpolygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Fill/Polygon
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-a-polygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove a Polygon
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-polygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove all Polygon
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="vietmap-flutter-gl-flutter-map-sdk">Vietmap Flutter GL - Flutter map SDK<a class="headerlink" href="#vietmap-flutter-gl-flutter-map-sdk" title="Permanent link">&para;</a></h1>
+<p><a href="https://bit.ly/vietmap-api"><img src="https://bizweb.dktcdn.net/100/415/690/themes/804206/assets/logo.png?1689561872933" height="40"/> </p></a></p>
+<p>Contact <a href="https://bit.ly/vietmap-api">vietmap.vn</a> to register a valid key.</p>
+<h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<p>Add library to pubspec.yaml file
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">  </span><span class="nt">vietmap_flutter_gl</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">latest_version</span>
+</code></pre></div></p>
+<p>Check the latest version at <a href="https://pub.dev/packages/vietmap_flutter_gl">https://pub.dev/packages/vietmap_flutter_gl</a></p>
+<p>or run this command in the terminal to add the library to the project:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">  </span>flutter<span class="w"> </span>pub<span class="w"> </span>add<span class="w"> </span>vietmap_flutter_gl
+</code></pre></div></p>
+<h2 id="android-configuration">Android configuration<a class="headerlink" href="#android-configuration" title="Permanent link">&para;</a></h2>
+<p>Add the below code to the build.gradle (project) file at path: <strong>android/build.gradle</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a> maven { url &quot;https://jitpack.io&quot; }
+</code></pre></div>
+<p>at the repositories block</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>allprojects {
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    repositories {
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        google()
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        mavenCentral()
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        maven { url &quot;https://jitpack.io&quot; }
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    }
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>}
+</code></pre></div>
+Upgrade the minSdkVersion to a minimum is 24 in the build.gradle (app) file, at path <strong>android/app/build.gradle</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>  minSdkVersion 24
+</code></pre></div></p>
+<h2 id="ios-configuration">iOS configuration<a class="headerlink" href="#ios-configuration" title="Permanent link">&para;</a></h2>
+<p>Add the below codes to the Info.plist file.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">VietMapAPIBaseURL</span><span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">https</span><span class="p">:</span><span class="c1">//maps.vietmap.vn/api/navigations/route/&lt;/string&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">VietMapAccessToken</span><span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">YOUR_API_KEY_HERE</span><span class="o">&lt;/</span><span class="n">string</span><span class="o">&gt;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">VietMapURL</span><span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">https</span><span class="p">:</span><span class="c1">//maps.vietmap.vn/api/maps/light/styles.json?apikey=YOUR_API_KEY_HERE&lt;/string&gt;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSLocationAlwaysAndWhenInUseUsageDescription</span><span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">This</span><span class="w"> </span><span class="n">app</span><span class="w"> </span><span class="n">requires</span><span class="w"> </span><span class="n">location</span><span class="w"> </span><span class="n">permission</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">working</span><span class="w"> </span><span class="n">normally</span><span class="o">&lt;/</span><span class="n">string</span><span class="o">&gt;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSLocationAlwaysUsageDescription</span><span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">This</span><span class="w"> </span><span class="n">app</span><span class="w"> </span><span class="n">requires</span><span class="w"> </span><span class="n">location</span><span class="w"> </span><span class="n">permission</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">working</span><span class="w"> </span><span class="n">normally</span><span class="o">&lt;/</span><span class="n">string</span><span class="o">&gt;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSLocationWhenInUseUsageDescription</span><span class="o">&lt;/</span><span class="n">key</span><span class="o">&gt;</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">This</span><span class="w"> </span><span class="n">app</span><span class="w"> </span><span class="n">requires</span><span class="w"> </span><span class="n">location</span><span class="w"> </span><span class="n">permission</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">working</span><span class="w"> </span><span class="n">normally</span><span class="o">&lt;/</span><span class="n">string</span><span class="o">&gt;</span>
+</code></pre></div></p>
+<h2 id="main-characteristics">Main characteristics<a class="headerlink" href="#main-characteristics" title="Permanent link">&para;</a></h2>
+<h3 id="show-the-map">Show the map<a class="headerlink" href="#show-the-map" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="w">    </span><span class="n">VietmapGL</span><span class="p">(</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">      </span><span class="nl">styleString:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">          </span><span class="s1">&#39;https://maps.vietmap.vn/api/maps/light/styles.json?apikey=YOUR_API_KEY_HERE&#39;</span><span class="p">,</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">      </span><span class="nl">initialCameraPosition:</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">          </span><span class="n">CameraPosition</span><span class="p">(</span><span class="nl">target:</span><span class="w"> </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.762317</span><span class="p">,</span><span class="w"> </span><span class="m">106.654551</span><span class="p">)),</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">      </span><span class="nl">onMapCreated:</span><span class="w"> </span><span class="p">(</span><span class="n">VietmapController</span><span class="w"> </span><span class="n">controller</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">          </span><span class="n">setState</span><span class="p">(()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">            </span><span class="n">_mapController</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">controller</span><span class="p">;</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">          </span><span class="p">});</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="p">);</span>
+</code></pre></div>
+<h2 id="map-interactions">Map Interactions<a class="headerlink" href="#map-interactions" title="Permanent link">&para;</a></h2>
+<p>The VietmapGL Maps Flutter SDK allows you to define interactions that you can activate on the map to enable gestures and click events. The following interactions are supported</p>
+<h3 id="zoom-controls">Zoom Controls<a class="headerlink" href="#zoom-controls" title="Permanent link">&para;</a></h3>
+<p>The map supports the familiar two-finger pinch and zooms to change the zoom level as well as double tap to zoom in. Set zoom to 4 for country-level display and 18 for house number display. In this SDK the camera position plays an important role</p>
+<p>And following operations can be performed using the CameraPosition</p>
+<h4 id="target">Target<a class="headerlink" href="#target" title="Permanent link">&para;</a></h4>
+<p>The target is single latitude and longitude coordinate that the camera centers it on. Changing the camera's target will move the camera to the inputted coordinates. The target is a LatLng object. The target coordinate is always <em>at the center of the viewport</em>.</p>
+<h4 id="tilt">Tilt<a class="headerlink" href="#tilt" title="Permanent link">&para;</a></h4>
+<p>Tilt is the camera's angle from the nadir (directly facing the Earth) and uses unit degrees. The camera's minimum (default) tilt is 0 degrees, and the maximum tilt is 60. Tilt levels use six decimal points of precision, which enables you to restrict/set/lock a map's bearing with extreme precision.</p>
+<p>The map camera tilt can also adjust by placing two fingertips on the map and moving both fingers up and down in parallel at the same time or</p>
+<h4 id="bearing">Bearing<a class="headerlink" href="#bearing" title="Permanent link">&para;</a></h4>
+<p>Bearing represents the direction that the camera is pointing in and is measured in degrees  <em>clockwise from north</em>.</p>
+<p>The camera's default bearing is 0 degrees (i.e. "true north") causing the map compass to hide until the camera bearing becomes a non-zero value. Bearing levels use six decimal point precision, which enables you to restrict/set/lock a map's bearing with extreme precision. In addition to programmatically adjusting the camera bearing, the user can place two fingertips on the map and rotate their fingers.</p>
+<h4 id="zoom">Zoom<a class="headerlink" href="#zoom" title="Permanent link">&para;</a></h4>
+<p>Zoom controls the scale of the map and consumes any value between 0 and 22. At zoom level 0, the viewport shows continents and other world features. A middle value of 11 will show city-level details. At a higher zoom level, the map will begin to show buildings and points of interest. The camera can zoom in the following ways:</p>
+<ul>
+<li>Pinch motion two fingers to zoom in and out.</li>
+<li>Quickly tap twice on the map with a single finger to zoom in.</li>
+<li>Quickly tap twice on the map with a single finger and hold your finger down on the screen after the second tap.</li>
+<li>Then slide the finger up to zoom out and down to zoom out.</li>
+</ul>
+<p>SDK allows various methods to move, and animate the camera to a particular location :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">_mapController</span><span class="o">?</span><span class="p">.</span><span class="n">moveCamera</span><span class="p">(</span><span class="n">CameraUpdate</span><span class="p">.</span><span class="n">newLatLngZoom</span><span class="p">(</span><span class="n">LatLng</span><span class="p">(</span><span class="m">22.553147478403194</span><span class="p">,</span><span class="w"> </span><span class="m">77.23388671875</span><span class="p">),</span><span class="w"> </span><span class="m">14</span><span class="p">));</span><span class="w">  </span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">_mapController</span><span class="o">?</span><span class="p">.</span><span class="n">animateCamera</span><span class="p">(</span><span class="n">CameraUpdate</span><span class="p">.</span><span class="n">newLatLngZoom</span><span class="p">(</span><span class="n">LatLng</span><span class="p">(</span><span class="m">28.698791</span><span class="p">,</span><span class="w"> </span><span class="m">77.121243</span><span class="p">),</span><span class="w"> </span><span class="m">14</span><span class="p">));</span><span class="w">  </span>
+</code></pre></div></p>
+<h2 id="map-events">Map Events<a class="headerlink" href="#map-events" title="Permanent link">&para;</a></h2>
+<h3 id="map-clicklong-click">Map Click/Long click<a class="headerlink" href="#map-clicklong-click" title="Permanent link">&para;</a></h3>
+<p>If you want to respond to a user tapping on a point on the map, you can use an onMapClick callback.</p>
+<p>It sets a callback that's invoked when the user clicks on the map:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">VietmapGL</span><span class="p">(</span><span class="w">    </span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nl">initialCameraPosition:</span><span class="w"> </span><span class="n">_kInitialPosition</span><span class="p">,</span><span class="w">    </span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nl">onMapClick:</span><span class="w"> </span><span class="p">(</span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="n">latlng</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="p">{</span><span class="w">    </span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="n">latlng</span><span class="p">.</span><span class="n">toString</span><span class="p">())</span><span class="w">  </span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">)</span><span class="w">  </span>
+</code></pre></div></p>
+<p>Sets a callback that's invoked when the user long clicks on the map view.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">VietmapGL</span><span class="p">(</span><span class="w">    </span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nl">initialCameraPosition:</span><span class="w"> </span><span class="n">_kInitialPosition</span><span class="p">,</span><span class="w">    </span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nl">onMapLongClick:</span><span class="w"> </span><span class="p">(</span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="n">latlng</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="p">{</span><span class="w">    </span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="n">latlng</span><span class="p">.</span><span class="n">toString</span><span class="p">())</span><span class="w">  </span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">)</span><span class="w">  </span>
+</code></pre></div></p>
+<p>Sets a callback that's invoked when the map is completely rendered.
+Encourage this callback to call some action on the initial, after the map is completely loaded
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">VietmapGL</span><span class="p">(</span><span class="w">    </span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="nl">initialCameraPosition:</span><span class="w"> </span><span class="n">_kInitialPosition</span><span class="p">,</span><span class="w">    </span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="nl">onMapRenderedCallback:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">            </span><span class="n">_mapController</span><span class="o">?</span><span class="p">.</span><span class="n">animateCamera</span><span class="p">(</span><span class="n">CameraUpdate</span><span class="p">.</span><span class="n">newCameraPosition</span><span class="p">(</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">                </span><span class="n">CameraPosition</span><span class="p">(</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">                    </span><span class="nl">target:</span><span class="w"> </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.739031</span><span class="p">,</span><span class="w"> </span><span class="m">106.680524</span><span class="p">),</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">                    </span><span class="nl">zoom:</span><span class="w"> </span><span class="m">10</span><span class="p">,</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">                    </span><span class="nl">tilt:</span><span class="w"> </span><span class="m">60</span><span class="p">)));</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">  </span><span class="p">)</span><span class="w">  </span>
+</code></pre></div></p>
+<h2 id="map-overlays">Map Overlays<a class="headerlink" href="#map-overlays" title="Permanent link">&para;</a></h2>
+<h3 id="add-a-marker-marked-a-point-in-the-map-with-a-custom-widget">Add a Marker (Marked a point in the map with a custom widget)<a class="headerlink" href="#add-a-marker-marked-a-point-in-the-map-with-a-custom-widget" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="w">  </span><span class="n">Stack</span><span class="p">(</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="nl">children:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">      </span><span class="n">VietmapGL</span><span class="p">(</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">        </span><span class="nl">trackCameraPosition:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// Will track the map change to update the marker position in realtime</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">        </span><span class="p">...</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">        </span><span class="p">),</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">      </span><span class="n">MarkerLayer</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">        </span><span class="nl">ignorePointer:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// Will ignore all user gestures on the marker</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">        </span><span class="nl">mapController:</span><span class="w"> </span><span class="n">_mapController</span><span class="o">!</span><span class="p">,</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">        </span><span class="nl">markers:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">              </span><span class="n">Marker</span><span class="p">(</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">                  </span><span class="nl">child:</span><span class="w"> </span><span class="n">Container</span><span class="p">(</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">                    </span><span class="nl">width:</span><span class="w"> </span><span class="m">50</span><span class="p">,</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">                    </span><span class="nl">height:</span><span class="w"> </span><span class="m">50</span><span class="p">,</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">                    </span><span class="nl">decoration:</span><span class="w"> </span><span class="n">BoxDecoration</span><span class="p">(</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="w">                        </span><span class="nl">color:</span><span class="w"> </span><span class="n">Colors</span><span class="p">.</span><span class="n">red</span><span class="p">,</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">                        </span><span class="nl">shape:</span><span class="w"> </span><span class="n">BoxShape</span><span class="p">.</span><span class="n">circle</span><span class="p">),</span>
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w">                    </span><span class="nl">child:</span><span class="w"> </span><span class="n">Center</span><span class="p">(</span>
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="w">                      </span><span class="nl">child:</span><span class="w"> </span><span class="n">Text</span><span class="p">(</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="w">                        </span><span class="s1">&#39;Simple text marker&#39;</span><span class="p">,</span>
+<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">                        </span><span class="nl">style:</span><span class="w"> </span><span class="n">TextStyle</span><span class="p">(</span>
+<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="w">                            </span><span class="nl">color:</span><span class="w"> </span><span class="n">Colors</span><span class="p">.</span><span class="n">white</span><span class="p">,</span>
+<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="w">                            </span><span class="nl">fontSize:</span><span class="w"> </span><span class="m">20</span><span class="p">,</span>
+<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a><span class="w">                            </span><span class="nl">fontWeight:</span><span class="w"> </span><span class="n">FontWeight</span><span class="p">.</span><span class="n">bold</span><span class="p">),</span>
+<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a><span class="w">                      </span><span class="p">),</span>
+<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a><span class="w">                    </span><span class="p">),</span>
+<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a><span class="w">                  </span><span class="p">),</span>
+<a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a><span class="w">                  </span><span class="nl">latLng:</span><span class="w"> </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.727416</span><span class="p">,</span><span class="w"> </span><span class="m">106.735597</span><span class="p">)),</span>
+<a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a><span class="w">              </span><span class="n">Marker</span><span class="p">(</span>
+<a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a><span class="w">                  </span><span class="nl">child:</span><span class="w"> </span><span class="n">Icon</span><span class="p">(</span><span class="n">Icons</span><span class="p">.</span><span class="n">location_on</span><span class="p">),</span>
+<a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a><span class="w">                  </span><span class="nl">latLng:</span><span class="w"> </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.792765</span><span class="p">,</span><span class="w"> </span><span class="m">106.674143</span><span class="p">)),</span>
+<a id="__codelineno-11-32" name="__codelineno-11-32" href="#__codelineno-11-32"></a><span class="w">        </span><span class="p">]</span>
+<a id="__codelineno-11-33" name="__codelineno-11-33" href="#__codelineno-11-33"></a><span class="w">  </span><span class="p">])</span>
+</code></pre></div>
+<strong>Note</strong>: You must enable <em>trackCameraPosition: true</em>, at <em>VietmapGL</em>, which ensured the MarkerLayer renders normally
+- The marker support anchor with input is an alignment, which required width and height to calculate the position of the marker, the default for both of them is 20
+- Make sure your width and height are correct to the marker display exactly
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="w">    </span><span class="n">Marker</span><span class="p">(</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">        </span><span class="nl">width:</span><span class="w"> </span><span class="m">40</span><span class="p">,</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">        </span><span class="nl">height:</span><span class="m">40</span><span class="p">,</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">        </span><span class="nl">alignment:</span><span class="w"> </span><span class="n">Alignment</span><span class="p">.</span><span class="n">bottomCenter</span><span class="p">,</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">        </span><span class="nl">child:</span><span class="w"> </span><span class="n">Icon</span><span class="p">(</span><span class="n">Icons</span><span class="p">.</span><span class="n">location_on</span><span class="p">,</span><span class="w"> </span><span class="nl">size:</span><span class="m">40</span><span class="p">),</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">        </span><span class="nl">latLng:</span><span class="w"> </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.792765</span><span class="p">,</span><span class="w"> </span><span class="m">106.674143</span><span class="p">)),</span>
+</code></pre></div></p>
+<h3 id="add-a-linepolyline-a-line-connects-2-points-on-the-map">Add a Line/Polyline (A line connects 2 points on the map)<a class="headerlink" href="#add-a-linepolyline-a-line-connects-2-points-on-the-map" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">_mapController</span><span class="o">?</span><span class="p">.</span><span class="n">addPolyline</span><span class="p">(</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">      </span><span class="n">PolylineOptions</span><span class="p">(</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">          </span><span class="nl">geometry:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">            </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.736657</span><span class="p">,</span><span class="w"> </span><span class="m">106.672240</span><span class="p">),</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">            </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.766543</span><span class="p">,</span><span class="w"> </span><span class="m">106.742378</span><span class="p">),</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">            </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.775818</span><span class="p">,</span><span class="w"> </span><span class="m">106.640497</span><span class="p">),</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">            </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.727416</span><span class="p">,</span><span class="w"> </span><span class="m">106.735597</span><span class="p">),</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">            </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.792765</span><span class="p">,</span><span class="w"> </span><span class="m">106.674143</span><span class="p">),</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">            </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.736657</span><span class="p">,</span><span class="w"> </span><span class="m">106.672240</span><span class="p">),</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">          </span><span class="nl">polylineColor:</span><span class="w"> </span><span class="n">Colors</span><span class="p">.</span><span class="n">red</span><span class="p">,</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">          </span><span class="nl">polylineWidth:</span><span class="w"> </span><span class="m">14.0</span><span class="p">,</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">          </span><span class="nl">polylineOpacity:</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">          </span><span class="nl">draggable:</span><span class="w"> </span><span class="kc">true</span><span class="p">),</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="w">    </span><span class="p">);</span>
+</code></pre></div>
+<h3 id="remove-a-polyline">Remove a Polyline<a class="headerlink" href="#remove-a-polyline" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="w">    </span><span class="n">_mapController</span><span class="o">?</span><span class="p">.</span><span class="n">removePolyline</span><span class="p">(</span><span class="n">line</span><span class="p">);</span><span class="w">  </span>
+</code></pre></div>
+<h3 id="remove-all-polyline">Remove all Polyline<a class="headerlink" href="#remove-all-polyline" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="w">    </span><span class="n">_mapController</span><span class="o">?</span><span class="p">.</span><span class="n">clearLines</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="add-a-fillpolygon">Add a Fill/Polygon<a class="headerlink" href="#add-a-fillpolygon" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="w">    </span><span class="n">_mapController</span><span class="o">?</span><span class="p">.</span><span class="n">addPolygon</span><span class="p">(</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">      </span><span class="n">PolygonOptions</span><span class="p">(</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">          </span><span class="nl">geometry:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">            </span><span class="p">[</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">              </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.736657</span><span class="p">,</span><span class="w"> </span><span class="m">106.672240</span><span class="p">),</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">              </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.766543</span><span class="p">,</span><span class="w"> </span><span class="m">106.742378</span><span class="p">),</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">              </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.775818</span><span class="p">,</span><span class="w"> </span><span class="m">106.640497</span><span class="p">),</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">              </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.727416</span><span class="p">,</span><span class="w"> </span><span class="m">106.735597</span><span class="p">),</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">              </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.792765</span><span class="p">,</span><span class="w"> </span><span class="m">106.674143</span><span class="p">),</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">              </span><span class="n">LatLng</span><span class="p">(</span><span class="m">10.736657</span><span class="p">,</span><span class="w"> </span><span class="m">106.672240</span><span class="p">),</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">            </span><span class="p">]</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">          </span><span class="nl">polygonColor:</span><span class="w"> </span><span class="n">Colors</span><span class="p">.</span><span class="n">red</span><span class="p">,</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">          </span><span class="nl">polygonOpacity:</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">          </span><span class="nl">draggable:</span><span class="w"> </span><span class="kc">true</span><span class="p">),</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="w">    </span><span class="p">);</span>
+</code></pre></div>
+<h3 id="remove-a-polygon">Remove a Polygon<a class="headerlink" href="#remove-a-polygon" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="w">    </span><span class="n">_mapController</span><span class="o">?</span><span class="p">.</span><span class="n">removePolygon</span><span class="p">(</span><span class="n">polygon</span><span class="p">);</span><span class="w">  </span>
+</code></pre></div>
+<h3 id="remove-all-polygon">Remove all Polygon<a class="headerlink" href="#remove-all-polygon" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="w">    </span><span class="n">_mapController</span><span class="o">?</span><span class="p">.</span><span class="n">clearPolygons</span><span class="p">();</span>
+</code></pre></div>
+<p><br></p>
+<h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Our SDK uses the key to identify the markers and update their location while the user does some gestures, so we strongly recommend you add the key for all of the widgets in the screen which use the map SDK:
+ <div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">Stack</span><span class="p">(</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w"> </span><span class="nl">children:</span><span class="p">[</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">   </span><span class="n">MarkerLayer</span><span class="p">(</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">     </span><span class="p">...</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">   </span><span class="p">),</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">   </span><span class="n">Positioned</span><span class="p">(</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">     </span><span class="nl">key:</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Key</span><span class="p">(</span><span class="s1">&#39;yourWidgetKey&#39;</span><span class="p">),</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">     </span><span class="p">...</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">   </span><span class="p">),</span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w"> </span><span class="p">]</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+<h1 id="note-replace-apikey-which-is-provided-by-vietmap-to-all-your_api_key_here-tag-to-the-application-work-normally">Note: Replace apikey which is provided by VietMap to all <em>YOUR_API_KEY_HERE</em> tag to the application work normally<a class="headerlink" href="#note-replace-apikey-which-is-provided-by-vietmap-to-all-your_api_key_here-tag-to-the-application-work-normally" title="Permanent link">&para;</a></h1>
+<p><a href="https://vietmap.vn/maps-api"><img src="https://bizweb.dktcdn.net/100/415/690/themes/804206/assets/logo.png?1689561872933" height="40"/> </p></a>
+Email us: <a href="mailto:maps-api.support@vietmap.vn">maps-api.support@vietmap.vn</a></p>
+<p>Contact for <a href="https://vietmap.vn/lien-he">support</a></p>
+<p>Vietmap API document <a href="https://maps.vietmap.vn/docs/map-api/overview/">here</a></p>
+<p>Have a bug to report? <a href="https://github.com/vietmap-company/flutter-map-sdk/issues">Open an issue</a>. If possible, include a full log and information which shows the issue.
+Have a feature request? <a href="https://github.com/vietmap-company/flutter-map-sdk/issues">Open an issue</a>. Tell us what the feature should do and why you want the feature.</p>
+<p><a href="https://github.com/vietmap-company/flutter-map-sdk/blob/initVM/README.vi.md">Tài liệu tiếng Việt</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 VIETMAP
+    </div>
+  
+  
+    Made with
+    <a href="https://www.vietmap.vn" target="_blank" rel="noopener">
+      VIETMAP
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+  
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  <script src="../../../assets/javascripts/custom.a4a4fac0.min.js"></script>
+
+  </body>
+</html>

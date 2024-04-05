@@ -1,0 +1,673 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://maps.vietmap.vn/docs/map-api/boundary/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+    
+    
+      
+        <title>Boundary - MAPS API DOCS</title>
+      
+    
+    
+  
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+  <link rel="stylesheet" href="../../assets/stylesheets/custom.3e8bd608.min.css">
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#url" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MAPS API DOCS" class="md-header__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MAPS API DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Boundary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+    
+  
+  MAPS API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../sdk-web-gl/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  SDK WEB GL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../sdk-mobile/sdk-android/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  SDK MOBILE
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MAPS API DOCS" class="md-nav__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    MAPS API DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MAPS API
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sdk-web-gl/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    SDK WEB GL
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sdk-mobile/sdk-android/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    SDK MOBILE
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Boundary</h1>
+
+<p>The Boundary Maps API is a powerful tool that enables developers to incorporate boundary data into their applications and services. Boundaries, such as country borders, state or province lines, city limits, or even custom-defined areas, play a crucial role in various domains, including location-based services, geospatial analysis, demographic research, and urban planning.</p>
+<p>With the Boundary Maps API, developers can access an extensive collection of pre-defined boundaries from around the country, or they can create and manage their own custom boundaries. This API provides a straightforward and efficient way to retrieve boundary data, visualize it on maps, and perform various operations on boundaries, such as intersection, union, difference, or simplification.</p>
+<h2 id="url">URL<a class="headerlink" href="#url" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://maps.vietmap.vn/api/boundaries/v3/info/{Id}?apikey={your-apikey}
+</code></pre></div>
+<h2 id="method">Method<a class="headerlink" href="#method" title="Permanent link">&para;</a></h2>
+<p><strong>GET</strong></p>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>apikey</td>
+<td>string</td>
+<td>yes</td>
+<td>API provided by VIETMAP for customer's account.</td>
+<td></td>
+</tr>
+<tr>
+<td>Id</td>
+<td>string</td>
+<td>yes</td>
+<td>User desired boundary data</td>
+<td>1292:District 5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p><strong>Input</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://maps.vietmap.vn/api/boundaries/v3/info/1292?apikey={your-apikey}
+</code></pre></div></p>
+<p><strong>Response</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="s">&quot;geo_wkt&quot;</span><span class="p">:</span> <span class="s">&quot;MULTIPOLYGON (((106.685180664 10.756476402, 106.685272217 10.75630188, 106.685508728 10.755866051, 106.685668945 10.755606651, 106.68585968 10.755377769, 106.686164856 10.754994392, 106.686332703 10.754771233, 106.686477661 10.754561424, 106.686729431 10.754096985, 106.686813354 10.753896713, 106.686912537 10.753990173, 106.686981201 10.753864288, 106.687104653 10.753728039, 106.687294006 10.753519058, 106.687034607 10.753245354, 106.686714172 10.752829552, 106.686508179 10.752357483, 106.686455178 10.751917673, 106.686408997 10.751534462, 106.68523407 10.751151085, 106.684616089 10.751041412, 106.684135911 10.751147737, 106.683815002 10.751218796, 106.682243347 10.751646996, 106.68182373 10.751814842, 106.681106567 10.751988411, 106.680778503 10.751992226, 106.680412292 10.75196743, 106.679573059 10.751813889, 106.678619385 10.751694679, 106.678153992 10.751674652, 106.67766571 10.751657486, 106.677459717 10.751585007, 106.677078247 10.751283646, 106.676841736 10.750997543, 106.676628113 10.750584602, 106.676498413 10.75012207, 106.676376343 10.749709129, 106.676223755 10.749351501, 106.675888062 10.749044418, 106.675491333 10.74883461, 106.674964905 10.748695374, 106.674377441 10.748621941, 106.673629761 10.748626709, 106.673225403 10.748713493, 106.672767639 10.748873711, 106.671829224 10.749214172, 106.671257019 10.749352455, 106.670753479 10.749417305, 106.670120239 10.749502182, 106.668731689 10.74965477, 106.667045593 10.749999046, 106.66632843 10.75018692, 106.665687561 10.750201225, 106.665084839 10.750125885, 106.664497375 10.749944687, 106.663734436 10.749605179, 106.661811829 10.749001503, 106.66053009 10.748602867, 106.659347534 10.748240471, 106.656906128 10.747274399, 106.655014038 10.746153831, 106.654918268 10.746315444, 106.654846191 10.746437073, 106.65473938 10.746638298, 106.65460968 10.746897697, 106.654579163 10.746965408, 106.654547955 10.747020021, 106.654533386 10.747045517, 106.654319763 10.747468948, 106.654121399 10.747869492, 106.654090881 10.74793148, 106.654052734 10.748042107, 106.653869629 10.748584747, 106.653836712 10.748703248, 106.653831482 10.748722076, 106.653821289 10.748761574, 106.653778076 10.748929024, 106.653625488 10.749505997, 106.65358482 10.749640993, 106.653556824 10.749733925, 106.653366089 10.750455856, 106.653343201 10.750598907, 106.653343201 10.750677109, 106.653320312 10.751091003, 106.653266907 10.751656532, 106.65259552 10.751563072, 106.652412415 10.751537323, 106.652232325 10.751513405, 106.652046204 10.751488686, 106.651908875 10.751468658, 106.651817322 10.751467705, 106.650512695 10.751481056, 106.650558472 10.75181675, 106.650611877 10.752307892, 106.650619507 10.752356529, 106.650641872 10.752538246, 106.650650024 10.752604485, 106.650657654 10.752710342, 106.650723685 10.753246019, 106.650733948 10.753329277, 106.650741577 10.753400803, 106.650787354 10.753903389, 106.650810242 10.754024506, 106.65083313 10.75423336, 106.650856018 10.754447937, 106.650866191 10.754521695, 106.650878906 10.754613876, 106.650894165 10.754770279, 106.65096283 10.755270004, 106.651016235 10.755741119, 106.651031494 10.755860329, 106.651077271 10.75613308, 106.651100159 10.756352425, 106.651435852 10.756409645, 106.651573181 10.756435394, 106.651901245 10.756505013, 106.65196991 10.756520271, 106.652389526 10.75660038, 106.652511597 10.756619453, 106.652816772 10.756678581, 106.653694153 10.756849289, 106.654548645 10.757016182, 106.65561676 10.757241249, 106.656028748 10.75732708, 106.656341553 10.75739193, 106.656440735 10.75741291, 106.65712738 10.757557869, 106.657707214 10.757680893, 106.65827179 10.757787704, 106.659515381 10.758041382, 106.660064697 10.758146286, 106.660179138 10.758167267, 106.660652161 10.75825882, 106.661529541 10.758441925, 106.661979675 10.75853157, 106.662216187 10.758579254, 106.662773132 10.758690834, 106.663795471 10.758893967, 106.664840698 10.759100914, 106.66494751 10.759121895, 106.665168762 10.759166718, 106.66557312 10.759244919, 106.665901184 10.759300232, 106.66607666 10.759329796, 106.667289734 10.759575844, 106.667892456 10.759699821, 106.668746948 10.759868622, 106.668891907 10.759854317, 106.669029236 10.759907722, 106.669761658 10.760083199, 106.67074585 10.760284424, 106.671058655 10.760347366, 106.67225647 10.7605896, 106.673141479 10.760763168, 106.674369812 10.761009216, 106.6745224 10.761011124, 106.674636841 10.761032104, 106.675033569 10.761288643, 106.675888062 10.761859894, 106.675964355 10.761907578, 106.676429749 10.762195587, 106.676902771 10.7625103, 106.677337646 10.762789726, 106.677429199 10.762848854, 106.67780304 10.763091087, 106.678009033 10.763226509, 106.678215027 10.763370514, 106.678642273 10.763667107, 106.679306028 10.764088634, 106.679779053 10.764388084, 106.681671143 10.765434265, 106.681755066 10.765202522, 106.682434082 10.76354599, 106.683128357 10.761734962, 106.683349609 10.761180878, 106.684013367 10.759461403, 106.684234619 10.758904457, 106.684249878 10.758853912, 106.684318542 10.75867939, 106.684570312 10.758029938, 106.684814453 10.757367134, 106.685096741 10.756648064, 106.685180664 10.756476402)))&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="s">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1292</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="s">&quot;name&quot;</span><span class="p">:</span> <span class="s">&quot;5&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="s">&quot;prefix&quot;</span><span class="p">:</span> <span class="s">&quot;Quận&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="s">&quot;full_name&quot;</span><span class="p">:</span> <span class="s">&quot;Quận 5&quot;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">}</span>
+</code></pre></div></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 VIETMAP
+    </div>
+  
+  
+    Made with
+    <a href="https://www.vietmap.vn" target="_blank" rel="noopener">
+      VIETMAP
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+  
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  <script src="../../assets/javascripts/custom.a4a4fac0.min.js"></script>
+
+  </body>
+</html>
