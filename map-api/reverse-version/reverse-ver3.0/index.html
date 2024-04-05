@@ -591,6 +591,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#response-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response description
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1192,6 +1201,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#response-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response description
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1292,6 +1310,100 @@
 <a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">        </span><span class="p">]</span>
 <a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div>
+<h3 id="response-description">Response description<a class="headerlink" href="#response-description" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lat</td>
+<td>double</td>
+<td>Latitude coordinate of the POI</td>
+</tr>
+<tr>
+<td>lng</td>
+<td>double</td>
+<td>Longitude coordinate of the POI</td>
+</tr>
+<tr>
+<td>ref_id</td>
+<td>string</td>
+<td>Reference ID for the POI</td>
+</tr>
+<tr>
+<td>distance</td>
+<td>int</td>
+<td>Distance of the POI from a reference point (if applicable)</td>
+</tr>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>Full address including <code>street</code>, <code>ward</code>, <code>district</code>, and <code>city</code></td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Name of the POI</td>
+</tr>
+<tr>
+<td>display</td>
+<td>string</td>
+<td>Display name containing detailed information of the POI address</td>
+</tr>
+<tr>
+<td>boundaries</td>
+<td>array</td>
+<td>Array containing boundary information (<code>ward</code>, <code>district</code>, <code>city</code>)</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>array</td>
+<td>Array containing categories associated with the POI</td>
+</tr>
+</tbody>
+</table>
+<p>For the <code>boundaries</code> array:</p>
+<table>
+<thead>
+<tr>
+<th>Sub-Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>int</td>
+<td>Type of boundary (0 for city, 1 for district, 2 for ward)</td>
+</tr>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>Unique identifier for the boundary</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Name of the boundary</td>
+</tr>
+<tr>
+<td>prefix</td>
+<td>string</td>
+<td>Prefix of the boundary (e.g., "Phường" for ward)</td>
+</tr>
+<tr>
+<td>full_name</td>
+<td>string</td>
+<td>Full name of the boundary (e.g., "Phường 9" for ward)</td>
+</tr>
+</tbody>
+</table>
 
 
 

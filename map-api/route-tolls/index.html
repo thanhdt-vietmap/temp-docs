@@ -740,6 +740,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response description
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1196,6 +1211,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response description
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1313,6 +1343,77 @@ JSON Output</p>
 <a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a><span class="w">    </span><span class="p">]</span><span class="w"> </span>
 <a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a><span class="p">}</span>
 </code></pre></div>
+<h3 id="response-description">Response description<a class="headerlink" href="#response-description" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>array</td>
+<td>Array containing coordinate pairs along the route</td>
+</tr>
+<tr>
+<td>tolls</td>
+<td>array</td>
+<td>Array containing toll booth information along the route</td>
+</tr>
+</tbody>
+</table>
+<p>For the <code>path</code> array:</p>
+<table>
+<thead>
+<tr>
+<th>Sub-Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[longitude, latitude]</td>
+<td>array of floats</td>
+<td>Coordinate pair representing a point on the route</td>
+</tr>
+</tbody>
+</table>
+<p>For the <code>tolls</code> array:</p>
+<table>
+<thead>
+<tr>
+<th>Sub-Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Name of the toll booth</td>
+</tr>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>Address of the toll booth</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>Type of toll booth (entry, exit, etc.)</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>int</td>
+<td>Toll amount in local currency</td>
+</tr>
+</tbody>
+</table>
 
 
 
