@@ -1269,21 +1269,21 @@
 <td>array string</td>
 <td>yes</td>
 <td>none</td>
-<td>The points for which the route should be calculated. Format: [latitude,longitude]. Specify at least an origin and a destination. Via points are possible. The maximum number depends on your plan.</td>
+<td>The points for which the route should be calculated. Format: [latitude,longitude]. Specify at least an origin and a destination. Via points are possible. The maximum number depends on your plan.</br> Example query: <code>&amp;point=lat,lng</code></td>
 </tr>
 <tr>
 <td>points_encoded</td>
 <td>boolean</td>
 <td>no</td>
 <td>true</td>
-<td>Allows changing the encoding of location data in the response. The default is polyline encoding, which is compact but requires special client code to unpack. Set this parameter to false to switch the encoding to simple coordinate pairs like [lon,lat]. See the description of the response format for more information.</td>
+<td>Allows changing the encoding of location data in the response. The default is polyline encoding, which is compact but requires special client code to unpack. Set this parameter to false to switch the encoding to simple coordinate pairs like [lon,lat]. See the description of the response format for more information. </br> We suggest this query should receive <code>true</code> value to decrease the size of the response JSON.</td>
 </tr>
 <tr>
 <td>vehicle</td>
 <td>string</td>
 <td>no</td>
 <td>car</td>
-<td>Enum: car,bike,foot,motorcycle. Config the vehicle profiles for which the route should be calculated.</td>
+<td>Enum: <code>car</code>, <code>bike</code>, <code>foot</code>, <code>motorcycle</code>. Config the vehicle profiles for which the route should be calculated.</td>
 </tr>
 <tr>
 <td>optimize</td>
@@ -1296,7 +1296,7 @@
 </table>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <p><strong>Input</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">https</span><span class="p">:</span><span class="c1">//maps.vietmap.vn/api/route?api-version=1.1&amp;apikey={your-apikey}&amp;point=10.79628438955497,106.70592293472612&amp;point=10.801891047584164,106.70660958023404&amp;vehicle=motorcycle</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://maps.vietmap.vn/api/route?api-version=1.1&amp;apikey={your-apikey}&amp;point=10.79628438955497,106.70592293472612&amp;point=10.801891047584164,106.70660958023404&amp;vehicle=motorcycle
 </code></pre></div>
 <strong>Response</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
@@ -1439,7 +1439,7 @@
 <tr>
 <td>points</td>
 <td>string</td>
-<td>Encoded points representing the route using <code>google polyline 5</code> format.</td>
+<td>Encoded points representing the route using <code>google polyline 5</code> format. If the <code>points_encoded</code> is <code>false</code>, points will response a list of <code>[lat,lng]</code> format.</td>
 </tr>
 <tr>
 <td>instructions</td>

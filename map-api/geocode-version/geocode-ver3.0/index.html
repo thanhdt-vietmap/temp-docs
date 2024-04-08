@@ -1261,7 +1261,7 @@
 <p><a href="../../../assets/geocode.jpg"><img alt="geocode" src="../../../assets/geocode.jpg" /></a></p>
 <p>Updating Geocode 3.0 API is a powerful tool for developers to integrate location search functionality into their applications with optimized performance. Additionally, this latest version utilizes intelligent search algorithms and methods to provide accurate and speedy search results for users. </p>
 <h3 id="url">URL<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">https</span><span class="p">:</span><span class="c1">//maps.vietmap.vn/api/search/v3?apikey={your-apikey}&amp;text={text}&amp;focus={lat,long}&amp;layers={Layers}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://maps.vietmap.vn/api/search/v3?apikey={your-apikey}&amp;text={text}&amp;focus={lat,long}&amp;layers={Layers}
 </code></pre></div>
 <h3 id="method">Method<a class="headerlink" href="#method" title="Permanent link">&para;</a></h3>
 <p>GET</p>
@@ -1295,7 +1295,7 @@
 <td>focus</td>
 <td>string</td>
 <td>no</td>
-<td>GPS cordinates</td>
+<td>GPS cordinates </br> <code>(lat,lng)</code></td>
 <td>10.759540242000032, 106.67660114000005</td>
 </tr>
 <tr>
@@ -1309,7 +1309,7 @@
 <td>circle_center</td>
 <td>number</td>
 <td>no</td>
-<td>The central coordinate(lat/lng) position of the area to be searched</td>
+<td>The central coordinate <code>(lat,lng)</code> position of the area to be searched</td>
 <td>10.758867051669924,106.6755666901197</td>
 </tr>
 <tr>
@@ -1351,10 +1351,10 @@
 </table>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
 <p><strong>Input</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">https</span><span class="p">:</span><span class="c1">//maps.vietmap.vn/api/search/v3?apikey={your-apikey}&amp;text=Công Ty Cổ Phần Ứng Dụng Bản Đồ Việt,HCM&amp;layers=POI&amp;cityId=12&amp;distId=1292&amp;wardId=984332</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://maps.vietmap.vn/api/search/v3?apikey={your-apikey}&amp;text=Công Ty Cổ Phần Ứng Dụng Bản Đồ Việt,HCM&amp;layers=POI&amp;cityId=12&amp;distId=1292&amp;wardId=984332
 </code></pre></div></p>
 <p><strong>Respone</strong></p>
-<p>If you need detailed information about the place, please use the  <a href="../../place/">Vietmap Place API</a>
+<p>If you need detailed information about the place, please use the <a href="../../place/">Vietmap Place API</a>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">        </span><span class="nt">&quot;ref_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;vm:POI:8D92EB120DDE9996&quot;</span><span class="p">,</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3 Đường Trần Nhân Tôn,Phường 9,Quận 5,Thành Phố Hồ Chí Minh&quot;</span><span class="p">,</span>
@@ -1401,12 +1401,12 @@
 <tr>
 <td>ref_id</td>
 <td>string</td>
-<td>Reference ID for the Point of Interest (POI)</td>
+<td>Reference ID for the Point of Interest (POI), using for get detail info from <a href="../../place/">Vietmap Place API</a></td>
 </tr>
 <tr>
 <td>address</td>
 <td>string</td>
-<td>Full address including street, ward, district, and city</td>
+<td>Full address including <code>street</code>, <code>ward</code>, <code>district</code>, and <code>city</code></td>
 </tr>
 <tr>
 <td>name</td>
@@ -1421,7 +1421,7 @@
 <tr>
 <td>boundaries</td>
 <td>array</td>
-<td>Array containing boundary information (ward, district, city)</td>
+<td>Array containing boundary information (<code>ward</code>, <code>district</code>, <code>city</code>)</td>
 </tr>
 <tr>
 <td>categories</td>
@@ -1443,7 +1443,7 @@
 <tr>
 <td>type</td>
 <td>integer</td>
-<td>Type of boundary (0 for city, 1 for district, 2 for ward)</td>
+<td>Type of boundary (0 for <code>city</code>, 1 for <code>district</code>, 2 for <code>ward</code>)</td>
 </tr>
 <tr>
 <td>id</td>

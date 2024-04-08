@@ -1231,7 +1231,7 @@
 <p>Updating Autocomplete 3.0 API is a valuable resources that allows developers to integrate autocomplete functionality into their applications. This API is designed to help users quickly find and select items from a large set of options by suggesting potential matches as they type.</p>
 <p>The API is built on a machine learning model that analyzes user input and suggests potential matches based on the context of the search. This model can be updated in real-time, allowing the API to continuously improve its suggestions as more data becomes available.</p>
 <h3 id="url">URL<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">https</span><span class="p">:</span><span class="c1">//maps.vietmap.vn/api/autocomplete/v3?apikey={your-apikey}&amp;cityId={cityId}&amp;text={text}&amp;circle_center={circle_center}&amp;circle_radius={circle_radius}&amp;layers={layers}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://maps.vietmap.vn/api/autocomplete/v3?apikey={your-apikey}&amp;cityId={cityId}&amp;text={text}&amp;circle_center={circle_center}&amp;circle_radius={circle_radius}&amp;layers={layers}
 </code></pre></div>
 <h3 id="method">Method<a class="headerlink" href="#method" title="Permanent link">&para;</a></h3>
 <p><strong>GET</strong></p>
@@ -1279,14 +1279,14 @@
 <td>circle_center</td>
 <td>number</td>
 <td>no</td>
-<td>The central coordinate(lat/lng) position of the area to be searched</td>
+<td>The central coordinate <code>(lat,lng)</code> position of the area to be searched</td>
 <td>10.758867051669924,106.6755666901197</td>
 </tr>
 <tr>
 <td>circle_radius</td>
 <td>number</td>
 <td>no</td>
-<td>The radius of the search area (in meters)</td>
+<td>The radius of the search area <code>(in meters)</code></td>
 <td>200</td>
 </tr>
 <tr>
@@ -1364,12 +1364,12 @@
 <tr>
 <td>ref_id</td>
 <td>string</td>
-<td>Reference ID for the Point of Interest (POI)</td>
+<td>Reference ID for the Point of Interest (POI), using for get detail info from <a href="../../place/">Vietmap Place API</a></td>
 </tr>
 <tr>
 <td>address</td>
 <td>string</td>
-<td>Full address including street, ward, district, and city</td>
+<td>Full address including <code>street</code>, <code>ward</code>, <code>district</code>, and <code>city</code></td>
 </tr>
 <tr>
 <td>name</td>
@@ -1406,7 +1406,7 @@
 <tr>
 <td>type</td>
 <td>int</td>
-<td>Type of boundary (0 for city, 1 for district, 2 for ward)</td>
+<td>Type of boundary (0 for <code>city</code>, 1 for <code>district</code>, 2 for <code>ward</code>)</td>
 </tr>
 <tr>
 <td>id</td>

@@ -1230,7 +1230,7 @@
 <p><a href="../../../assets/reverse.jpg"><img alt="Reverse" src="../../../assets/reverse.jpg" /></a></p>
 <p>Updating Reverse 3.0 API is a valuable resource for developers who want to incorporate location search features into their applications while achieving optimal performance. With its intelligent search algorithms and techniques, this latest version can swiftly deliver precise search results for users. This API is a powerful tool that can help enhance the user experience of location-based applications.</p>
 <h3 id="url">URL<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">https</span><span class="p">:</span><span class="c1">//maps.vietmap.vn/api/reverse/v3?apikey={your-apikey}&amp;lng={longitude}&amp;lat={latitude}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://maps.vietmap.vn/api/reverse/v3?apikey={your-apikey}&amp;lng={longitude}&amp;lat={latitude}
 </code></pre></div>
 <h3 id="method">Method<a class="headerlink" href="#method" title="Permanent link">&para;</a></h3>
 <p><strong>GET</strong></p>
@@ -1338,7 +1338,7 @@
 <tr>
 <td>distance</td>
 <td>int</td>
-<td>Distance of the POI from a reference point (if applicable)</td>
+<td>Distance of the POI from a reference point (if applicable), value response in <code>kilometer</code></td>
 </tr>
 <tr>
 <td>address</td>
@@ -1380,7 +1380,7 @@
 <tr>
 <td>type</td>
 <td>int</td>
-<td>Type of boundary (0 for city, 1 for district, 2 for ward)</td>
+<td>Type of boundary (0 for <code>city</code>, 1 for <code>district</code>, 2 for <code>ward</code>)</td>
 </tr>
 <tr>
 <td>id</td>
