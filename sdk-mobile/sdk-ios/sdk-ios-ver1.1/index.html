@@ -57,7 +57,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -636,7 +645,7 @@
 
 
 <h1 id="sdk-ios">SDK iOS<a class="headerlink" href="#sdk-ios" title="Permanent link">&para;</a></h1>
-<p><img alt="Alt text" src="../image-9.png" /></p>
+<p><a class="glightbox" href="../image-9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-9.png" /></a></p>
 <h2 id="setup-environment">Setup environment<a class="headerlink" href="#setup-environment" title="Permanent link">&para;</a></h2>
 <p>Install <code>Hombrew</code>
 First, check if <code>brew</code> is available
@@ -652,9 +661,9 @@ Install <code>Carthage</code>
 <h2 id="create-a-navigation-project-with-xcode">Create a Navigation project with Xcode<a class="headerlink" href="#create-a-navigation-project-with-xcode" title="Permanent link">&para;</a></h2>
 <p><strong>Create a new project using Swift and Storyboard</strong>
 File &gt; New &gt; Project</p>
-<p><img alt="Alt text" src="../image.png" /></p>
+<p><a class="glightbox" href="../image.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image.png" /></a></p>
 <p>If run successfully
-<img alt="Alt text" src="../image-1.png" /></p>
+<a class="glightbox" href="../image-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-1.png" /></a></p>
 <h2 id="import-libraries">Import libraries<a class="headerlink" href="#import-libraries" title="Permanent link">&para;</a></h2>
 <p>Create Cartfile 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="err">$</span> <span class="n">cd</span> <span class="o">~/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">NavigationSample</span>
@@ -670,15 +679,15 @@ Finally, new file will be created
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">Cartfile</span><span class="p">.</span><span class="n">resolve</span><span class="p">:</span> <span class="n">The</span> <span class="n">specified</span> <span class="n">framework</span> <span class="n">will</span> <span class="n">be</span> <span class="n">fetched</span><span class="o">/</span><span class="n">built</span><span class="p">.</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">Carthage</span><span class="p">:</span> <span class="n">Contain</span> <span class="n">all</span> <span class="n">the</span> <span class="n">built</span> <span class="n">frameworks</span><span class="p">.</span>
 </code></pre></div>
-<img alt="Alt text" src="../image-8.png" /></p>
+<a class="glightbox" href="../image-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-8.png" /></a></p>
 <p><strong>Pay attention</strong>
-<img alt="Alt text" src="../image-3.png" /></p>
+<a class="glightbox" href="../image-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-3.png" /></a></p>
 <p>Add Package Dependencies and these libraries: <code>https://github.com/vietmap-company/maps-sdk-ios.git</code></p>
-<p><img alt="Alt text" src="../image-4.png" /></p>
+<p><a class="glightbox" href="../image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-4.png" /></a></p>
 <p>Select Dependency Rule &gt; Branch &gt; Main in order to use latest libraries
-<img alt="Alt text" src="../image-5.png" /></p>
+<a class="glightbox" href="../image-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-5.png" /></a></p>
 <p>Finally, 
-<img alt="Alt text" src="../image-6.png" /> </p>
+<a class="glightbox" href="../image-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-6.png" /></a> </p>
 <h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
 <p><a href="#register-gesture-recognizer-for-mapview">addGestureRecognizer</a>: Register Gesture Recognizer for map view</p>
 <p><a href="#request-an-api-to-search-for-directions">Directions</a>: Request API to find directions</p>
@@ -719,7 +728,7 @@ Request for device location
 <p>UIView: mapView &gt; display mapView</p>
 <p>UIButton: clearMarker &gt; delete destination marker </p>
 <p>UIButton: startButton &gt; start navigation</p>
-<p><img alt="Alt text" src="../image-7.png" /></p>
+<p><a class="glightbox" href="../image-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-7.png" /></a></p>
 <h3 id="create-mapview">Create mapview<a class="headerlink" href="#create-mapview" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">var</span> <span class="nv">mapView</span><span class="p">:</span> <span class="n">NavigationMapView</span><span class="p">?</span> <span class="p">{</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="kr">didSet</span> <span class="p">{</span>
@@ -1451,5 +1460,7 @@ Retrieve coordinates and set a marker for the destination in the <code>didLongPr
     </div>	
   </div>
 
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

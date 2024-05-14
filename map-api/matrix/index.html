@@ -61,7 +61,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1468,13 +1477,13 @@ Query param description: </p>
 <td>durations</td>
 <td>array</td>
 <td><code>[[230, 201, 386, 193 ], [ 126, 188, 435, 108 ]],</code></td>
-<td>An array containing duration information (seconds).         <img alt="alt text" src="../../assets/duration_description.png" /></td>
+<td>An array containing duration information (seconds).         <a class="glightbox" href="../../assets/duration_description.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../../assets/duration_description.png" /></a></td>
 </tr>
 <tr>
 <td>distances</td>
 <td>array</td>
 <td><code>[[1766.3, 1374.3, 1952.2, 1113.5], [507.5, 1152.4, 2101.8, 399.4]]</code></td>
-<td>An array containing distance information (meters). <img alt="alt text" src="../../assets/distance_descrition.png" /></td>
+<td>An array containing distance information (meters). <a class="glightbox" href="../../assets/distance_descrition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../../assets/distance_descrition.png" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -1772,5 +1781,7 @@ Query param description: </p>
     </div>	
   </div>
 
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

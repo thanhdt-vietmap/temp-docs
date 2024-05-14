@@ -61,7 +61,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1223,7 +1232,7 @@
 
 
 <h1 id="sdk-ios">SDK iOS<a class="headerlink" href="#sdk-ios" title="Permanent link">&para;</a></h1>
-<p><img alt="Alt text" src="../sdkmobile.png" /></p>
+<p><a class="glightbox" href="../sdkmobile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../sdkmobile.png" /></a></p>
 <h1 id="installation-guide-for-vietmap-map-ios-sdk">Installation Guide for VietMap Map iOS SDK<a class="headerlink" href="#installation-guide-for-vietmap-map-ios-sdk" title="Permanent link">&para;</a></h1>
 <h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
 <ol>
@@ -1235,9 +1244,9 @@
 <h2 id="install-ios-sdk-map">Install iOS SDK Map<a class="headerlink" href="#install-ios-sdk-map" title="Permanent link">&para;</a></h2>
 <h3 id="1-create-navigation-project-with-xcode">1. Create Navigation project with Xcode<a class="headerlink" href="#1-create-navigation-project-with-xcode" title="Permanent link">&para;</a></h3>
 <p>Create a project with Swift and Storyboard. Open Xcode, select File &gt; New &gt; Project.</p>
-<p><img alt="Create project" src="../image-10.png" /></p>
+<p><a class="glightbox" href="../image-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Create project" src="../image-10.png" /></a></p>
 <p>Ensure the project runs successfully. If successful, you will see the layout as shown below.</p>
-<p><img alt="Project layout" src="../image-11.png" /></p>
+<p><a class="glightbox" href="../image-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Project layout" src="../image-11.png" /></a></p>
 <h3 id="2-import-library">2. Import Library<a class="headerlink" href="#2-import-library" title="Permanent link">&para;</a></h3>
 <h4 id="environment-settings">Environment Settings<a class="headerlink" href="#environment-settings" title="Permanent link">&para;</a></h4>
 <p>Install Homebrew
@@ -1718,5 +1727,7 @@ If Homebrew is not installed, you will see:</p>
     </div>	
   </div>
 
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
