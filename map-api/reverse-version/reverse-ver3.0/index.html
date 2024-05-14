@@ -37,6 +37,7 @@
 
     
   <link rel="stylesheet" href="../../../assets/stylesheets/custom.3e8bd608.min.css">
+  
 
     
       
@@ -50,6 +51,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -252,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../sdk-mobile/sdk-android/overview/" class="md-tabs__link">
+        <a href="../../../sdk-mobile/overview/" class="md-tabs__link">
           
   
     
@@ -691,9 +694,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
         
           
           <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="">
@@ -817,9 +818,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
         
           
           <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="">
@@ -941,9 +940,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
         
           
           <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="">
@@ -1122,7 +1119,7 @@
         
   
   
-    <a href="../../../sdk-mobile/sdk-android/overview/" class="md-nav__link">
+    <a href="../../../sdk-mobile/overview/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1242,7 +1239,7 @@
 <th>Type</th>
 <th>Required</th>
 <th>Description</th>
-<th>Example</th>
+<th style="text-align: right;">Example</th>
 </tr>
 </thead>
 <tbody>
@@ -1251,28 +1248,28 @@
 <td>string</td>
 <td>yes</td>
 <td>API provided by VIETMAP for customer's account</td>
-<td></td>
+<td style="text-align: right;"></td>
 </tr>
 <tr>
 <td>lng</td>
 <td>number</td>
 <td>yes</td>
 <td>Longitude of desired place</td>
-<td>106.67546114000004</td>
+<td style="text-align: right;">106.675461</td>
 </tr>
 <tr>
 <td>lat</td>
 <td>number</td>
 <td>yes</td>
 <td>Latitude of desired place</td>
-<td>10.758970242000032</td>
+<td style="text-align: right;">10.758970</td>
 </tr>
 <tr>
 <td>cats</td>
 <td>string</td>
 <td>no</td>
 <td>Provide full list of POI categories. Click here <a href="https://vietmapcorp-my.sharepoint.com/:x:/g/personal/sennd_vietmap_vn/EacvkT3kgtBHmYUPnI5Nuj8BKHfvM6_HFNS_THOuxDty8A?e=5M8IAM&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAyMDUwMTQyMSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="&quot;_blank">POI Categories</a></td>
-<td>1002-1</td>
+<td style="text-align: right;">1002-1</td>
 </tr>
 </tbody>
 </table>
@@ -1283,8 +1280,8 @@
 <strong>Response</strong>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">[</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="nt">&quot;lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.758970242000032</span><span class="p">,</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="nt">&quot;lng&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">106.67546114000004</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="nt">&quot;lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.758970</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="nt">&quot;lng&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">106.675461</span><span class="p">,</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="nt">&quot;ref_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;vm:POI:8D92EB120DDE9996&quot;</span><span class="p">,</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="nt">&quot;distance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3 Đường Trần Nhân Tôn,Phường 9,Quận 5,Thành Phố Hồ Chí Minh&quot;</span><span class="p">,</span>
@@ -1508,7 +1505,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
   
@@ -1516,6 +1513,197 @@
       
     
   <script src="../../../assets/javascripts/custom.a4a4fac0.min.js"></script>
+  <style>
+    .support-online {
+      position: fixed;
+      z-index: 999;
+      right: 30px;
+      bottom: 40%;
+      top: auto !important;
+      left: auto;
+    }
+    .support-online a {
+      position: relative;
+      margin: 10px;
+      text-align: left;
+      width: 40px;
+      height: 40px
+    }
+  
+    .support-online a.call-now span{
+      line-height: 22px;
+    }
+  
+    .support-online a.call-now span b{
+      font-size: 16px;
+      color: #fff700;
+    }
+  
+    .support-online i {
+      width: 40px;
+      height: 40px;
+      background: #2a5dff;
+      color: #fff;
+      border-radius: 100%;
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px;
+      position: relative;
+      z-index: 999
+    }
+
+    .support-content{
+      
+    }
+  
+    .support-online a {
+      display: block
+    }
+  
+    .support-online a span {
+      border-radius: 2px;
+      text-align: center;
+      background: #2a5dff;
+      padding: 10px;
+      display: none;
+      width: 150px;
+      margin-right: 12px;
+      position: absolute;
+      color: #ffffff;
+      z-index: 999;
+      top: 0px;
+      right: 41px;
+      font-size: 13pt;
+      transition: all 0.2s ease-in-out 0s;
+      -moz-animation: headerAnimation 0.7s 1;
+      -webkit-animation: headerAnimation 0.7s 1;
+      -o-animation: headerAnimation 0.7s 1;
+      animation: headerAnimation 0.7s 1;
+    }
+
+    .support-online img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .support-online a:hover span {
+      display: block
+    }
+  
+    .support-online a span::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #2a5dff;
+      position: absolute;
+      right: -10px;
+      top: 10px
+    }
+  
+    .kenit-alo-circle {
+      width: 50px;
+      height: 50px;
+      top: -5px;
+      right: -5px;
+      position: absolute;
+      background-color: transparent;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      border: 2px solid rgba(30, 30, 30, 0.4);
+      opacity: .1;
+      border-color: lighten(#2a5dff, 5);
+      opacity: .5
+    }
+  
+    .support-online .btn-support {
+      cursor: pointer
+    }
+  
+  
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+  
+    .animated.infinite {
+      animation-iteration-count: infinite;
+    }
+  
+    .animated.hinge {
+      animation-duration: 2s;
+    }
+  
+    .animated.flipOutX,
+    .animated.flipOutY,
+    .animated.bounceIn,
+    .animated.bounceOut {
+      animation-duration: .75s;
+    }
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+      }
+  
+      50% {
+        opacity: 1;
+      }
+    }
+  
+    .zoomIn {
+      animation-name: zoomIn;
+    }
+    @keyframes rubberBand {
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+  
+      30% {
+        transform: scale3d(1.25, 0.75, 1);
+      }
+  
+      40% {
+        transform: scale3d(0.75, 1.25, 1);
+      }
+  
+      50% {
+        transform: scale3d(1.15, 0.85, 1);
+      }
+  
+      65% {
+        transform: scale3d(.95, 1.05, 1);
+      }
+  
+      75% {
+        transform: scale3d(1.05, .95, 1);
+      }
+  
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  </style>
+  <div class="support-online">
+    <div class="support-content">		
+      <a href="tel:0896164567" class="call-now" rel="nofollow">
+        <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+        <img src="/docs/assets/phone.png" width="50" height="50" alt="facebook">
+        <div class="animated infinite zoomIn kenit-alo-circle"></div>			
+        <span>Tổng đài hỗ trợ<br><b>089.616.4567</b></span>
+      </a>
+      <a href="https://m.me/VietmapMappingSolutions" target="_blank">
+        <img src="/docs/assets/messenger.png" width="50" height="50" alt="facebook">
+        <span>Chat Facebook</span>
+      </a>
+      <a href="https://zalo.me/vietmapmapsapi" target="_blank">
+        <img src="//bizweb.dktcdn.net/100/415/690/files/icon-zalo.png" alt="zalo" width="50" height="50">
+        <span>Chat Zalo</span>
+      </a>
+    </div>	
+  </div>
 
   </body>
 </html>

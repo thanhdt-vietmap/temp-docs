@@ -37,6 +37,7 @@
 
     
   <link rel="stylesheet" href="../../assets/stylesheets/custom.3e8bd608.min.css">
+  
 
     
       
@@ -50,6 +51,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -252,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../sdk-mobile/sdk-android/overview/" class="md-tabs__link">
+        <a href="../../sdk-mobile/overview/" class="md-tabs__link">
           
   
     
@@ -463,9 +466,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
         
           
           <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="">
@@ -610,9 +611,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
         
           
           <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="">
@@ -891,6 +890,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#url-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL (Parameters)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#response-description" class="md-nav__link">
     <span class="md-ellipsis">
       Response description
@@ -951,9 +968,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
         
           
           <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="">
@@ -1132,7 +1147,7 @@
         
   
   
-    <a href="../../sdk-mobile/sdk-android/overview/" class="md-nav__link">
+    <a href="../../sdk-mobile/overview/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1215,6 +1230,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#url-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL (Parameters)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#response-description" class="md-nav__link">
     <span class="md-ellipsis">
       Response description
@@ -1244,7 +1277,9 @@
 
 
 <h1 id="matrix">Matrix<a class="headerlink" href="#matrix" title="Permanent link">&para;</a></h1>
-<p><a href="../../assets/matrix.jpg"><img alt="Matrix" src="../../assets/matrix.jpg" /></a></p>
+<video controls>
+<source src="../../assets/matrix(16x9).mp4" type="video/mp4">
+</video>
 <hr />
 <p>The Matrix API is part of the VIETMAP Directions API and with it you can calculate many-to-many distances and times a lot more efficient than calling the Routing API multiple times.</p>
 <p>In the Routing API we support multiple points, so called 'via points', which results in one route being calculated. The Matrix API results in NxM routes, or more precise NxM distances or times being calculated but is a lot faster compared to NxM single requests.</p>
@@ -1291,7 +1326,7 @@
 <td>string</td>
 <td>no</td>
 <td>car</td>
-<td>Enum: car,bike,foot,motorcycle. The vehicle profile for which the route should be calculated.</td>
+<td>Enum: <code>car</code>, <code>bike</code>, <code>foot</code>, <code>motorcycle</code>. The vehicle profile for which the route should be calculated.</td>
 </tr>
 <tr>
 <td>sources</td>
@@ -1305,7 +1340,7 @@
 <td>int or string</td>
 <td>no</td>
 <td>all</td>
-<td>Format: [<code>{index};{index}[;{index} ...</code>] or all. Use location with given index as destination. This is list index of destinations. For example, having a total of 7 points, the first 2 points are called the source, the remaining <code>5 points</code> are called the destination. then the <code>index</code> of destinations is <code>[2;3;4;5]</code>. If you enter 2 or more locations, separate them with a semicolon ";"</td>
+<td>Format: [<code>{index};{index}[;{index} ...</code>] or all. Use location with given index as destination. This is list index of destinations. For example, having a total of 7 points, the first 2 points are called the source, the remaining <code>5 points</code> are called the destination. then the <code>index</code> of destinations is <code>[2;3;4;5]</code>. If you enter 2 or more locations, separate them with a semicolon <code>";"</code></td>
 </tr>
 <tr>
 <td>annotation</td>
@@ -1317,41 +1352,102 @@
 </tbody>
 </table>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<p><strong>Input</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">https</span><span class="p">:</span><span class="c1">//maps.vietmap.vn/api/matrix?api-version=1.1&amp;apikey={your-apikey}&amp;point=20.93829498370334,106.31359286606312&amp;point=20.937731,106.2880954&amp;sources=0;1&amp;destinations=2;3&amp;points_encoded=true&amp;point=10.846782687783872,106.78063854904616&amp;point=10.826297759486991,106.72313198776595</span>
-</code></pre></div></p>
-<p><strong>Response</strong>
+<h3 id="url-parameters">URL (Parameters)<a class="headerlink" href="#url-parameters" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://maps.vietmap.vn/api/matrix?api-version=1.1&amp;apikey={your-apikey}&amp;point=10.768897,106.678505&amp;point=10.765496,106.67626&amp;point=10.7627936,106.6750729&amp;point=10.7616745,106.6792425&amp;point=10.765605,106.685383&amp;point=10.766843,106.674029&amp;sources=0;1&amp;destinations=2;3;4;5
+</code></pre></div>
+Query param description: </p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>point</td>
+<td>10.768897,106.678505</td>
+<td><code>Point 0</code>, format in <code>lat,lng</code></td>
+</tr>
+<tr>
+<td>point</td>
+<td>10.765496,106.67626</td>
+<td><code>Point 1</code>, format in <code>lat,lng</code></td>
+</tr>
+<tr>
+<td>point</td>
+<td>10.7627936,106.6750729</td>
+<td><code>Point 2</code>, format in <code>lat,lng</code></td>
+</tr>
+<tr>
+<td>point</td>
+<td>10.7616745,106.6792429</td>
+<td><code>Point 3</code>, format in <code>lat,lng</code></td>
+</tr>
+<tr>
+<td>point</td>
+<td>10.765605,106.685383</td>
+<td><code>Point 4</code>, format in <code>lat,lng</code></td>
+</tr>
+<tr>
+<td>point</td>
+<td>10.766843,106.674029</td>
+<td><code>Point 5</code>, format in <code>lat,lng</code></td>
+</tr>
+<tr>
+<td>sources</td>
+<td>0;1</td>
+<td>Index of the start point. In this example, API will receive <code>Point 0</code> and <code>Point 1</code> as source points</td>
+</tr>
+<tr>
+<td>destinations</td>
+<td>2;3;4;5</td>
+<td>Index of the end point. In this example, API will receive <code>Point 2</code>, <code>Point 3</code>, <code>Point 4</code> and <code>Point 5</code> as the destination points</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response">Response<a class="headerlink" href="#response" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OK&quot;</span><span class="p">,</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&quot;messages&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">&quot;durations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="p">[</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">            </span><span class="mi">125956</span><span class="p">,</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">            </span><span class="mi">126403</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="p">],</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="p">[</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">            </span><span class="mi">126239</span><span class="p">,</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">            </span><span class="mi">126686</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">        </span><span class="p">]</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="p">],</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="nt">&quot;distances&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">        </span><span class="p">[</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">            </span><span class="mf">1727976.2</span><span class="p">,</span>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">            </span><span class="mf">1734204.4</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">        </span><span class="p">],</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">            </span><span class="mi">230</span><span class="p">,</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">            </span><span class="mi">201</span><span class="p">,</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">            </span><span class="mi">386</span><span class="p">,</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">            </span><span class="mi">193</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="p">],</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="p">[</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="mi">126</span><span class="p">,</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">            </span><span class="mi">188</span><span class="p">,</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">            </span><span class="mi">435</span><span class="p">,</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">            </span><span class="mi">108</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">        </span><span class="p">]</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="p">],</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="nt">&quot;distances&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">        </span><span class="p">[</span>
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">            </span><span class="mf">1728700.8</span><span class="p">,</span>
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">            </span><span class="mi">1734929</span>
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">        </span><span class="p">]</span>
-<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">    </span><span class="p">]</span>
-<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="p">}</span>
-</code></pre></div></p>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">            </span><span class="mf">1766.3</span><span class="p">,</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">            </span><span class="mf">1374.3</span><span class="p">,</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">            </span><span class="mf">1952.2</span><span class="p">,</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">            </span><span class="mf">1113.5</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">        </span><span class="p">],</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">        </span><span class="p">[</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">            </span><span class="mf">507.5</span><span class="p">,</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">            </span><span class="mf">1152.4</span><span class="p">,</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">            </span><span class="mf">2101.8</span><span class="p">,</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">            </span><span class="mf">399.4</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">        </span><span class="p">]</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="p">}</span>
+</code></pre></div>
 <h3 id="response-description">Response description<a class="headerlink" href="#response-description" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>Field</th>
 <th>Type</th>
+<th>Value</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -1359,26 +1455,29 @@
 <tr>
 <td>code</td>
 <td>string</td>
+<td><code>'OK'</code></td>
 <td>A code indicating the status of the response.</td>
 </tr>
 <tr>
 <td>messages</td>
-<td>null</td>
+<td>string</td>
+<td><code>null</code></td>
 <td>Messages associated with the response, if any.</td>
 </tr>
 <tr>
 <td>durations</td>
 <td>array</td>
-<td>An array containing duration information.</td>
+<td><code>[[230, 201, 386, 193 ], [ 126, 188, 435, 108 ]],</code></td>
+<td>An array containing duration information (seconds).         <img alt="alt text" src="../../assets/duration_description.png" /></td>
 </tr>
 <tr>
 <td>distances</td>
 <td>array</td>
-<td>An array containing distance information.</td>
+<td><code>[[1766.3, 1374.3, 1952.2, 1113.5], [507.5, 1152.4, 2101.8, 399.4]]</code></td>
+<td>An array containing distance information (meters). <img alt="alt text" src="../../assets/distance_descrition.png" /></td>
 </tr>
 </tbody>
 </table>
-<p>Each array in the <code>durations</code> field contains pairs of duration values. Similarly, each array in the <code>distances</code> field contains pairs of distance values. Each pair represents the duration or distance between two points.</p>
 
 
 
@@ -1473,7 +1572,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
   
@@ -1481,6 +1580,197 @@
       
     
   <script src="../../assets/javascripts/custom.a4a4fac0.min.js"></script>
+  <style>
+    .support-online {
+      position: fixed;
+      z-index: 999;
+      right: 30px;
+      bottom: 40%;
+      top: auto !important;
+      left: auto;
+    }
+    .support-online a {
+      position: relative;
+      margin: 10px;
+      text-align: left;
+      width: 40px;
+      height: 40px
+    }
+  
+    .support-online a.call-now span{
+      line-height: 22px;
+    }
+  
+    .support-online a.call-now span b{
+      font-size: 16px;
+      color: #fff700;
+    }
+  
+    .support-online i {
+      width: 40px;
+      height: 40px;
+      background: #2a5dff;
+      color: #fff;
+      border-radius: 100%;
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px;
+      position: relative;
+      z-index: 999
+    }
+
+    .support-content{
+      
+    }
+  
+    .support-online a {
+      display: block
+    }
+  
+    .support-online a span {
+      border-radius: 2px;
+      text-align: center;
+      background: #2a5dff;
+      padding: 10px;
+      display: none;
+      width: 150px;
+      margin-right: 12px;
+      position: absolute;
+      color: #ffffff;
+      z-index: 999;
+      top: 0px;
+      right: 41px;
+      font-size: 13pt;
+      transition: all 0.2s ease-in-out 0s;
+      -moz-animation: headerAnimation 0.7s 1;
+      -webkit-animation: headerAnimation 0.7s 1;
+      -o-animation: headerAnimation 0.7s 1;
+      animation: headerAnimation 0.7s 1;
+    }
+
+    .support-online img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .support-online a:hover span {
+      display: block
+    }
+  
+    .support-online a span::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #2a5dff;
+      position: absolute;
+      right: -10px;
+      top: 10px
+    }
+  
+    .kenit-alo-circle {
+      width: 50px;
+      height: 50px;
+      top: -5px;
+      right: -5px;
+      position: absolute;
+      background-color: transparent;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      border: 2px solid rgba(30, 30, 30, 0.4);
+      opacity: .1;
+      border-color: lighten(#2a5dff, 5);
+      opacity: .5
+    }
+  
+    .support-online .btn-support {
+      cursor: pointer
+    }
+  
+  
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+  
+    .animated.infinite {
+      animation-iteration-count: infinite;
+    }
+  
+    .animated.hinge {
+      animation-duration: 2s;
+    }
+  
+    .animated.flipOutX,
+    .animated.flipOutY,
+    .animated.bounceIn,
+    .animated.bounceOut {
+      animation-duration: .75s;
+    }
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+      }
+  
+      50% {
+        opacity: 1;
+      }
+    }
+  
+    .zoomIn {
+      animation-name: zoomIn;
+    }
+    @keyframes rubberBand {
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+  
+      30% {
+        transform: scale3d(1.25, 0.75, 1);
+      }
+  
+      40% {
+        transform: scale3d(0.75, 1.25, 1);
+      }
+  
+      50% {
+        transform: scale3d(1.15, 0.85, 1);
+      }
+  
+      65% {
+        transform: scale3d(.95, 1.05, 1);
+      }
+  
+      75% {
+        transform: scale3d(1.05, .95, 1);
+      }
+  
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  </style>
+  <div class="support-online">
+    <div class="support-content">		
+      <a href="tel:0896164567" class="call-now" rel="nofollow">
+        <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+        <img src="/docs/assets/phone.png" width="50" height="50" alt="facebook">
+        <div class="animated infinite zoomIn kenit-alo-circle"></div>			
+        <span>Tổng đài hỗ trợ<br><b>089.616.4567</b></span>
+      </a>
+      <a href="https://m.me/VietmapMappingSolutions" target="_blank">
+        <img src="/docs/assets/messenger.png" width="50" height="50" alt="facebook">
+        <span>Chat Facebook</span>
+      </a>
+      <a href="https://zalo.me/vietmapmapsapi" target="_blank">
+        <img src="//bizweb.dktcdn.net/100/415/690/files/icon-zalo.png" alt="zalo" width="50" height="50">
+        <span>Chat Zalo</span>
+      </a>
+    </div>	
+  </div>
 
   </body>
 </html>
