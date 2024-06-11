@@ -8,35 +8,35 @@
       
       
       
-        <link rel="canonical" href="https://maps.vietmap.vn/docs/map-api/geocode-version/geocode-ver3.0/">
+        <link rel="canonical" href="https://maps.vietmap.vn/docs/map-api/reverse-batch/">
       
       
-        <link rel="prev" href="../../traffic/">
+        <link rel="prev" href="../place/">
       
       
-        <link rel="next" href="../../reverse-version/reverse-ver3.0/">
+        <link rel="next" href="../route/">
       
       
-      <link rel="icon" href="../../../assets/favicon.png">
+      <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>Geocode - MAPS API DOCS</title>
+        <title>Reverse Batch - MAPS API DOCS</title>
       
     
     
   
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
 
     
-  <link rel="stylesheet" href="../../../assets/stylesheets/custom.3e8bd608.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/custom.3e8bd608.min.css">
   
 
     
@@ -52,16 +52,16 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -70,7 +70,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#geocode-version-30" class="md-skip">
+        <a href="#url" class="md-skip">
           Skip to content
         </a>
       
@@ -105,9 +105,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="MAPS API DOCS" class="md-header__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+    <a href="../.." title="MAPS API DOCS" class="md-header__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
       
-  <img src="../../../assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Geocode
+              Reverse Batch
             
           </span>
         </div>
@@ -224,7 +224,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../overview/" class="md-tabs__link">
+        <a href="../overview/" class="md-tabs__link">
           
   
     
@@ -244,7 +244,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../sdk-web-gl/overview/" class="md-tabs__link">
+        <a href="../../sdk-web-gl/overview/" class="md-tabs__link">
           
   
     
@@ -264,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../sdk-mobile/overview/" class="md-tabs__link">
+        <a href="../../sdk-mobile/overview/" class="md-tabs__link">
           
   
     
@@ -305,9 +305,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MAPS API DOCS" class="md-nav__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+    <a href="../.." title="MAPS API DOCS" class="md-nav__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
       
-  <img src="../../../assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     MAPS API DOCS
@@ -385,7 +385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -406,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tilemap/" class="md-nav__link">
+      <a href="../tilemap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -427,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../traffic/" class="md-nav__link">
+      <a href="../traffic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -504,28 +504,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Geocode
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../geocode-version/geocode-ver3.0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -534,84 +516,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#geocode-version-30" class="md-nav__link">
-    <span class="md-ellipsis">
-      Geocode version 3.0
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Geocode version 3.0">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#url" class="md-nav__link">
-    <span class="md-ellipsis">
-      URL
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameter
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#response-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      Response description
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -624,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reverse-version/reverse-ver3.0/" class="md-nav__link">
+      <a href="../reverse-version/reverse-ver3.0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -645,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../autocomplete-version/autocomplete-ver3.0/" class="md-nav__link">
+      <a href="../autocomplete-version/autocomplete-ver3.0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -666,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../place/" class="md-nav__link">
+      <a href="../place/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -684,10 +588,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../reverse-batch/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Reverse Batch
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -696,6 +618,129 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameter-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameter description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#body-parameters-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body parameters description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Output
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JSON Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Object
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#address-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Address Object
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Object
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -769,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../route/" class="md-nav__link">
+      <a href="../route/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -790,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../route-tolls/" class="md-nav__link">
+      <a href="../route-tolls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -811,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../match-tolls/" class="md-nav__link">
+      <a href="../match-tolls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -893,7 +938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tsp/" class="md-nav__link">
+      <a href="../tsp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -914,7 +959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../vrp/" class="md-nav__link">
+      <a href="../vrp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -935,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../matrix/" class="md-nav__link">
+      <a href="../matrix/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1015,7 +1060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../isochrone/" class="md-nav__link">
+      <a href="../isochrone/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1036,7 +1081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../geofencing/" class="md-nav__link">
+      <a href="../geofencing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1110,7 +1155,7 @@
         
   
   
-    <a href="../../../sdk-web-gl/overview/" class="md-nav__link">
+    <a href="../../sdk-web-gl/overview/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1166,7 +1211,7 @@
         
   
   
-    <a href="../../../sdk-mobile/overview/" class="md-nav__link">
+    <a href="../../sdk-mobile/overview/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1210,16 +1255,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#geocode-version-30" class="md-nav__link">
-    <span class="md-ellipsis">
-      Geocode version 3.0
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Geocode version 3.0">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#url" class="md-nav__link">
     <span class="md-ellipsis">
       URL
@@ -1227,8 +1262,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#method" class="md-nav__link">
     <span class="md-ellipsis">
       Method
@@ -1236,17 +1271,35 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#parameter" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#parameter-description" class="md-nav__link">
     <span class="md-ellipsis">
-      Parameter
+      Parameter description
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#body-parameters-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body parameters description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -1254,11 +1307,48 @@
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#json-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Output
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JSON Output">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#response-description" class="md-nav__link">
     <span class="md-ellipsis">
-      Response description
+      Response Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Object
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#address-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Address Object
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Object
     </span>
   </a>
   
@@ -1284,17 +1374,15 @@
                   
 
 
-  <h1>Geocode</h1>
+  <h1>Reverse Batch</h1>
 
-<h2 id="geocode-version-30">Geocode version 3.0<a class="headerlink" href="#geocode-version-30" title="Permanent link">&para;</a></h2>
-<p><a href="../../../assets/geocode.jpg"><img alt="geocode" src="../../../assets/geocode.jpg" /></a></p>
-<p>Updating Geocode 3.0 API is a powerful tool for developers to integrate location search functionality into their applications with optimized performance. Additionally, this latest version utilizes intelligent search algorithms and methods to provide accurate and speedy search results for users. </p>
+<p><strong>REVERSE - BATCH</strong> API provides the feature to convert a list of coordinates into the corresponding addresses for each point in that list of coordinates. </p>
 <h3 id="url">URL<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://maps.vietmap.vn/api/search/v3?apikey={your-apikey}&amp;text={text}&amp;focus={lat,long}&amp;layers={Layers}
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://maps.vietmap.vn/api/geocode-fleet/reverse-batch?apikey={your-apikey}
 </code></pre></div>
 <h3 id="method">Method<a class="headerlink" href="#method" title="Permanent link">&para;</a></h3>
-<p>GET</p>
-<h3 id="parameter">Parameter<a class="headerlink" href="#parameter" title="Permanent link">&para;</a></h3>
+<p>POST</p>
+<h3 id="parameter-description">Parameter description<a class="headerlink" href="#parameter-description" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1313,114 +1401,147 @@
 <td>API provided by VIETMAP for customer's account.</td>
 <td></td>
 </tr>
+</tbody>
+</table>
+<h3 id="body">Body<a class="headerlink" href="#body" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">[</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">        </span><span class="nt">&quot;lon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">107.42193008289291</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="nt">&quot;lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.91527176296465</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="nt">&quot;vehicleType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="nt">&quot;ton&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="nt">&quot;seat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="nt">&quot;heading&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="nt">&quot;lon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">107.4267435202076</span><span class="p">,</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="nt">&quot;lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.889979077535088</span><span class="p">,</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="nt">&quot;vehicleType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="nt">&quot;ton&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="nt">&quot;seat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="nt">&quot;heading&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="p">]</span>
+</code></pre></div>
+<h3 id="body-parameters-description">Body parameters description<a class="headerlink" href="#body-parameters-description" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
 <tr>
-<td>text</td>
-<td>string</td>
-<td>yes</td>
-<td>User desired input</td>
-<td>Công Ty Cổ Phần Ứng Dụng Bản Đồ Việt</td>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>lon</strong></td>
+<td>number</td>
+<td><strong>yes</strong></td>
+<td>Longitude of the desired place</td>
+<td>106.675461</td>
 </tr>
 <tr>
-<td>focus</td>
-<td>string</td>
-<td>no</td>
-<td>GPS cordinates </br> <code>(lat,lng)</code></td>
-<td>10.759540,106.676601</td>
+<td><strong>lat</strong></td>
+<td>number</td>
+<td><strong>yes</strong></td>
+<td>Latitude of the desired place</td>
+<td>10.758970</td>
 </tr>
 <tr>
-<td>layers</td>
-<td>string</td>
-<td>no</td>
-<td>Represent for certain type of data such as <code>POI</code>,<code>ADDRESS</code>,<code>BUILDING</code>,<code>VILLAGE</code>,<code>WARD</code>,<code>DIST</code>,<code>CITY</code>,<code>STREET</code></td>
-<td>POI</td>
-</tr>
-<tr>
-<td>circle_center</td>
+<td>vehicleType</td>
 <td>number</td>
 <td>no</td>
-<td>The central coordinate <code>(lat,lng)</code> position of the area to be searched</td>
-<td>10.758867,106.675566</td>
+<td>Type of vehicle (<code>1=Car</code>, <code>2=Taxi</code>, <code>3=Bus</code>, <code>4=Coach</code>, <code>5=Truck</code>, <code>6=Truck trailer</code>, <code>7=Motorcycle</code>)</td>
+<td>4</td>
 </tr>
 <tr>
-<td>circle_radius</td>
+<td>ton</td>
 <td>number</td>
 <td>no</td>
-<td>The radius of the search area (in meters)</td>
-<td>200</td>
+<td>Capacity of the vehicle <code>(Truck/Truck trailer)</code> in tons</td>
+<td>0</td>
 </tr>
 <tr>
-<td>cats</td>
-<td>string</td>
-<td>no</td>
-<td>Provide full list of POI categories. Click here <a href="https://vietmapcorp-my.sharepoint.com/:x:/g/personal/sennd_vietmap_vn/EacvkT3kgtBHmYUPnI5Nuj8BKHfvM6_HFNS_THOuxDty8A?e=5M8IAM&amp;clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAyMDUwMTQyMSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="&quot;_blank">POI Categories</a></td>
-<td>1002-1</td>
-</tr>
-<tr>
-<td>cityId</td>
+<td>seat</td>
 <td>number</td>
 <td>no</td>
-<td>Every city has a unique ID, which is used to filter search results</td>
-<td>12</td>
+<td>Seating capacity of the vehicle <code>(bus/coach)</code></td>
+<td>19</td>
 </tr>
 <tr>
-<td>distId</td>
+<td>heading</td>
 <td>number</td>
 <td>no</td>
-<td>Every district has a unique ID, which is used to filter search results</td>
-<td>1292</td>
-</tr>
-<tr>
-<td>wardId</td>
-<td>number</td>
-<td>no</td>
-<td>Every ward has a unique ID, which is used to filter search results</td>
-<td>984332</td>
+<td>Angle in degrees compared to the Northern line <code>(0-359)</code></td>
+<td>270</td>
 </tr>
 </tbody>
 </table>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
-<p><strong>Input</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://maps.vietmap.vn/api/search/v3?apikey={your-apikey}&amp;text=Công Ty Cổ Phần Ứng Dụng Bản Đồ Việt,HCM&amp;layers=POI&amp;cityId=12&amp;distId=1292&amp;wardId=984332
+<p><strong>URL:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>https://maps.vietmap.vn/api/geocode-fleet/reverse-batch?apikey={your-apikey}
+</code></pre></div>
+<p><strong>Body:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">[</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">        </span><span class="nt">&quot;lon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">107.42193008289291</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="nt">&quot;lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.91527176296465</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="nt">&quot;vehicleType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="nt">&quot;ton&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="nt">&quot;seat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="nt">&quot;heading&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">        </span><span class="nt">&quot;lon&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">107.4267435202076</span><span class="p">,</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">        </span><span class="nt">&quot;lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.889979077535088</span><span class="p">,</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">        </span><span class="nt">&quot;vehicleType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">        </span><span class="nt">&quot;ton&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="nt">&quot;seat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">        </span><span class="nt">&quot;heading&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="p">]</span>
 </code></pre></div></p>
-<p><strong>Respone</strong></p>
-<p>If you need detailed information about the place, please use the <a href="../../place/">Vietmap Place API</a>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">[</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="nt">&quot;ref_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;vm:POI:8D92EB120DDE9996&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3 Đường Trần Nhân Tôn,Phường 9,Quận 5,Thành Phố Hồ Chí Minh&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Công Ty Cổ Phần Ứng Dụng Bản Đồ Việt Chi Nhánh Miền Nam&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="nt">&quot;display&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Công Ty Cổ Phần Ứng Dụng Bản Đồ Việt Chi Nhánh Miền Nam 3 Đường Trần Nhân Tôn,Phường 9,Quận 5,Thành Phố Hồ Chí Minh&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="nt">&quot;boundaries&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">            </span><span class="p">{</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">                </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">984332</span><span class="p">,</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">                </span><span class="nt">&quot;prefix&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Phường&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">                </span><span class="nt">&quot;full_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Phường 9&quot;</span><span class="p">,</span><span class="w">               </span>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">            </span><span class="p">},</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">            </span><span class="p">{</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">                </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1292</span><span class="p">,</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">                </span><span class="nt">&quot;prefix&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Quận&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">                </span><span class="nt">&quot;full_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Quận 5&quot;</span><span class="p">,</span><span class="w">              </span>
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">            </span><span class="p">},</span>
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">            </span><span class="p">{</span>
-<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">                </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span>
-<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hồ Chí Minh&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">                </span><span class="nt">&quot;prefix&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Thành Phố&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">                </span><span class="nt">&quot;full_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Thành Phố Hồ Chí Minh&quot;</span><span class="p">,</span><span class="w">             </span>
-<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">        </span><span class="p">],</span>
-<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">        </span><span class="nt">&quot;categories&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">            </span><span class="s2">&quot;6001&quot;</span>
-<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">        </span><span class="p">]</span>
-<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="p">]</span>
-</code></pre></div></p>
-<h3 id="response-description">Response description<a class="headerlink" href="#response-description" title="Permanent link">&para;</a></h3>
-<p>Geocode API will respond to a <code>list</code> that contains <code>up to 10 places</code>.</p>
+<h2 id="json-output">JSON Output<a class="headerlink" href="#json-output" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">[</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">        </span><span class="nt">&quot;admin&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">199456</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">            </span><span class="nt">&quot;names&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;T. Đồng Nai&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;H. Xuân Lộc&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;TT. Gia Ray&quot;</span><span class="p">],</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">            </span><span class="nt">&quot;inside&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">        </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">            </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6 Quốc Lộ 1A&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">            </span><span class="nt">&quot;admins&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;T. Đồng Nai&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;H. Xuân Lộc&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;TT. Gia Ray&quot;</span><span class="p">],</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">            </span><span class="nt">&quot;distance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.00022955630504154108</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">        </span><span class="nt">&quot;network&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">61657</span><span class="p">,</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Quốc Lộ 1A&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">            </span><span class="nt">&quot;speed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">            </span><span class="nt">&quot;distance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1586102614531273E-05</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">        </span><span class="nt">&quot;admin&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">920352</span><span class="p">,</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">            </span><span class="nt">&quot;names&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;T. Đồng Nai&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;H. Xuân Lộc&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;X. Xuân Tâm&quot;</span><span class="p">],</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">            </span><span class="nt">&quot;inside&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="w">        </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="w">        </span><span class="nt">&quot;network&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">61185</span><span class="p">,</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Quốc Lộ 1A&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="w">            </span><span class="nt">&quot;speed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="w">            </span><span class="nt">&quot;distance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2.3453771497588975E-06</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="p">]</span>
+</code></pre></div>
+<h3 id="response-description">Response Description<a class="headerlink" href="#response-description" title="Permanent link">&para;</a></h3>
+<p>The response from the API is structured into a list objects which contains three main objects: <strong>admin</strong>, <strong>address</strong>, and <strong>network</strong>. Each object contains specific details as described in the tables below:</p>
+<h3 id="admin-object">Admin Object<a class="headerlink" href="#admin-object" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1431,71 +1552,78 @@
 </thead>
 <tbody>
 <tr>
-<td>ref_id</td>
-<td>string</td>
-<td>Reference ID for the Point of Interest (POI), using for get detail info from <a href="../../place/">Vietmap Place API</a></td>
+<td>id</td>
+<td>number</td>
+<td>VietMap unique identifier of the ward administrative region</td>
 </tr>
 <tr>
-<td>address</td>
-<td>string</td>
-<td>Full address including <code>street</code>, <code>ward</code>, <code>district</code>, and <code>city</code></td>
-</tr>
-<tr>
-<td>name</td>
-<td>string</td>
-<td>Name of the Point of Interest (POI)</td>
-</tr>
-<tr>
-<td>display</td>
-<td>string</td>
-<td>Display name containing detailed information of the POI address</td>
-</tr>
-<tr>
-<td>boundaries</td>
+<td>names</td>
 <td>array</td>
-<td>Array containing boundary information (<code>ward</code>, <code>district</code>, <code>city</code>)</td>
+<td>List of names representing the hierarchical administrative levels</td>
 </tr>
 <tr>
-<td>categories</td>
-<td>array</td>
-<td>Array containing categories associated with the POI</td>
+<td>inside</td>
+<td>boolean</td>
+<td>Indicates whether the location is inside the given administrative region</td>
 </tr>
 </tbody>
 </table>
-<p>For the <code>boundaries</code> array:</p>
+<h3 id="address-object">Address Object<a class="headerlink" href="#address-object" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>Sub-Parameter</th>
+<th>Parameter</th>
 <th>Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>type</td>
-<td>integer</td>
-<td>Type of boundary (0 for <code>city</code>, 1 for <code>district</code>, 2 for <code>ward</code>)</td>
+<td>address</td>
+<td>string</td>
+<td>Name of the location</td>
 </tr>
 <tr>
+<td>admins</td>
+<td>array</td>
+<td>List of administrative regions associated with the address</td>
+</tr>
+<tr>
+<td>distance</td>
+<td>number</td>
+<td>Distance from provided lat, lng to the address</td>
+</tr>
+</tbody>
+</table>
+<h3 id="network-object">Network Object<a class="headerlink" href="#network-object" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td>id</td>
-<td>integer</td>
-<td>Unique identifier for the boundary</td>
+<td>number</td>
+<td>VietMap unique identifier for the network</td>
 </tr>
 <tr>
 <td>name</td>
 <td>string</td>
-<td>Name of the boundary</td>
+<td>Name of the network</td>
 </tr>
 <tr>
-<td>prefix</td>
-<td>string</td>
-<td>Prefix of the boundary (e.g., "Phường" for ward)</td>
+<td>speed</td>
+<td>null</td>
+<td>Speed of the network, currently it not available for public</td>
 </tr>
 <tr>
-<td>full_name</td>
-<td>string</td>
-<td>Full name of the boundary (e.g., "Phường 9" for ward)</td>
+<td>distance</td>
+<td>number</td>
+<td>Distance to the network</td>
 </tr>
 </tbody>
 </table>
@@ -1534,7 +1662,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../traffic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Traffic" rel="prev">
+          <a href="../place/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Place" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1543,20 +1671,20 @@
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                Traffic
+                Place
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../reverse-version/reverse-ver3.0/" class="md-footer__link md-footer__link--next" aria-label="Next: Reverse" rel="next">
+          <a href="../route/" class="md-footer__link md-footer__link--next" aria-label="Next: Route" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Reverse
+                Route
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1593,14 +1721,14 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
   
-      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
-  <script src="../../../assets/javascripts/custom.a4a4fac0.min.js"></script>
+  <script src="../../assets/javascripts/custom.a4a4fac0.min.js"></script>
   <style>
     .support-online {
       position: fixed;
