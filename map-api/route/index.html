@@ -505,48 +505,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../geocode-version/geocode-ver3.0/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Geocode
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../reverse-version/reverse-ver3.0/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Reverse
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../autocomplete-version/autocomplete-ver3.0/" class="md-nav__link">
         
   
@@ -568,11 +526,53 @@
   
   
     <li class="md-nav__item">
+      <a href="../geocode-version/geocode-ver3.0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geocode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../place/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Place
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reverse-version/reverse-ver3.0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reverse
   </span>
   
 
@@ -1458,12 +1458,12 @@
 <tr>
 <td>points_encoded</td>
 <td>boolean</td>
-<td>Indicates if the points are encoded</td>
+<td>Whether the <code>points</code> and <code>snapped_waypoints</code> fields are polyline-encoded strings rather than JSON arrays of coordinates</td>
 </tr>
 <tr>
 <td>bbox</td>
 <td>array</td>
-<td>Bounding box coordinates of the route</td>
+<td>The bounding box of the route geometry. Format: [<code>minLon</code>, <code>minLat</code>, <code>maxLon</code>, <code>maxLat</code>]</td>
 </tr>
 <tr>
 <td>points</td>
@@ -1505,27 +1505,27 @@
 <tr>
 <td>sign</td>
 <td>int</td>
-<td>Direction sign of the instruction (0 for straight, -2 for left, 2 for right, etc.)</td>
+<td>Direction sign of the instruction, sign description <a href="https://www.figma.com/design/rWyQ5TNtt6E5l8tPEE9Tkl/VietMap-navigation-symbol?node-id=354-4&amp;t=cgtrhx0jyyMWdZ45-0">here</a></td>
 </tr>
 <tr>
 <td>interval</td>
 <td>array</td>
-<td>Interval indices indicating the start and end of the instruction</td>
+<td>Two indices into points, referring to the beginning and the end of the segment of the route this instruction refers to.</td>
 </tr>
 <tr>
 <td>text</td>
 <td>string</td>
-<td>Textual description of the instruction</td>
+<td>A description what the user has to do in order to follow the route.</td>
 </tr>
 <tr>
 <td>time</td>
 <td>int</td>
-<td>Time required for the instruction (in milliseconds)</td>
+<td>The duration for this instruction, in milliseconds.</td>
 </tr>
 <tr>
 <td>street_name</td>
 <td>string</td>
-<td>Name of the street for the instruction</td>
+<td>The name of the street to turn onto in order to follow the route.</td>
 </tr>
 <tr>
 <td>last_heading</td>
