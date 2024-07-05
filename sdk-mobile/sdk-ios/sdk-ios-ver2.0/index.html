@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
@@ -23,7 +23,7 @@
     
     
   
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -57,16 +57,7 @@
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  </head>
   
   
     
@@ -190,7 +181,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -654,7 +645,7 @@
 
 
 <h1 id="sdk-ios-version-20">SDK iOS Version 2.0<a class="headerlink" href="#sdk-ios-version-20" title="Permanent link">&para;</a></h1>
-<p><a class="glightbox" href="../sdkmobile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../sdkmobile.png" /></a></p>
+<p><img alt="Alt text" src="../sdkmobile.png" /></p>
 <h2 id="environment-settings">Environment settings<a class="headerlink" href="#environment-settings" title="Permanent link">&para;</a></h2>
 <p>Install Homebrew
 Check brew
@@ -674,16 +665,16 @@ Install Carthage</p>
 </code></pre></div></p>
 <h2 id="create-navigation-project-with-xcode">Create Navigation project with xcode<a class="headerlink" href="#create-navigation-project-with-xcode" title="Permanent link">&para;</a></h2>
 <p>Create project with Swift and Storyboard Open xcode, select File &gt; New &gt; Project
-<a class="glightbox" href="../image-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-10.png" /></a></p>
+<img alt="Alt text" src="../image-10.png" /></p>
 <p>Make sure the project runs successfully. If successful, you will receive the layout as shown below.
-<a class="glightbox" href="../image-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-11.png" /></a></p>
+<img alt="Alt text" src="../image-11.png" /></p>
 <h2 id="import-library">Import library<a class="headerlink" href="#import-library" title="Permanent link">&para;</a></h2>
 <p>Create Cartfile by opening terminal and running the following command:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$ cd ~/path/to/NavigationSample
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>$ touch Cartfile
 </code></pre></div>
 <p>The Cartfile file will be created in the path/to/NavigationSample directory
-<a class="glightbox" href="../image-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-12.png" /></a></p>
+<img alt="Alt text" src="../image-12.png" /></p>
 <p>To ensure Cartfile has full permissions to build the library, use the following command:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>$ chmod +x Cartfile
 </code></pre></div></p>
@@ -707,9 +698,9 @@ Then run the following command:</p>
 <p>Create the Frameworks folder in NavigationSample
 Select NavigationSample &gt; Right-click &gt; New group
 Drag and drop all xcframework folders in the Carthage/Build folder just created above into the Frameworks folder in xcode as shown below:
-<a class="glightbox" href="../image-13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-13.png" /></a>
+<img alt="Alt text" src="../image-13.png" />
 <strong>Note: Make sure to convert Embed to [Embed &amp; sign]</strong>
-<a class="glightbox" href="../image-14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-14.png" /></a></p>
+<img alt="Alt text" src="../image-14.png" /></p>
 <p>Create a Podfile by opening a terminal and running the following command:</p>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>$ cd ~/path/to/NavigationSample
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>$ pod init
@@ -763,7 +754,7 @@ UIView: mapView &gt; show mapView
 UIButton: clearMarker &gt; delete destination marker
 UIButton: startButton &gt; start navigation
 Refer to UI or copy paste at NavigationSample/Main.storyboard</p>
-<p><a class="glightbox" href="../image-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../image-15.png" /></a></p>
+<p><img alt="Alt text" src="../image-15.png" /></p>
 <h3 id="initialize-mapview">Initialize mapView<a class="headerlink" href="#initialize-mapview" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kd">var</span><span class="w"> </span><span class="n">mapView</span><span class="p">:</span><span class="w"> </span><span class="n">NavigationMapView</span><span class="o">?</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="n">didSet</span><span class="w"> </span><span class="p">{</span>
@@ -1300,7 +1291,7 @@ The example below saves the current position and adds a direction arrow for the 
     
     
   
-      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
   <script src="../../../assets/javascripts/custom.a4a4fac0.min.js"></script>
@@ -1496,7 +1487,5 @@ The example below saves the current position and adds a direction arrow for the 
     </div>	
   </div>
 
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
+  </body>
 </html>
