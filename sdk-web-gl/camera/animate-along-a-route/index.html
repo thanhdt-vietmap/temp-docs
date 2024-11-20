@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://maps.vietmap.vn/docs/sdk-web-gl/camera/animate-camera/">
+        <link rel="canonical" href="https://maps.vietmap.vn/docs/sdk-web-gl/camera/animate-along-a-route/">
       
       
-        <link rel="prev" href="../rotate-camera/">
+        <link rel="prev" href="../fit-camera-to-line/">
       
       
-        <link rel="next" href="../fit-camera-to-bounds/">
+        <link rel="next" href="../../../sdk-mobile/overview/">
       
       
       <link rel="icon" href="../../../assets/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Animate camera - MAPS API DOCS</title>
+        <title>Animate along a route - MAPS API DOCS</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#animate-camera" class="md-skip">
+        <a href="#animate-camera-along-a-route" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Animate camera
+              Animate along a route
             
           </span>
         </div>
@@ -1202,30 +1202,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Animate camera
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../animate-camera/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1234,35 +1214,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1314,10 +1265,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../animate-along-a-route/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Animate along a route
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1326,6 +1297,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1452,10 +1452,10 @@
                   
 
 
-<h1 id="animate-camera">Animate camera<a class="headerlink" href="#animate-camera" title="Permanent link">&para;</a></h1>
-<p>Customize camera animations using AnimationOptions</p>
+<h1 id="animate-camera-along-a-route">Animate camera along a route<a class="headerlink" href="#animate-camera-along-a-route" title="Permanent link">&para;</a></h1>
+<p>Animate camera along a route is a component that animates the camera along a specific route on a map.</p>
 <p><iframe
-    src="https://docs.mapdev.lat//sdk-web-gl/camera/animate-camera.html" 
+    src="https://docs.mapdev.lat//sdk-web-gl/camera/animate-along-a-route.html" 
     width="100%" 
     height="450" 
     style="border:0;" 
@@ -1794,7 +1794,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../rotate-camera/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Rotate camera" rel="prev">
+          <a href="../fit-camera-to-line/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fit camera to line" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1803,20 +1803,20 @@
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                Rotate camera
+                Fit camera to line
               </div>
             </div>
           </a>
         
         
           
-          <a href="../fit-camera-to-bounds/" class="md-footer__link md-footer__link--next" aria-label="Next: Fit camera to bounds" rel="next">
+          <a href="../../../sdk-mobile/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Fit camera to bounds
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">

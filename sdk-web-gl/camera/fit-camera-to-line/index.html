@@ -8,35 +8,35 @@
       
       
       
-        <link rel="canonical" href="https://maps.vietmap.vn/docs/sdk-web-gl/map/example-map/simple-map/">
+        <link rel="canonical" href="https://maps.vietmap.vn/docs/sdk-web-gl/camera/fit-camera-to-line/">
       
       
-        <link rel="prev" href="../../../overview/">
+        <link rel="prev" href="../fit-camera-to-bounds/">
       
       
-        <link rel="next" href="../style-map/">
+        <link rel="next" href="../animate-along-a-route/">
       
       
-      <link rel="icon" href="../../../../assets/favicon.png">
+      <link rel="icon" href="../../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
-        <title>Simple map - MAPS API DOCS</title>
+        <title>Fit camera to line - MAPS API DOCS</title>
       
     
     
   
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
 
     
-  <link rel="stylesheet" href="../../../../assets/stylesheets/custom.3e8bd608.min.css">
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.3e8bd608.min.css">
   
 
     
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vietmap-gl-with-html" class="md-skip">
+        <a href="#fit-camera-to-line" class="md-skip">
           Skip to content
         </a>
       
@@ -96,9 +96,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="MAPS API DOCS" class="md-header__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+    <a href="../../.." title="MAPS API DOCS" class="md-header__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
       
-  <img src="../../../../assets/logo.png" alt="logo">
+  <img src="../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Simple map
+              Fit camera to line
             
           </span>
         </div>
@@ -213,7 +213,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../map-api/overview/" class="md-tabs__link">
+        <a href="../../../map-api/overview/" class="md-tabs__link">
           
   
     
@@ -235,7 +235,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../overview/" class="md-tabs__link">
+        <a href="../../overview/" class="md-tabs__link">
           
   
     
@@ -255,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../sdk-mobile/overview/" class="md-tabs__link">
+        <a href="../../../sdk-mobile/overview/" class="md-tabs__link">
           
   
     
@@ -296,9 +296,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="MAPS API DOCS" class="md-nav__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+    <a href="../../.." title="MAPS API DOCS" class="md-nav__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
       
-  <img src="../../../../assets/logo.png" alt="logo">
+  <img src="../../../assets/logo.png" alt="logo">
 
     </a>
     MAPS API DOCS
@@ -349,7 +349,7 @@
         
   
   
-    <a href="../../../../map-api/overview/" class="md-nav__link">
+    <a href="../../../map-api/overview/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -438,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -456,8 +456,6 @@
                 
   
   
-    
-  
   
   
     
@@ -486,11 +484,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
@@ -504,7 +502,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Show map
@@ -515,30 +513,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Simple map
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../map/example-map/simple-map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -547,44 +525,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#map-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Map Options
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -597,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../style-map/" class="md-nav__link">
+      <a href="../../map/example-map/style-map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -618,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../map-interaction/" class="md-nav__link">
+      <a href="../../map/example-map/map-interaction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -639,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../control-map/" class="md-nav__link">
+      <a href="../../map/example-map/control-map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../locate-user/" class="md-nav__link">
+      <a href="../../map/example-map/locate-user/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -746,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../marker/example-marker/add-a-marker/" class="md-nav__link">
+      <a href="../../marker/example-marker/add-a-marker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -767,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../marker/example-marker/draw-a-circle/" class="md-nav__link">
+      <a href="../../marker/example-marker/draw-a-circle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -788,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../marker/example-marker/draggable-marker/" class="md-nav__link">
+      <a href="../../marker/example-marker/draggable-marker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -809,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../marker/example-marker/cluster-marker/" class="md-nav__link">
+      <a href="../../marker/example-marker/cluster-marker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -830,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../marker/example-marker/methods-marker/" class="md-nav__link">
+      <a href="../../marker/example-marker/methods-marker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -912,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../popup/example-popup/popup/" class="md-nav__link">
+      <a href="../../popup/example-popup/popup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -933,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../popup/example-popup/popup-marker/" class="md-nav__link">
+      <a href="../../popup/example-popup/popup-marker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -954,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../popup/example-popup/popup-hover/" class="md-nav__link">
+      <a href="../../popup/example-popup/popup-hover/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1036,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../line/example-line/line/" class="md-nav__link">
+      <a href="../../line/example-line/line/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1057,7 +997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../line/example-line/gradient-line/" class="md-nav__link">
+      <a href="../../line/example-line/gradient-line/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1078,7 +1018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../line/example-line/animated-a-line/" class="md-nav__link">
+      <a href="../../line/example-line/animated-a-line/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1156,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../polygon/polygon/polygon/" class="md-nav__link">
+      <a href="../../polygon/polygon/polygon/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1182,6 +1122,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1210,11 +1152,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
         
           
           <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
@@ -1228,7 +1170,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_7">
             <span class="md-nav__icon md-icon"></span>
             Camera control
@@ -1242,7 +1184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../camera/rotate-camera/" class="md-nav__link">
+      <a href="../rotate-camera/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1263,7 +1205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../camera/animate-camera/" class="md-nav__link">
+      <a href="../animate-camera/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1284,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../camera/fit-camera-to-bounds/" class="md-nav__link">
+      <a href="../fit-camera-to-bounds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1302,10 +1244,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../camera/fit-camera-to-line/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Fit camera to line
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1314,6 +1276,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1326,7 +1317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../camera/animate-along-a-route/" class="md-nav__link">
+      <a href="../animate-along-a-route/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1392,7 +1383,7 @@
         
   
   
-    <a href="../../../../sdk-mobile/overview/" class="md-nav__link">
+    <a href="../../../sdk-mobile/overview/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1446,15 +1437,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#map-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Map Options
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1470,152 +1452,103 @@
                   
 
 
-<h1 id="vietmap-gl-with-html">VietMap GL with HTML<a class="headerlink" href="#vietmap-gl-with-html" title="Permanent link">&para;</a></h1>
-<p>This example demonstrates how to integrate VietMap GL with HTML to display a map.</p>
+<h1 id="fit-camera-to-line">Fit camera to line<a class="headerlink" href="#fit-camera-to-line" title="Permanent link">&para;</a></h1>
+<p>Fit camera to line is a component that automatically adjusts the camera to fit the bounds of a specific line on a map.</p>
 <p><iframe
-    src="https://docs.mapdev.lat//sdk-web-gl/map/code-map/map.html" 
+    src="https://docs.mapdev.lat//sdk-web-gl/camera/fit-camera-to-line.html" 
     width="100%" 
     height="450" 
     style="border:0;" 
     allowfullscreen="" 
     loading="lazy">
-</iframe></p>
+</iframe>
+</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span> <span class="p">/&gt;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span> <span class="p">/&gt;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Map<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;https://unpkg.com/@vietmap/vietmap-gl-js@4.2.0/vietmap-gl.css&#39;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Animate map camera around a point<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;og:description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Animate the map camera around a point.&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#39;utf-8&#39;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;https://unpkg.com/@vietmap/vietmap-gl-js@4.2.0/vietmap-gl.js&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>     <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;https://unpkg.com/@vietmap/vietmap-gl-js@4.2.0/vietmap-gl.css&#39;</span> <span class="p">/&gt;</span>  
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="p">}</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">      </span><span class="p">#</span><span class="nn">map</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">absolute</span><span class="p">;</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">      </span><span class="p">}</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;map&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">vietmapgl</span><span class="p">.</span><span class="nb">Map</span><span class="p">({</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">        </span><span class="nx">container</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;map&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">        </span><span class="nx">style</span><span class="o">:</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">          </span><span class="s2">&quot;https://maps.vietmap.vn/mt/tm/style.json?apikey=YOUR_API_KEY_HERE&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="nx">center</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">106.66817068179284</span><span class="p">,</span><span class="w"> </span><span class="mf">10.803866192772915</span><span class="p">],</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span><span class="nx">zoom</span><span class="o">:</span><span class="w"> </span><span class="mf">9</span><span class="p">,</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">      </span><span class="p">});</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">      </span><span class="nx">map</span><span class="p">.</span><span class="nx">addControl</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nx">vietmapgl</span><span class="p">.</span><span class="nx">NavigationControl</span><span class="p">());</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="nt">html</span><span class="o">,</span><span class="w"> </span><span class="nt">body</span><span class="o">,</span><span class="w"> </span><span class="p">#</span><span class="nn">map</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;map&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">vietmapgl</span><span class="p">.</span><span class="nb">Map</span><span class="p">({</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="nx">container</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;map&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span><span class="nx">style</span><span class="o">:</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">          </span><span class="s2">&quot;https://maps.vietmap.vn/mt/tm/style.json?apikey=YOUR_API_KEY_HERE&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="nx">center</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mf">106.72301001966926</span><span class="p">,</span><span class="mf">10.796056815909495</span><span class="p">],</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="nx">zoom</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="nx">pitch</span><span class="o">:</span><span class="mf">60</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">      </span><span class="p">});</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">rotateCamera</span><span class="p">(</span><span class="nx">timestamp</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">        </span><span class="c1">// clamp the rotation between 0 -360 degrees</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span><span class="c1">// Divide timestamp by 100 to slow rotation to ~10 degrees / sec</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="nx">map</span><span class="p">.</span><span class="nx">rotateTo</span><span class="p">((</span><span class="nx">timestamp</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">100</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">360</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">duration</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">});</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span><span class="c1">// Request the next frame of the animation.</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">        </span><span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">rotateCamera</span><span class="p">);</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="nx">map</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">        </span><span class="c1">// Start the animation.</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">        </span><span class="nx">rotateCamera</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">        </span><span class="c1">// Add 3d buildings and remove label layers to enhance the map</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">layers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">map</span><span class="p">.</span><span class="nx">getStyle</span><span class="p">().</span><span class="nx">layers</span><span class="p">;</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">layers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">layers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;symbol&#39;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">layers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">layout</span><span class="p">[</span><span class="s1">&#39;text-field&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">                </span><span class="c1">// remove text labels</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">                </span><span class="nx">map</span><span class="p">.</span><span class="nx">removeLayer</span><span class="p">(</span><span class="nx">layers</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">id</span><span class="p">);</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">        </span><span class="nx">map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">({</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">            </span><span class="s1">&#39;id&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;3d-buildings&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="w">            </span><span class="s1">&#39;source&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;composite&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="w">            </span><span class="s1">&#39;source-layer&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;building&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">            </span><span class="s1">&#39;filter&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;==&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;extrude&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;true&#39;</span><span class="p">],</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">            </span><span class="s1">&#39;type&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;fill-extrusion&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="w">            </span><span class="s1">&#39;minzoom&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">15</span><span class="p">,</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">            </span><span class="s1">&#39;paint&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="w">                </span><span class="s1">&#39;fill-extrusion-color&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#aaa&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>
+<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="w">                </span><span class="c1">// use an &#39;interpolate&#39; expression to add a smooth transition effect to the</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="w">                </span><span class="c1">// buildings as the user zooms in</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="w">                </span><span class="s1">&#39;fill-extrusion-height&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="w">                    </span><span class="s1">&#39;interpolate&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="w">                    </span><span class="p">[</span><span class="s1">&#39;linear&#39;</span><span class="p">],</span>
+<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="w">                    </span><span class="p">[</span><span class="s1">&#39;zoom&#39;</span><span class="p">],</span>
+<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="w">                    </span><span class="mf">15</span><span class="p">,</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="w">                    </span><span class="mf">0</span><span class="p">,</span>
+<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a><span class="w">                    </span><span class="mf">15.05</span><span class="p">,</span>
+<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a><span class="w">                    </span><span class="p">[</span><span class="s1">&#39;get&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;height&#39;</span><span class="p">]</span>
+<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="w">                </span><span class="p">],</span>
+<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a><span class="w">                </span><span class="s1">&#39;fill-extrusion-base&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a><span class="w">                    </span><span class="s1">&#39;interpolate&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="w">                    </span><span class="p">[</span><span class="s1">&#39;linear&#39;</span><span class="p">],</span>
+<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a><span class="w">                    </span><span class="p">[</span><span class="s1">&#39;zoom&#39;</span><span class="p">],</span>
+<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a><span class="w">                    </span><span class="mf">15</span><span class="p">,</span>
+<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a><span class="w">                    </span><span class="mf">0</span><span class="p">,</span>
+<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a><span class="w">                    </span><span class="mf">15.05</span><span class="p">,</span>
+<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a><span class="w">                    </span><span class="p">[</span><span class="s1">&#39;get&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;min_height&#39;</span><span class="p">]</span>
+<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="w">                </span><span class="p">],</span>
+<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a><span class="w">                </span><span class="s1">&#39;fill-extrusion-opacity&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">0.6</span>
+<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a><span class="w">        </span><span class="p">});</span>
+<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a><span class="w">    </span><span class="p">});</span>
+<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
-<h2 id="map-options">Map Options<a class="headerlink" href="#map-options" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Prop</th>
-<th style="text-align: center;">Type</th>
-<th style="text-align: center;">Default</th>
-<th style="text-align: center;">Description</th>
-<th style="text-align: center;">Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>container</td>
-<td style="text-align: center;"><code>HTMLElement</code></td>
-<td style="text-align: center;"><code>null</code></td>
-<td style="text-align: center;">Reference to the DOM element where the map will be mounted.</td>
-<td style="text-align: center;"><code>mapContainer.current</code> (used with <code>useRef</code>)</td>
-</tr>
-<tr>
-<td>style</td>
-<td style="text-align: center;"><a href="./mapType.md">MapType</a></td>
-<td style="text-align: center;"><code>null</code></td>
-<td style="text-align: center;">URL of the map style.</td>
-<td style="text-align: center;"><code>https://maps.vietmap.vn/mt/tm/style.json?apikey=${VIETMAP_API_KEY}</code></td>
-</tr>
-<tr>
-<td>apiKey</td>
-<td style="text-align: center;"><code>string</code></td>
-<td style="text-align: center;"><code>null</code></td>
-<td style="text-align: center;"><code>VietMap</code> API key provided by VietMap.</td>
-<td style="text-align: center;"><code>VIETMAP_API_KEY</code></td>
-</tr>
-<tr>
-<td>center</td>
-<td style="text-align: center;"><code>ILatLng</code></td>
-<td style="text-align: center;"><code>[0,0]</code></td>
-<td style="text-align: center;">Center coordinates of the map [longitude, latitude].</td>
-<td style="text-align: center;"><code>106.675477,10.758898</code></td>
-</tr>
-<tr>
-<td>zoom</td>
-<td style="text-align: center;"><code>number</code></td>
-<td style="text-align: center;"><code>0</code></td>
-<td style="text-align: center;">Map zoom level. (0-18)</td>
-<td style="text-align: center;"><code>12</code></td>
-</tr>
-<tr>
-<td>pitch</td>
-<td style="text-align: center;"><code>number</code></td>
-<td style="text-align: center;"><code>0</code></td>
-<td style="text-align: center;">Map tilt angle. (0-60)</td>
-<td style="text-align: center;"><code>0</code></td>
-</tr>
-<tr>
-<td>bearing</td>
-<td style="text-align: center;"><code>number</code></td>
-<td style="text-align: center;"><code>0</code></td>
-<td style="text-align: center;">Map rotation angle in degrees. (0-360)</td>
-<td style="text-align: center;"><code>0</code></td>
-</tr>
-<tr>
-<td>controlPosition</td>
-<td style="text-align: center;"><a href="./docs/controlOptions.md">ControlOptions</a></td>
-<td style="text-align: center;"><code>top-right</code></td>
-<td style="text-align: center;">Position of map control buttons.</td>
-<td style="text-align: center;"><code>top-right</code></td>
-</tr>
-<tr>
-<td>minZoom</td>
-<td style="text-align: center;"><code>number</code></td>
-<td style="text-align: center;"><code>0</code></td>
-<td style="text-align: center;">Minimum zoom level. (0-18)</td>
-<td style="text-align: center;"><code>0</code></td>
-</tr>
-<tr>
-<td>maxZoom</td>
-<td style="text-align: center;"><code>number</code></td>
-<td style="text-align: center;"><code>0</code></td>
-<td style="text-align: center;">Maximum zoom level. (0-18)</td>
-<td style="text-align: center;"><code>0</code></td>
-</tr>
-<tr>
-<td>version</td>
-<td style="text-align: center;"><code>string</code></td>
-<td style="text-align: center;"><code>1.5.3</code></td>
-<td style="text-align: center;">Map version.</td>
-<td style="text-align: center;"><code>1.5.3</code></td>
-</tr>
-<tr>
-<td>interactive</td>
-<td style="text-align: center;"><a href="./interactive.md">Interactive</a></td>
-<td style="text-align: center;"><code>true</code></td>
-<td style="text-align: center;">Allow user interaction with the map.</td>
-<td style="text-align: center;"><code>true</code></td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1651,7 +1584,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
+          <a href="../fit-camera-to-bounds/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fit camera to bounds" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1660,20 +1593,20 @@
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                Overview
+                Fit camera to bounds
               </div>
             </div>
           </a>
         
         
           
-          <a href="../style-map/" class="md-footer__link md-footer__link--next" aria-label="Next: Change map style" rel="next">
+          <a href="../animate-along-a-route/" class="md-footer__link md-footer__link--next" aria-label="Next: Animate along a route" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Change map style
+                Animate along a route
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1710,14 +1643,14 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
   
-      <script src="../../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
-  <script src="../../../../assets/javascripts/custom.a4a4fac0.min.js"></script>
+  <script src="../../../assets/javascripts/custom.a4a4fac0.min.js"></script>
   <style>
     .support-online {
       position: fixed;
