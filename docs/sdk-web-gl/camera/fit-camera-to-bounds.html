@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fit a map to a bounding box</title>
+    <meta property="og:description" content="Fit the map to a specific area, regardless of the pixel size of the map." />
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://unpkg.com/@vietmap/vietmap-gl-js@4.2.0/vietmap-gl.js'></script>
+    <link rel='stylesheet' href='https://unpkg.com/@vietmap/vietmap-gl-js@4.2.0/vietmap-gl.css' />  
+    <style>
+        body { margin: 0; padding: 0; }
+        html, body, #map { height: 100%; }
+    </style>
+</head>
+<body>
+<style>
+    #fit {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 50%;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+        background: #004bfa;
+        opacity: 0.6;
+    }
+</style>
+<div id="map"></div>
+<button id="fit">Fit to VietNam</button>
+<script>
+    const map = new vietmapgl.Map({
+        container: 'map',
+        style: 'https://maps.vietmap.vn/mt/tm/style.json?apikey=c7659ad5cb23c429c48009b8759ec6645d12d0617693aa4b',
+        center: [106.71733, 10.79968],
+        zoom: 15
+    });
+
+    document.getElementById('fit').addEventListener('click', () => {
+        map.fitBounds([
+            [101.24501788213605,23.65322460697342],
+            [ 118.38884495385005,6.5474833425115575]
+        ]);
+    });
+</script>
+</body>
+</html>

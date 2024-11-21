@@ -1,0 +1,1718 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://maps.vietmap.vn/docs/sdk-mobile/sdk-ios/map/">
+      
+      
+        <link rel="prev" href="../../sdk-android/navigation/">
+      
+      
+        <link rel="next" href="../navigation/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Map - MAPS API DOCS</title>
+      
+    
+    
+  
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.3e8bd608.min.css">
+  
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sdk-ios" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MAPS API DOCS" class="md-header__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MAPS API DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Map
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../map-api/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  MAPS API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../sdk-web-gl/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  SDK WEB GL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../overview/" class="md-tabs__link">
+          
+  
+    
+  
+  SDK MOBILE
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MAPS API DOCS" class="md-nav__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    MAPS API DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../map-api/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MAPS API
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../sdk-web-gl/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    SDK WEB GL
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    SDK MOBILE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            SDK MOBILE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    SDK Android
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            SDK Android
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-android/map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Map
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk-android/navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    SDK iOS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            SDK iOS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Map
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Flutter
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Flutter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Flutter/map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Map
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Flutter/navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Flutter/api-plugin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Api Plugin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    React Native
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            React Native
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react-native/map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../react-native/docs/MapView/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Map
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../react-native/docs/VectorSource/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sources
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../react-native/docs/BackgroundLayer/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Layers
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react-native/expo-map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Map - Expo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react-native/navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react-native/react-plugin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Api Plugin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="sdk-ios">SDK iOS<a class="headerlink" href="#sdk-ios" title="Permanent link">&para;</a></h1>
+<p><img alt="Alt text" src="../sdkmobile.png" /></p>
+<h1 id="installation-guide-for-vietmap-map-ios-sdk">Installation Guide for VietMap Map iOS SDK<a class="headerlink" href="#installation-guide-for-vietmap-map-ios-sdk" title="Permanent link">&para;</a></h1>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#1-create-navigation-project-with-xcode">Create Navigation project with Xcode</a></li>
+<li><a href="#2-import-library">Import Library</a></li>
+<li><a href="#3-events">Events</a></li>
+<li><a href="#4-build-project">Build Project</a></li>
+</ol>
+<h2 id="install-ios-sdk-map">Install iOS SDK Map<a class="headerlink" href="#install-ios-sdk-map" title="Permanent link">&para;</a></h2>
+<h3 id="1-create-navigation-project-with-xcode">1. Create Navigation project with Xcode<a class="headerlink" href="#1-create-navigation-project-with-xcode" title="Permanent link">&para;</a></h3>
+<p>Create a project with Swift and Storyboard. Open Xcode, select File &gt; New &gt; Project.</p>
+<p><img alt="Create project" src="../image-10.png" /></p>
+<p>Ensure the project runs successfully. If successful, you will see the layout as shown below.</p>
+<p><img alt="Project layout" src="../image-11.png" /></p>
+<h3 id="2-import-library">2. Import Library<a class="headerlink" href="#2-import-library" title="Permanent link">&para;</a></h3>
+<h4 id="environment-settings">Environment Settings<a class="headerlink" href="#environment-settings" title="Permanent link">&para;</a></h4>
+<p>Install Homebrew
+Check brew
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$ brew --version
+</code></pre></div>
+If Homebrew is not installed, you will see:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$ zsh: command not found: brew
+</code></pre></div>
+<p>If Homebrew is not installed, use the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$ /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre></div>
+<p>Install pods
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$ brew install cocoapods
+</code></pre></div></p>
+<p><strong>Import libraries with Podfile</strong>
+1. Go to Terminal and switch to your local project:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cd NavigationSample
+</code></pre></div>
+2. Once you are inside the project folder, type the command below to create/initialize your POD files:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pod init
+</code></pre></div>
+3. Open the Podfile and write with code below: 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pod &#39;VietMap&#39;, &#39;~&gt; 1.2.2&#39;
+</code></pre></div>
+4. Then install library
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pod install --repo-update
+</code></pre></div>
+5. Double click on the Xcode workspace to open the project</p>
+<h3 id="3-events">3. Events.<a class="headerlink" href="#3-events" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>regionIsChangingWith</code>: Method called when the displayed region of the map view is changing.</li>
+<li><code>didChange</code>: Method called when the user tracking mode on the map view changes.</li>
+<li><code>mapViewDidFinishLoadingMap</code>: Method called when the map on the map view has finished loading and displaying.</li>
+<li><code>mapViewDidStopLocatingUser</code>: Method called when the MGLMapView stops locating the user's position.</li>
+<li><code>mapViewWillStartLoadingMap</code>: Method called when the MGLMapView begins loading map data.</li>
+<li><code>mapViewWillStartLocatingUser</code>: Method called when the MGLMapView starts locating the user's position.</li>
+<li><code>mapViewWillStartRenderingMap</code>: Method called when the MGLMapView starts rendering the map.</li>
+<li><code>mapViewWillStartRenderingFrame</code>: Method called when the MGLMapView starts rendering a frame of the map.</li>
+<li><code>didFinishLoading</code>: Method called when the MGLMapView finishes loading data and interface for the map.</li>
+<li><code>didSelect</code>: Method called when an annotation on the map is selected.</li>
+<li><code>didDeselect</code>: Method called when an annotation on the map is no longer selected.</li>
+<li><code>didSingleTapAt</code>: Method called when the user performs a single tap on the map.</li>
+<li><code>regionDidChangeAnimated</code>: Method called when the displayed region of the map changes, including when the user moves, zooms, or rotates the map.</li>
+<li><code>regionWillChangeAnimated</code>: Method called before the displayed region of the map is about to change.</li>
+<li><code>mapViewDidFailLoadingMap</code>: Method called when loading the map fails with a specific error.</li>
+<li><code>didUpdate: MGLUserLocation</code>: Method called when the user's location information is updated on the map.</li>
+<li><code>mapViewDidFinishRenderingMap</code>: Method called when the map rendering process is completed.</li>
+<li><code>mapViewDidBecomeIdle</code>: Method called when the map has finished its activities and becomes idle.</li>
+<li><code>didFailToLocateUserWithError</code>: Method called when locating the user on the map encounters an error.</li>
+<li><code>tapOnCalloutFor</code>: Method called when the user taps on the callout of an annotation on the map.</li>
+<li><code>mapViewDidFinishRenderingFrame</code>: Method called after a frame of the map has been finished rendering on the screen.</li>
+<li><code>shapeAnnotationIsEnabled</code>: This method allows you to control the activation of shape annotations on the map. Returns true or false to specify whether the shape annotation is enabled.</li>
+<li><code>didAdd: MGLAnnotationView</code>: Method called after new MGLAnnotationViews are added.</li>
+<li><code>didSelect: MGLAnnotationView</code>: Method called when an MGLAnnotationView on the map is selected.</li>
+<li><code>didDeselect: MGLAnnotationView</code>: Method called when an MGLAnnotationView on the map is no longer selected.</li>
+<li><code>alphaForShapeAnnotation</code>: This method allows you to specify the alpha value (opacity) for an MGLShape on the map. The alpha value is a number from 0.0 to 1.0, with 0.0 being completely transparent and 1.0 being opaque.</li>
+<li><code>viewFor: MGLAnnotation</code>: This method is used to provide a custom MGLAnnotationView for a specific MGLAnnotation on the map.</li>
+<li><code>imageFor: MGLAnnotation</code>: This method is used to provide a custom MGLAnnotationImage for a specific MGLAnnotation on the map.</li>
+<li><code>annotationCanShowCallout</code>: This method is used to determine whether an MGLAnnotation can show a callout. To determine whether a specific MGLAnnotation can show a callout, return true or false.</li>
+<li><code>calloutViewFor</code>: This method is used to create and customize the callout view interface for a specific MGLAnnotation.</li>
+<li><code>strokeColorForShapeAnnotation</code>: This method is used to provide the stroke color for a specific MGLShape (such as MGLPolyline or MGLPolygon) on the map.</li>
+<li><code>fillColorForPolygonAnnotation</code>: This method is used to provide the fill color for a specific MGLPolygon on the map.</li>
+<li><code>leftCalloutAccessoryViewFor</code>: This method is used to provide a UIView as the left supplementary element of the callout for a specific MGLAnnotation.</li>
+<li><code>lineWidthForPolylineAnnotation</code>: This method is used to provide the line width of the polyline for a specific MGLPolyline.</li>
+<li><code>rightCalloutAccessoryViewFor</code>: This method is used to provide a UIView as the right supplementary interface of the callout for a specific MGLAnnotation.</li>
+<li><code>calloutAccessoryControlTapped</code>: This method is called when the user taps on the supplementary interface elements (accessory control) in the callout for a specific MGLAnnotation.</li>
+<li><code>shouldChangeFrom</code>: This method is called when the camera state of the map is about to change, allowing you to check and decide whether the change should be made.</li>
+<li><code>mapViewUserLocationAnchorPoint</code>: This method allows you to determine the anchor point of the user location icon on the map.</li>
+<li><code>didFailToLoadImage</code>: This method is called when an image with the provided name cannot be loaded.</li>
+<li><code>shouldRemoveStyleImage</code>: This method is called when an image in the style is being used and there is a request to remove it.</li>
+<li><code>didChangeLocationManagerAuthorization</code>: This method is called when the user's location access permission changes in the app.</li>
+<li><code>styleForDefaultUserLocationAnnotationView</code>: This method is used to customize the interface of the default user location annotation on the map.</li>
+</ul>
+<h3 id="4-build-project">4. Build Project.<a class="headerlink" href="#4-build-project" title="Permanent link">&para;</a></h3>
+<p>Requires device location access permission.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;key&gt;NSLocationAlwaysAndWhenInUseUsageDescription&lt;/key&gt;
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>&lt;string&gt;Get user location&lt;/string&gt;
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>&lt;key&gt;NSLocationAlwaysUsageDescription&lt;/key&gt;
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>&lt;string&gt;Get user location&lt;/string&gt;
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>&lt;key&gt;NSLocationWhenInUseUsageDescription&lt;/key&gt;
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>&lt;string&gt;Get user location&lt;/string&gt;
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>&lt;key&gt;UIBackgroundModes&lt;/key&gt;
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>&lt;array&gt;
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    &lt;string&gt;audio&lt;/string&gt;
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    &lt;string&gt;location&lt;/string&gt;
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>&lt;/array&gt;
+</code></pre></div>
+<h4 id="sample-code">Sample Code<a class="headerlink" href="#sample-code" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">import</span> <span class="nc">UIKit</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kd">import</span> <span class="nc">VietMap</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="kd">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="bp">UIViewController</span> <span class="p">{</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="kd">var</span> <span class="nv">mapView</span><span class="p">:</span> <span class="n">MGLMapView</span><span class="p">!</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="kd">var</span> <span class="nv">coordinates</span><span class="p">:</span> <span class="p">[</span><span class="bp">CLLocationCoordinate2D</span><span class="p">]</span> <span class="p">=</span> <span class="p">[]</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="kr">override</span> <span class="kd">func</span> <span class="nf">viewDidAppear</span><span class="p">(</span><span class="kc">_</span> <span class="n">animated</span><span class="p">:</span> <span class="nb">Bool</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>        <span class="kc">super</span><span class="p">.</span><span class="n">viewDidAppear</span><span class="p">(</span><span class="n">animated</span><span class="p">)</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>        <span class="k">if</span> <span class="cp">#available</span><span class="p">(</span><span class="cp">iOS</span> <span class="mf">10.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>            <span class="bp">UNUserNotificationCenter</span><span class="p">.</span><span class="n">current</span><span class="p">().</span><span class="n">requestAuthorization</span><span class="p">(</span><span class="n">options</span><span class="p">:</span> <span class="p">[.</span><span class="n">badge</span><span class="p">,</span> <span class="p">.</span><span class="n">alert</span><span class="p">,</span> <span class="p">.</span><span class="n">sound</span><span class="p">])</span> <span class="p">{</span> <span class="kc">_</span><span class="p">,</span><span class="kc">_</span> <span class="k">in</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>                <span class="n">DispatchQueue</span><span class="p">.</span><span class="n">main</span><span class="p">.</span><span class="k">async</span> <span class="p">{</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>                    <span class="bp">CLLocationManager</span><span class="p">().</span><span class="n">requestWhenInUseAuthorization</span><span class="p">()</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>                <span class="p">}</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>            <span class="p">}</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>        <span class="p">}</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>    <span class="p">}</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>    <span class="kr">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>        <span class="kc">super</span><span class="p">.</span><span class="n">viewDidLoad</span><span class="p">()</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>        <span class="n">startMapView</span><span class="p">()</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>        <span class="n">drawPolygon</span><span class="p">()</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>    <span class="p">}</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>    <span class="kd">func</span> <span class="nf">startMapView</span><span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>        <span class="n">mapView</span> <span class="p">=</span> <span class="n">MGLMapView</span><span class="p">(</span><span class="n">frame</span><span class="p">:</span> <span class="n">view</span><span class="p">.</span><span class="n">bounds</span><span class="p">,</span> <span class="n">styleURL</span><span class="p">:</span> <span class="n">URL</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="s">&quot;https://maps.vietmap.vn/api/maps/light/styles.json?apikey=YOUR_API_KEY_HERE&quot;</span><span class="p">))</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>        <span class="n">mapView</span><span class="p">.</span><span class="n">autoresizingMask</span> <span class="p">=</span> <span class="p">[.</span><span class="n">flexibleWidth</span><span class="p">,</span> <span class="p">.</span><span class="n">flexibleHeight</span><span class="p">]</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>        <span class="n">mapView</span><span class="p">.</span><span class="n">delegate</span> <span class="p">=</span> <span class="kc">self</span>
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a>        <span class="n">mapView</span><span class="p">.</span><span class="n">userTrackingMode</span> <span class="p">=</span> <span class="p">.</span><span class="n">follow</span>
+<a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a>
+<a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a>        <span class="kd">let</span> <span class="nv">singleTap</span> <span class="p">=</span> <span class="bp">UILongPressGestureRecognizer</span><span class="p">(</span><span class="n">target</span><span class="p">:</span> <span class="kc">self</span><span class="p">,</span> <span class="n">action</span><span class="p">:</span> <span class="k">#selector</span><span class="p">(</span><span class="n">didLongPress</span><span class="p">(</span><span class="n">tap</span><span class="p">:)))</span>
+<a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a>        <span class="n">mapView</span><span class="p">.</span><span class="n">gestureRecognizers</span><span class="p">?.</span><span class="bp">filter</span><span class="p">({</span> <span class="nv">$0</span> <span class="k">is</span> <span class="bp">UILongPressGestureRecognizer</span> <span class="p">}).</span><span class="n">forEach</span><span class="p">(</span><span class="n">singleTap</span><span class="p">.</span><span class="n">require</span><span class="p">(</span><span class="n">toFail</span><span class="p">:))</span>
+<a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a>        <span class="n">mapView</span><span class="p">.</span><span class="n">addGestureRecognizer</span><span class="p">(</span><span class="n">singleTap</span><span class="p">)</span>
+<a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a>        <span class="n">view</span><span class="p">.</span><span class="n">addSubview</span><span class="p">(</span><span class="n">mapView</span><span class="p">)</span>
+<a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a>    <span class="p">}</span>
+<a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a>
+<a id="__codelineno-9-38" name="__codelineno-9-38" href="#__codelineno-9-38"></a>    <span class="kd">func</span> <span class="nf">drawPolyline</span><span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-9-39" name="__codelineno-9-39" href="#__codelineno-9-39"></a>        <span class="kd">let</span> <span class="nv">polyline</span> <span class="p">=</span> <span class="n">MGLPolyline</span><span class="p">(</span><span class="n">coordinates</span><span class="p">:</span> <span class="n">coordinates</span><span class="p">,</span> <span class="bp">count</span><span class="p">:</span> <span class="nb">UInt</span><span class="p">(</span><span class="n">coordinates</span><span class="p">.</span><span class="bp">count</span><span class="p">))</span>
+<a id="__codelineno-9-40" name="__codelineno-9-40" href="#__codelineno-9-40"></a>        <span class="n">mapView</span><span class="p">.</span><span class="n">addAnnotation</span><span class="p">(</span><span class="n">polyline</span><span class="p">)</span>
+<a id="__codelineno-9-41" name="__codelineno-9-41" href="#__codelineno-9-41"></a>    <span class="p">}</span>
+<a id="__codelineno-9-42" name="__codelineno-9-42" href="#__codelineno-9-42"></a>
+<a id="__codelineno-9-43" name="__codelineno-9-43" href="#__codelineno-9-43"></a>    <span class="kd">func</span> <span class="nf">drawPolygon</span><span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-9-44" name="__codelineno-9-44" href="#__codelineno-9-44"></a>        <span class="kd">let</span> <span class="nv">coordinates</span> <span class="p">=</span> <span class="p">[</span>
+<a id="__codelineno-9-45" name="__codelineno-9-45" href="#__codelineno-9-45"></a>            <span class="bp">CLLocationCoordinate2D</span><span class="p">(</span><span class="n">latitude</span><span class="p">:</span> <span class="mf">10.745863</span><span class="p">,</span> <span class="n">longitude</span><span class="p">:</span> <span class="mf">106.655122</span><span class="p">),</span>
+<a id="__codelineno-9-46" name="__codelineno-9-46" href="#__codelineno-9-46"></a>            <span class="bp">CLLocationCoordinate2D</span><span class="p">(</span><span class="n">latitude</span><span class="p">:</span> <span class="mf">10.753557</span><span class="p">,</span> <span class="n">longitude</span><span class="p">:</span> <span class="mf">106.649735</span><span class="p">),</span>
+<a id="__codelineno-9-47" name="__codelineno-9-47" href="#__codelineno-9-47"></a>            <span class="bp">CLLocationCoordinate2D</span><span class="p">(</span><span class="n">latitude</span><span class="p">:</span> <span class="mf">10.765662</span><span class="p">,</span> <span class="n">longitude</span><span class="p">:</span> <span class="mf">106.681285</span><span class="p">),</span>
+<a id="__codelineno-9-48" name="__codelineno-9-48" href="#__codelineno-9-48"></a>            <span class="bp">CLLocationCoordinate2D</span><span class="p">(</span><span class="n">latitude</span><span class="p">:</span> <span class="mf">10.750961</span><span class="p">,</span> <span class="n">longitude</span><span class="p">:</span> <span class="mf">106.683948</span><span class="p">)</span>
+<a id="__codelineno-9-49" name="__codelineno-9-49" href="#__codelineno-9-49"></a>        <span class="p">]</span>
+<a id="__codelineno-9-50" name="__codelineno-9-50" href="#__codelineno-9-50"></a>        <span class="kd">let</span> <span class="nv">polygon</span> <span class="p">=</span> <span class="n">MGLPolygon</span><span class="p">(</span><span class="n">coordinates</span><span class="p">:</span> <span class="n">coordinates</span><span class="p">,</span> <span class="bp">count</span><span class="p">:</span> <span class="nb">UInt</span><span class="p">(</span><span class="n">coordinates</span><span class="p">.</span><span class="bp">count</span><span class="p">))</span>
+<a id="__codelineno-9-51" name="__codelineno-9-51" href="#__codelineno-9-51"></a>        <span class="n">mapView</span><span class="p">.</span><span class="n">addAnnotation</span><span class="p">(</span><span class="n">polygon</span><span class="p">)</span>
+<a id="__codelineno-9-52" name="__codelineno-9-52" href="#__codelineno-9-52"></a>    <span class="p">}</span>
+<a id="__codelineno-9-53" name="__codelineno-9-53" href="#__codelineno-9-53"></a>
+<a id="__codelineno-9-54" name="__codelineno-9-54" href="#__codelineno-9-54"></a>    <span class="c1">// </span><span class="cs">MARK:</span><span class="c1"> Gesture Recognizer Handlers</span>
+<a id="__codelineno-9-55" name="__codelineno-9-55" href="#__codelineno-9-55"></a>    <span class="kr">@objc</span> <span class="kd">func</span> <span class="nf">didLongPress</span><span class="p">(</span><span class="n">tap</span><span class="p">:</span> <span class="bp">UILongPressGestureRecognizer</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-9-56" name="__codelineno-9-56" href="#__codelineno-9-56"></a>        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">mapView</span> <span class="p">=</span> <span class="n">mapView</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+<a id="__codelineno-9-57" name="__codelineno-9-57" href="#__codelineno-9-57"></a>        <span class="k">if</span> <span class="p">(</span><span class="n">coordinates</span><span class="p">.</span><span class="bp">isEmpty</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-9-58" name="__codelineno-9-58" href="#__codelineno-9-58"></a>            <span class="n">coordinates</span><span class="p">.</span><span class="n">append</span><span class="p">((</span><span class="n">mapView</span><span class="p">.</span><span class="n">userLocation</span><span class="p">?.</span><span class="n">location</span><span class="p">?.</span><span class="n">coordinate</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+<a id="__codelineno-9-59" name="__codelineno-9-59" href="#__codelineno-9-59"></a>        <span class="p">}</span>
+<a id="__codelineno-9-60" name="__codelineno-9-60" href="#__codelineno-9-60"></a>        <span class="kd">let</span> <span class="nv">point</span> <span class="p">=</span> <span class="n">mapView</span><span class="p">.</span><span class="n">convert</span><span class="p">(</span><span class="n">tap</span><span class="p">.</span><span class="n">location</span><span class="p">(</span><span class="k">in</span><span class="p">:</span> <span class="n">mapView</span><span class="p">),</span> <span class="n">toCoordinateFrom</span><span class="p">:</span> <span class="n">mapView</span><span class="p">)</span>
+<a id="__codelineno-9-61" name="__codelineno-9-61" href="#__codelineno-9-61"></a>        <span class="kd">let</span> <span class="nv">annotation</span> <span class="p">=</span> <span class="n">MGLPointAnnotation</span><span class="p">()</span>
+<a id="__codelineno-9-62" name="__codelineno-9-62" href="#__codelineno-9-62"></a>        <span class="n">annotation</span><span class="p">.</span><span class="n">coordinate</span> <span class="p">=</span> <span class="n">point</span>
+<a id="__codelineno-9-63" name="__codelineno-9-63" href="#__codelineno-9-63"></a>        <span class="n">annotation</span><span class="p">.</span><span class="n">title</span> <span class="p">=</span> <span class="s">&quot;Point Here&quot;</span>
+<a id="__codelineno-9-64" name="__codelineno-9-64" href="#__codelineno-9-64"></a>        <span class="n">coordinates</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">point</span><span class="p">)</span>
+<a id="__codelineno-9-65" name="__codelineno-9-65" href="#__codelineno-9-65"></a>        <span class="n">mapView</span><span class="p">.</span><span class="n">addAnnotation</span><span class="p">(</span><span class="n">annotation</span><span class="p">)</span>
+<a id="__codelineno-9-66" name="__codelineno-9-66" href="#__codelineno-9-66"></a>        <span class="n">drawPolyline</span><span class="p">()</span>
+<a id="__codelineno-9-67" name="__codelineno-9-67" href="#__codelineno-9-67"></a>    <span class="p">}</span>
+<a id="__codelineno-9-68" name="__codelineno-9-68" href="#__codelineno-9-68"></a><span class="p">}</span>
+<a id="__codelineno-9-69" name="__codelineno-9-69" href="#__codelineno-9-69"></a>
+<a id="__codelineno-9-70" name="__codelineno-9-70" href="#__codelineno-9-70"></a><span class="kd">extension</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="n">MGLMapViewDelegate</span> <span class="p">{</span>
+<a id="__codelineno-9-71" name="__codelineno-9-71" href="#__codelineno-9-71"></a>    <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="kc">_</span> <span class="n">mapView</span><span class="p">:</span> <span class="n">MGLMapView</span><span class="p">,</span> <span class="n">imageFor</span> <span class="n">annotation</span><span class="p">:</span> <span class="n">MGLAnnotation</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">MGLAnnotationImage</span><span class="p">?</span> <span class="p">{</span>
+<a id="__codelineno-9-72" name="__codelineno-9-72" href="#__codelineno-9-72"></a>        <span class="kd">let</span> <span class="nv">image</span> <span class="p">=</span> <span class="bp">UIImage</span><span class="p">(</span><span class="n">systemName</span><span class="p">:</span> <span class="s">&quot;car&quot;</span><span class="p">)</span><span class="o">!</span>
+<a id="__codelineno-9-73" name="__codelineno-9-73" href="#__codelineno-9-73"></a>        <span class="n">image</span><span class="p">.</span><span class="n">withTintColor</span><span class="p">(</span><span class="bp">UIColor</span><span class="p">.</span><span class="n">red</span><span class="p">)</span>
+<a id="__codelineno-9-74" name="__codelineno-9-74" href="#__codelineno-9-74"></a>        <span class="kd">let</span> <span class="nv">annotationImage</span> <span class="p">=</span> <span class="n">MGLAnnotationImage</span><span class="p">(</span><span class="n">image</span><span class="p">:</span> <span class="n">image</span><span class="p">,</span> <span class="n">reuseIdentifier</span><span class="p">:</span> <span class="s">&quot;customAnnotation&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-75" name="__codelineno-9-75" href="#__codelineno-9-75"></a>
+<a id="__codelineno-9-76" name="__codelineno-9-76" href="#__codelineno-9-76"></a>        <span class="k">return</span> <span class="n">annotationImage</span>
+<a id="__codelineno-9-77" name="__codelineno-9-77" href="#__codelineno-9-77"></a>    <span class="p">}</span>
+<a id="__codelineno-9-78" name="__codelineno-9-78" href="#__codelineno-9-78"></a>
+<a id="__codelineno-9-79" name="__codelineno-9-79" href="#__codelineno-9-79"></a>    <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="kc">_</span> <span class="n">mapView</span><span class="p">:</span> <span class="n">MGLMapView</span><span class="p">,</span> <span class="n">annotationCanShowCallout</span> <span class="n">annotation</span><span class="p">:</span> <span class="n">MGLAnnotation</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Bool</span> <span class="p">{</span>
+<a id="__codelineno-9-80" name="__codelineno-9-80" href="#__codelineno-9-80"></a>        <span class="k">return</span> <span class="kc">true</span>
+<a id="__codelineno-9-81" name="__codelineno-9-81" href="#__codelineno-9-81"></a>    <span class="p">}</span>
+<a id="__codelineno-9-82" name="__codelineno-9-82" href="#__codelineno-9-82"></a>
+<a id="__codelineno-9-83" name="__codelineno-9-83" href="#__codelineno-9-83"></a>    <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="kc">_</span> <span class="n">mapView</span><span class="p">:</span> <span class="n">MGLMapView</span><span class="p">,</span> <span class="n">leftCalloutAccessoryViewFor</span> <span class="n">annotation</span><span class="p">:</span> <span class="n">MGLAnnotation</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="bp">UIView</span><span class="p">?</span> <span class="p">{</span>
+<a id="__codelineno-9-84" name="__codelineno-9-84" href="#__codelineno-9-84"></a>        <span class="kd">let</span> <span class="nv">imageView</span> <span class="p">=</span> <span class="bp">UIImageView</span><span class="p">(</span><span class="n">image</span><span class="p">:</span> <span class="bp">UIImage</span><span class="p">(</span><span class="n">named</span><span class="p">:</span> <span class="s">&quot;leftAccessoryImage&quot;</span><span class="p">))</span>
+<a id="__codelineno-9-85" name="__codelineno-9-85" href="#__codelineno-9-85"></a>        <span class="k">return</span> <span class="n">imageView</span>
+<a id="__codelineno-9-86" name="__codelineno-9-86" href="#__codelineno-9-86"></a>    <span class="p">}</span>
+<a id="__codelineno-9-87" name="__codelineno-9-87" href="#__codelineno-9-87"></a>
+<a id="__codelineno-9-88" name="__codelineno-9-88" href="#__codelineno-9-88"></a>    <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="kc">_</span> <span class="n">mapView</span><span class="p">:</span> <span class="n">MGLMapView</span><span class="p">,</span> <span class="n">rightCalloutAccessoryViewFor</span> <span class="n">annotation</span><span class="p">:</span> <span class="n">MGLAnnotation</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="bp">UIView</span><span class="p">?</span> <span class="p">{</span>
+<a id="__codelineno-9-89" name="__codelineno-9-89" href="#__codelineno-9-89"></a>        <span class="kd">let</span> <span class="nv">button</span> <span class="p">=</span> <span class="bp">UIButton</span><span class="p">(</span><span class="n">type</span><span class="p">:</span> <span class="p">.</span><span class="n">detailDisclosure</span><span class="p">)</span>
+<a id="__codelineno-9-90" name="__codelineno-9-90" href="#__codelineno-9-90"></a>        <span class="k">return</span> <span class="n">button</span>
+<a id="__codelineno-9-91" name="__codelineno-9-91" href="#__codelineno-9-91"></a>    <span class="p">}</span>
+<a id="__codelineno-9-92" name="__codelineno-9-92" href="#__codelineno-9-92"></a>
+<a id="__codelineno-9-93" name="__codelineno-9-93" href="#__codelineno-9-93"></a>    <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="kc">_</span> <span class="n">mapView</span><span class="p">:</span> <span class="n">MGLMapView</span><span class="p">,</span> <span class="n">fillColorForPolygonAnnotation</span> <span class="n">annotation</span><span class="p">:</span> <span class="n">MGLPolygon</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="bp">UIColor</span> <span class="p">{</span>
+<a id="__codelineno-9-94" name="__codelineno-9-94" href="#__codelineno-9-94"></a>        <span class="k">return</span> <span class="bp">UIColor</span><span class="p">.</span><span class="n">red</span><span class="p">.</span><span class="n">withAlphaComponent</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-9-95" name="__codelineno-9-95" href="#__codelineno-9-95"></a>    <span class="p">}</span>
+<a id="__codelineno-9-96" name="__codelineno-9-96" href="#__codelineno-9-96"></a><span class="p">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../sdk-android/navigation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Navigation" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                Navigation
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../navigation/" class="md-footer__link md-footer__link--next" aria-label="Next: Navigation" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+                Navigation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 VIETMAP
+    </div>
+  
+  
+    Made with
+    <a href="https://www.vietmap.vn" target="_blank" rel="noopener">
+      VIETMAP
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+  
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+    
+  <script src="../../../assets/javascripts/custom.a4a4fac0.min.js"></script>
+  <style>
+    .support-online {
+      position: fixed;
+      z-index: 999;
+      right: 30px;
+      bottom: 40%;
+      top: auto !important;
+      left: auto;
+    }
+    .support-online a {
+      position: relative;
+      margin: 10px;
+      text-align: left;
+      width: 40px;
+      height: 40px
+    }
+  
+    .support-online a.call-now span{
+      line-height: 22px;
+    }
+  
+    .support-online a.call-now span b{
+      font-size: 16px;
+      color: #fff700;
+    }
+  
+    .support-online i {
+      width: 40px;
+      height: 40px;
+      background: #2a5dff;
+      color: #fff;
+      border-radius: 100%;
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px;
+      position: relative;
+      z-index: 999
+    }
+
+    .support-content{
+      
+    }
+  
+    .support-online a {
+      display: block
+    }
+  
+    .support-online a span {
+      border-radius: 2px;
+      text-align: center;
+      background: #2a5dff;
+      padding: 10px;
+      display: none;
+      width: 150px;
+      margin-right: 12px;
+      position: absolute;
+      color: #ffffff;
+      z-index: 999;
+      top: 0px;
+      right: 41px;
+      font-size: 13pt;
+      transition: all 0.2s ease-in-out 0s;
+      -moz-animation: headerAnimation 0.7s 1;
+      -webkit-animation: headerAnimation 0.7s 1;
+      -o-animation: headerAnimation 0.7s 1;
+      animation: headerAnimation 0.7s 1;
+    }
+
+    .support-online img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .support-online a:hover span {
+      display: block
+    }
+  
+    .support-online a span::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #2a5dff;
+      position: absolute;
+      right: -10px;
+      top: 10px
+    }
+  
+    .kenit-alo-circle {
+      width: 50px;
+      height: 50px;
+      top: -5px;
+      right: -5px;
+      position: absolute;
+      background-color: transparent;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      border: 2px solid rgba(30, 30, 30, 0.4);
+      opacity: .1;
+      border-color: lighten(#2a5dff, 5);
+      opacity: .5
+    }
+  
+    .support-online .btn-support {
+      cursor: pointer
+    }
+  
+  
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+  
+    .animated.infinite {
+      animation-iteration-count: infinite;
+    }
+  
+    .animated.hinge {
+      animation-duration: 2s;
+    }
+  
+    .animated.flipOutX,
+    .animated.flipOutY,
+    .animated.bounceIn,
+    .animated.bounceOut {
+      animation-duration: .75s;
+    }
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+      }
+  
+      50% {
+        opacity: 1;
+      }
+    }
+  
+    .zoomIn {
+      animation-name: zoomIn;
+    }
+    @keyframes rubberBand {
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+  
+      30% {
+        transform: scale3d(1.25, 0.75, 1);
+      }
+  
+      40% {
+        transform: scale3d(0.75, 1.25, 1);
+      }
+  
+      50% {
+        transform: scale3d(1.15, 0.85, 1);
+      }
+  
+      65% {
+        transform: scale3d(.95, 1.05, 1);
+      }
+  
+      75% {
+        transform: scale3d(1.05, .95, 1);
+      }
+  
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  </style>
+  <div class="support-online">
+    <div class="support-content">		
+      <a href="tel:0896164567" class="call-now" rel="nofollow">
+        <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+        <img src="/docs/assets/phone.png" width="50" height="50" alt="facebook">
+        <div class="animated infinite zoomIn kenit-alo-circle"></div>			
+        <span>Tổng đài hỗ trợ<br><b>089.616.4567</b></span>
+      </a>
+      <a href="https://m.me/VietmapMappingSolutions" target="_blank">
+        <img src="/docs/assets/messenger.png" width="50" height="50" alt="facebook">
+        <span>Chat Facebook</span>
+      </a>
+      <a href="https://zalo.me/vietmapmapsapi" target="_blank">
+        <img src="//bizweb.dktcdn.net/100/415/690/files/icon-zalo.png" alt="zalo" width="50" height="50">
+        <span>Chat Zalo</span>
+      </a>
+    </div>	
+  </div>
+
+  </body>
+</html>
