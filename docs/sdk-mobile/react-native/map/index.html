@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
@@ -27,7 +27,7 @@
     
     
   
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -185,7 +185,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -374,14 +374,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
       
         
       
@@ -1686,20 +1678,19 @@ Check the latest version at <a href="https://www.npmjs.com/package/@vietmap/viet
 <p>We've created a demo project for <code>Vietmap React-Native GL library</code>, which contains sample code for the main functions of the library <a href="https://github.com/vietmap-company/vietmap-react-native-demo">here</a>.</p>
 <p>If you're using the <code>Expo project</code>, follow the guide from <a href="../expo-map/">Expo install document</a> or <a href="https://github.com/vietmap-company/react-native-expo-demo">this github project</a>.</p>
 <h3 id="show-the-map">Show the map<a class="headerlink" href="#show-the-map" title="Permanent link">&para;</a></h3>
-<p>You must call <code>Vietmap.setApiKey(YOUR_API_KEY_HERE)</code> before using the map component. You can get an API key from the <a href="https://vietmap.vn/maps-api">Vietmap API</a></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">    </span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">setApiKey</span><span class="p">(</span><span class="nx">YOUR_API_KEY_HERE</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">    </span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">MapView</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@vietmap/vietmap-gl-react-native&quot;</span><span class="p">;</span>
 </code></pre></div>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">SimpleMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">View</span><span class="w"> </span><span class="nx">style</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">page</span><span class="p">}</span><span class="o">&gt;</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">View</span><span class="w"> </span><span class="nx">style</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">container</span><span class="p">}</span><span class="o">&gt;</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">                </span><span class="o">&lt;</span><span class="nx">VietmapGL</span><span class="p">.</span><span class="nx">MapView</span><span class="w"> </span><span class="nx">styleURL</span><span class="o">=</span><span class="p">{</span><span class="sb">`https://maps.vietmap.vn/api/maps/light/styles.json?apikey=</span><span class="si">${</span><span class="nx">YOUR_API_KEY_HERE</span><span class="si">}</span><span class="sb">`</span><span class="p">}</span><span class="w"> </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flex</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span><span class="o">&gt;</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">                    </span><span class="o">&lt;</span><span class="nx">VietmapGL</span><span class="p">.</span><span class="nx">Camera</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">                </span><span class="o">&lt;</span><span class="nx">MapView</span><span class="w"> </span><span class="nx">mapStyle</span><span class="o">=</span><span class="p">{</span><span class="sb">`https://maps.vietmap.vn/api/maps/light/styles.json?apikey=</span><span class="si">${</span><span class="nx">YOUR_API_KEY_HERE</span><span class="si">}</span><span class="sb">`</span><span class="p">}</span><span class="w"> </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flex</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span><span class="o">&gt;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">                    </span><span class="o">&lt;</span><span class="nx">Camera</span>
 <a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">                        </span><span class="nx">zoomLevel</span><span class="o">=</span><span class="p">{</span><span class="mf">10</span><span class="p">}</span>
 <a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">                        </span><span class="nx">followUserLocation</span><span class="o">=</span><span class="p">{</span><span class="kc">false</span><span class="p">}</span>
 <a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">                        </span><span class="nx">centerCoordinate</span><span class="o">=</span><span class="p">{[</span><span class="mf">106.800106</span><span class="p">,</span><span class="w"> </span><span class="mf">10.704619</span><span class="p">]}</span>
 <a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">                    </span><span class="o">/&gt;</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">                </span><span class="o">&lt;</span><span class="err">/VietmapGL.MapView&gt;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">                </span><span class="o">&lt;</span><span class="err">/MapView&gt;</span>
 <a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">            </span><span class="o">&lt;</span><span class="err">/View&gt;</span>
 <a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/View&gt;</span>
 <a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="p">);</span>
@@ -1772,18 +1763,18 @@ The complete example code can be found <a href="https://github.com/vietmap-compa
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div>
 - Add the Camera to MapView
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">MapView</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">MapView</span><span class="w"> </span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="nx">tintColor</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;#000&#39;</span><span class="p">}</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nx">styleURL</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyle</span><span class="p">}</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nx">mapStyle</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyle</span><span class="p">}</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nx">style</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">map</span><span class="p">}</span><span class="o">&gt;</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">Camera</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Camera</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">            </span><span class="nx">zoomLevel</span><span class="o">=</span><span class="p">{</span><span class="mf">6</span><span class="p">}</span>
 <a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">            </span><span class="nx">animationMode</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;easeTo&quot;</span><span class="p">}</span><span class="w"> </span><span class="c1">// flyTo, moveTo, linearTo, easeTo</span>
 <a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">            </span><span class="nx">animationDuration</span><span class="o">=</span><span class="p">{</span><span class="mf">6000</span><span class="p">}</span>
 <a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">            </span><span class="nx">centerCoordinate</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">location</span><span class="p">}</span>
 <a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">        </span><span class="o">/&gt;</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">UserLocation</span><span class="w"> </span><span class="o">/&gt;</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/Vietmap.MapView&gt;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">UserLocation</span><span class="w"> </span><span class="o">/&gt;</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/MapView&gt;</span>
 </code></pre></div>
 - Create a function to move camera
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="w">    </span><span class="nx">flyToNewLocationFunction</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -1794,51 +1785,51 @@ The complete example code can be found <a href="https://github.com/vietmap-compa
 <h3 id="map-click">Map Click<a class="headerlink" href="#map-click" title="Permanent link">&para;</a></h3>
 <p>If you want to respond to a user tapping on a point on the map, you can use an onMapClick callback.</p>
 <p>It sets a callback that's invoked when the user clicks on the map:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">VietmapGL</span><span class="p">.</span><span class="nx">MapView</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">        </span><span class="nx">styleURL</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyleUrl</span><span class="p">}</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">MapView</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">        </span><span class="nx">mapStyle</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyleUrl</span><span class="p">}</span><span class="w"> </span>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">        </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flex</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span>
 <a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">        </span><span class="nx">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">onPressFunctionHere</span><span class="p">}</span><span class="o">&gt;</span><span class="w">   </span>
 <a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">            </span><span class="p">...</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/VietmapGL.MapView&gt;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/MapView&gt;</span>
 </code></pre></div></p>
 <h2 id="map-long-click">Map Long Click<a class="headerlink" href="#map-long-click" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Sets a callback that's invoked when the user long clicks on the map view.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">VietmapGL</span><span class="p">.</span><span class="nx">MapView</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">        </span><span class="nx">styleURL</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyleUrl</span><span class="p">}</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">MapView</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">        </span><span class="nx">mapStyle</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyleUrl</span><span class="p">}</span><span class="w"> </span>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">        </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flex</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span>
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">        </span><span class="nx">onLongPress</span><span class="o">=</span><span class="p">{</span><span class="nx">onLongPressFunctionHere</span><span class="p">}</span><span class="o">&gt;</span>
 <a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">            </span><span class="p">...</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/VietmapGL.MapView&gt;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/MapView&gt;</span>
 </code></pre></div></li>
 </ul>
 <h3 id="on-map-rendered-callback">On Map Rendered callback<a class="headerlink" href="#on-map-rendered-callback" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Sets a callback that's invoked when the map is completely rendered.</li>
 <li>Encourage this callback to call some action on the initial, after the map is completely loaded
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">VietmapGL</span><span class="p">.</span><span class="nx">MapView</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">        </span><span class="nx">styleURL</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyleUrl</span><span class="p">}</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">MapView</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">        </span><span class="nx">mapStyle</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyleUrl</span><span class="p">}</span><span class="w"> </span>
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">        </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flex</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">        </span><span class="nx">onDidFinishRenderingMap</span><span class="o">=</span><span class="p">{</span><span class="nx">handleOnMapFinishRenderHere</span><span class="p">}</span>
 <a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">        </span><span class="nx">onDidFinishLoadingMap</span><span class="o">=</span><span class="p">{</span><span class="nx">handleOnMapFinishLoadingHere</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">&gt;</span>
 <a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">            </span><span class="p">...</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/VietmapGL.MapView&gt;</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/MapView&gt;</span>
 </code></pre></div></li>
 </ul>
 <h2 id="map-overlays">Map Overlays<a class="headerlink" href="#map-overlays" title="Permanent link">&para;</a></h2>
 <h3 id="add-marker-marked-a-point-in-the-map">Add marker (Marked a point in the map)<a class="headerlink" href="#add-marker-marked-a-point-in-the-map" title="Permanent link">&para;</a></h3>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">vietmapLogo</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;YOUR_IMAGE_URL_HERE&#39;</span><span class="p">;</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">MapView</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">        </span><span class="nx">styleURL</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyle</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">MapView</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">        </span><span class="nx">mapStyle</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyle</span><span class="p">}</span>
 <a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">        </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flex</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span>
 <a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">        </span><span class="nx">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">handleOnMapClick</span><span class="p">}</span><span class="o">&gt;</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">Camera</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Camera</span>
 <a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">        </span><span class="nx">zoomLevel</span><span class="o">=</span><span class="p">{</span><span class="mf">10</span><span class="p">}</span>
 <a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">        </span><span class="nx">followUserLocation</span><span class="o">=</span><span class="p">{</span><span class="kc">false</span><span class="p">}</span>
 <a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">        </span><span class="nx">centerCoordinate</span><span class="o">=</span><span class="p">{[</span><span class="mf">106.800106</span><span class="p">,</span><span class="w"> </span><span class="mf">10.704619</span><span class="p">]}</span>
 <a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">        </span><span class="o">/&gt;</span>
-<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">ShapeSource</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">ShapeSource</span>
 <a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">        </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;marker-source&quot;</span>
 <a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">        </span><span class="nx">shape</span><span class="o">=</span><span class="p">{{</span>
 <a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">            </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Feature&#39;</span><span class="p">,</span>
@@ -1847,15 +1838,15 @@ The complete example code can be found <a href="https://github.com/vietmap-compa
 <a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="w">            </span><span class="nx">coordinates</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">106.800106</span><span class="p">,</span><span class="w"> </span><span class="mf">10.704619</span><span class="p">],</span>
 <a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">            </span><span class="p">},</span>
 <a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w">        </span><span class="p">}}</span><span class="o">&gt;</span>
-<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">SymbolLayer</span>
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">SymbolLayer</span>
 <a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="w">            </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;marker-layer&quot;</span>
 <a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">            </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
 <a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="w">            </span><span class="nx">iconImage</span><span class="o">:</span><span class="w"> </span><span class="nx">vietmapLogo</span><span class="p">,</span>
 <a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="w">            </span><span class="nx">iconSize</span><span class="o">:</span><span class="w"> </span><span class="mf">0.2</span><span class="p">,</span>
 <a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a><span class="w">            </span><span class="p">}}</span>
 <a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a><span class="w">        </span><span class="o">/&gt;</span>
-<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/Vietmap.ShapeSource&gt;</span>
-<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/Vietmap.MapView&gt;</span>
+<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/ShapeSource&gt;</span>
+<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/MapView&gt;</span>
 </code></pre></div></p>
 <h3 id="add-a-linepolyline-a-line-connects-2-points-on-the-map">Add a Line/Polyline (A line connects 2 points on the map)<a class="headerlink" href="#add-a-linepolyline-a-line-connects-2-points-on-the-map" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1896,16 +1887,16 @@ The complete example code can be found <a href="https://github.com/vietmap-compa
 <a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a><span class="p">};</span>
 </code></pre></div></li>
 <li>Draw line to the map
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">MapView</span><span class="w"> </span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="nx">styleURL</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyle</span><span class="p">}</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">MapView</span><span class="w"> </span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="nx">mapStyle</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyle</span><span class="p">}</span><span class="w"> </span>
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flex</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span><span class="o">&gt;</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">Camera</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Camera</span>
 <a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">        </span><span class="nx">zoomLevel</span><span class="o">=</span><span class="p">{</span><span class="mf">4</span><span class="p">}</span>
 <a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">        </span><span class="nx">followUserLocation</span><span class="o">=</span><span class="p">{</span><span class="kc">false</span><span class="p">}</span>
 <a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">        </span><span class="nx">centerCoordinate</span><span class="o">=</span><span class="p">{[</span><span class="mf">112.908654</span><span class="p">,</span><span class="w"> </span><span class="mf">7.760325</span><span class="p">]}</span>
 <a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">        </span><span class="o">/&gt;</span>
-<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">ShapeSource</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;route-source&quot;</span><span class="w"> </span><span class="nx">shape</span><span class="o">=</span><span class="p">{</span><span class="nx">geoJsonFeature</span><span class="p">}</span><span class="o">&gt;</span>
-<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">LineLayer</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">ShapeSource</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;route-source&quot;</span><span class="w"> </span><span class="nx">shape</span><span class="o">=</span><span class="p">{</span><span class="nx">geoJsonFeature</span><span class="p">}</span><span class="o">&gt;</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">LineLayer</span>
 <a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">                </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;route-layer&quot;</span>
 <a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">                </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
 <a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">                </span><span class="nx">lineColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;steelblue&#39;</span><span class="p">,</span>
@@ -1914,21 +1905,21 @@ The complete example code can be found <a href="https://github.com/vietmap-compa
 <a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w">                </span><span class="nx">lineCap</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;round&#39;</span><span class="p">,</span>
 <a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="w">                </span><span class="p">}}</span>
 <a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="w">            </span><span class="o">/&gt;</span>
-<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/Vietmap.ShapeSource&gt;</span>
-<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/Vietmap.MapView&gt;</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/ShapeSource&gt;</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/MapView&gt;</span>
 </code></pre></div></li>
 </ul>
 <h3 id="add-a-fillpolygon">Add a Fill/Polygon<a class="headerlink" href="#add-a-fillpolygon" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">MapView</span><span class="w"> </span><span class="nx">styleURL</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyle</span><span class="p">}</span><span class="w"> </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flex</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span><span class="o">&gt;</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">Camera</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">MapView</span><span class="w"> </span><span class="nx">mapStyle</span><span class="o">=</span><span class="p">{</span><span class="nx">vietmapStyle</span><span class="p">}</span><span class="w"> </span><span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flex</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span><span class="o">&gt;</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Camera</span>
 <a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">        </span><span class="nx">zoomLevel</span><span class="o">=</span><span class="p">{</span><span class="mf">3</span><span class="p">}</span>
 <a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">        </span><span class="nx">followUserLocation</span><span class="o">=</span><span class="p">{</span><span class="kc">false</span><span class="p">}</span>
 <a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">        </span><span class="nx">centerCoordinate</span><span class="o">=</span><span class="p">{[</span><span class="mf">107.708654</span><span class="p">,</span><span class="w"> </span><span class="mf">1.760325</span><span class="p">]}</span>
 <a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">        </span><span class="o">/&gt;</span>
-<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">ShapeSource</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;route-source&quot;</span><span class="w"> </span><span class="nx">shape</span><span class="o">=</span><span class="p">{</span><span class="nx">geoJsonFeature</span><span class="p">}</span><span class="o">&gt;</span>
-<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Vietmap</span><span class="p">.</span><span class="nx">FillLayer</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;fill-layer&quot;</span><span class="w"> </span><span class="o">/&gt;</span>
-<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/Vietmap.ShapeSource&gt;</span>
-<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/Vietmap.MapView&gt;</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">ShapeSource</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;route-source&quot;</span><span class="w"> </span><span class="nx">shape</span><span class="o">=</span><span class="p">{</span><span class="nx">geoJsonFeature</span><span class="p">}</span><span class="o">&gt;</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">FillLayer</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;fill-layer&quot;</span><span class="w"> </span><span class="o">/&gt;</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/ShapeSource&gt;</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/MapView&gt;</span>
 </code></pre></div>
 <h3 id="find-a-route-between-2-or-more-points">Find a route between 2 or more points<a class="headerlink" href="#find-a-route-between-2-or-more-points" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2041,7 +2032,7 @@ Have a feature request? <a href="https://github.com/vietmap-company//vietmap-gl-
     
     
   
-      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   <script src="../../../assets/javascripts/custom.a4a4fac0.min.js"></script>

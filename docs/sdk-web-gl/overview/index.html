@@ -14,11 +14,11 @@
         <link rel="prev" href="../../map-api/geofencing/">
       
       
-        <link rel="next" href="../map/example-map/simple-map/">
+        <link rel="next" href="../docs/classes/Map/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
@@ -27,7 +27,7 @@
     
     
   
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#sdk-web-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -185,7 +185,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -383,14 +383,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
     
     
       
@@ -442,6 +434,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -470,6 +464,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -484,6 +480,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -493,12 +504,96 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-include-required-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Include Required Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-add-the-map-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Add the Map Container
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-initialize-the-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Initialize the Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#reading-this-documentation" class="md-nav__link">
+  <a href="#detailed-documentation" class="md-nav__link">
     <span class="md-ellipsis">
-      Reading this documentation
+      Detailed Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detailed Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-markers-and-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Markers and Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-geography-and-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Geography and Geometry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
     </span>
   </a>
   
@@ -521,6 +616,20 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -556,7 +665,7 @@
             
   
   <span class="md-ellipsis">
-    Show map
+    Documentation
   </span>
   
 
@@ -566,7 +675,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
-            Show map
+            Documentation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -576,16 +685,44 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../map/example-map/simple-map/" class="md-nav__link">
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
   
+  
+    <a href="../docs/classes/Map/" class="md-nav__link">
+      
+  
   <span class="md-ellipsis">
-    Simple map
+    Map
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -597,16 +734,62 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../map/example-map/locate-user/" class="md-nav__link">
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
   
+  
+    <a href="../docs/classes/AttributionControl/" class="md-nav__link">
+      
+  
   <span class="md-ellipsis">
-    Locate user
+    Markers and Controls
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -618,16 +801,58 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../map/example-map/style-map/" class="md-nav__link">
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
   
+  
+    <a href="../docs/classes/EdgeInsets/" class="md-nav__link">
+      
+  
   <span class="md-ellipsis">
-    Change map style
+    Geography and Geometry
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -639,16 +864,64 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../map/example-map/map-interaction/" class="md-nav__link">
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
   
+  
+    <a href="../docs/classes/BoxZoomHandler/" class="md-nav__link">
+      
+  
   <span class="md-ellipsis">
-    Map interaction
+    Handlers
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -660,16 +933,727 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../map/example-map/control-map/" class="md-nav__link">
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
   
+  
+    <a href="../docs/classes/CanvasSource/" class="md-nav__link">
+      
+  
   <span class="md-ellipsis">
-    Map control
+    Sources
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../docs/classes/Evented/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Event Related
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../docs/classes/AJAXError/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../docs/enums/MessageType/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Enumerations
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../docs/classes/FullscreenControl/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Events
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../docs/functions/addProtocol/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../docs/interfaces/ActorTarget/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Interfaces
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../docs/types/ActorMessage/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Type Aliases
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -691,6 +1675,8 @@
   
     
     
+      
+        
       
         
       
@@ -726,7 +1712,7 @@
             
   
   <span class="md-ellipsis">
-    Annotation
+    Examples
   </span>
   
 
@@ -736,7 +1722,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            Annotation
+            Examples
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -746,107 +1732,51 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../marker/example-marker/add-a-marker/" class="md-nav__link">
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
   
+  
+    <a href="../map/example-map/simple-map/" class="md-nav__link">
+      
+  
   <span class="md-ellipsis">
-    Add a Marker
+    Show map
   </span>
   
 
-      </a>
-    </li>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../marker/example-marker/draw-a-circle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Draw a circle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../marker/example-marker/draggable-marker/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Draggable marker
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../marker/example-marker/cluster-marker/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cluster marker
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../marker/example-marker/methods-marker/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Methods
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -868,43 +1798,47 @@
       
         
       
-    
-    
-      
-      
         
-          
-          
+      
         
       
     
     
       
+      
+        
+      
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
-          
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
-            
+  
+  
+    <a href="../marker/example-marker/add-a-marker/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
-    Info window
+    Annotation
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4">
-            <span class="md-nav__icon md-icon"></span>
-            Info window
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
             
               
                 
@@ -912,65 +1846,47 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../popup/example-popup/popup/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../popup/example-popup/popup/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     Info window
   </span>
   
 
-      </a>
-    </li>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../popup/example-popup/popup-marker/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Info window on click
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../popup/example-popup/popup-hover/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Info window on hover
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -999,125 +1915,33 @@
       
       
         
-          
-          
-        
       
     
     
       
+        
+        
+      
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
-            
+  
+  
+    <a href="../line/example-line/line/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     Draw a line
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
-            <span class="md-nav__icon md-icon"></span>
-            Draw a line
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../line/example-line/line/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Line
-  </span>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../line/example-line/gradient-line/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Gradient line
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../line/example-line/animated-a-line/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Animated line
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../line/example-line/animated-gradient-line/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Animated gradient line
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1140,62 +1964,33 @@
       
       
         
-          
-          
-        
       
     
     
       
+        
+        
+      
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
-            
+  
+  
+    <a href="../polygon/polygon/polygon/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     Draw a polygon
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6">
-            <span class="md-nav__icon md-icon"></span>
-            Draw a polygon
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../polygon/polygon/polygon/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Polygon
-  </span>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1226,139 +2021,34 @@
       
       
         
-          
-          
-        
       
     
     
       
+        
+        
+      
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
-            
+  
+  
+    <a href="../camera/rotate-camera/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     Camera control
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_7">
-            <span class="md-nav__icon md-icon"></span>
-            Camera control
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../camera/rotate-camera/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Rotate camera
-  </span>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../camera/animate-camera/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Animate camera
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../camera/fit-camera-to-bounds/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Fit camera to bounds
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../camera/fit-camera-to-line/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Fit camera to line
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../camera/animate-along-a-route/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Animate along a route
-  </span>
-  
-
-      </a>
+      
     </li>
   
 
@@ -1452,6 +2142,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1466,6 +2158,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1475,12 +2182,96 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-include-required-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Include Required Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-add-the-map-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Add the Map Container
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-initialize-the-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Initialize the Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#reading-this-documentation" class="md-nav__link">
+  <a href="#detailed-documentation" class="md-nav__link">
     <span class="md-ellipsis">
-      Reading this documentation
+      Detailed Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detailed Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-markers-and-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Markers and Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-geography-and-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Geography and Geometry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
     </span>
   </a>
   
@@ -1501,55 +2292,71 @@
                   
 
 
-  <h1>Overview</h1>
-
-<p><a href="../../assets/sdk-web.png"><img alt="SDK WEB Overview" src="../../assets/sdk-web.png" /></a></p>
+<h1 id="sdk-web-overview">SDK WEB Overview<a class="headerlink" href="#sdk-web-overview" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>VietMap GL JS is a powerful JavaScript library designed to create highly interactive maps using WebGL technology. It renders fast vector maps with smooth transitions and supports extensive customization. As a core part of the VietMap GL ecosystem, it seamlessly integrates with other VietMap tools.  </p>
+<h3 id="key-features">Key Features:<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Custom map styles</li>
-<li>Fast vector maps</li>
-<li>Compatible with other VIETMAP tools</li>
+<li><strong>Custom Map Styles</strong>: Tailor the appearance of maps to suit your application needs.  </li>
+<li><strong>Fast Vector Maps</strong>: Experience seamless map rendering and performance with vector tiles.  </li>
+<li><strong>Compatibility</strong>: Easily integrate with other tools and services in the VIETMAP suite.  </li>
 </ul>
-<p>VietMap GL JS is a JavaScript library that uses WebGL to render interactive maps from vector tiles and VietMap styles. It is part of the VietMap GL ecosystem.</p>
+<hr />
 <h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
-<p>Include the JavaScript and CSS files in the of your HTML file.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;script src=&#39;https://unpkg.com/@vietmap/vietmap-gl-js@4.2.0/vietmap-gl.js&#39;&gt;&lt;/script&gt;
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&lt;link rel=&#39;stylesheet&#39; href=&#39;https://unpkg.com/@vietmap/vietmap-gl-js@4.2.0/vietmap-gl.css&#39; /&gt;  
+<p>To set up and use VietMap GL JS in your project, follow these steps:  </p>
+<h3 id="1-include-required-files">1. Include Required Files<a class="headerlink" href="#1-include-required-files" title="Permanent link">&para;</a></h3>
+<p>Add the JavaScript and CSS files in the <code>&lt;head&gt;</code> section of your HTML file:  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/@vietmap/vietmap-gl-js@4.2.0/vietmap-gl.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://unpkg.com/@vietmap/vietmap-gl-js@4.2.0/vietmap-gl.css&quot;</span> <span class="p">/&gt;</span>
 </code></pre></div>
-Include the following code in the of your HTML file.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&lt;div id=&#39;map&#39; style=&#39;width: 400px; height: 300px;&#39;&gt;&lt;/div&gt;
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>&lt;script&gt;
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>var map = new vietmapgl.Map({
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>container: &#39;map&#39;,
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>style: &#39;https://maps.vietmap.vn/mt/tm/style.json?apikey=&quot;your-apikey&quot;&#39;, // stylesheet location
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>center: [10, 106], // starting position [lng, lat]
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>zoom: 9 // starting zoom
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>});
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>&lt;/script&gt;
-</code></pre></div></p>
-<h2 id="reading-this-documentation">Reading this documentation<a class="headerlink" href="#reading-this-documentation" title="Permanent link">&para;</a></h2>
-<p>This documentation is divided into several sections:</p>
-<ul>
-<li>
-<p>Map. The Map object is the map on your page. It lets you access methods and properties for interacting with the map's style and layers, respond to events, and manipulate the user's perspective with the camera.</p>
-</li>
-<li>
-<p>Properties and options. This section describes VietMap GL JS's global properties and options that you might want to access while initializing your map or accessing information about its status.</p>
-</li>
-<li>
-<p>Markers and controls. This section describes the user interface elements that you can add to your map. The items in this section exist outside of the map's canvas element.</p>
-</li>
-<li>
-<p>Geography and geometry. This section includes general utilities and types that relate to working with and manipulating geographic information or geometries. User interaction handlers. The items in this section relate to the ways in which the map responds to user input.</p>
-</li>
-<li>
-<p>Sources. This section describes the source types VietMap GL JS can handle besides the ones described in the VietMap Style Specification.</p>
-</li>
-<li>
-<p>Events. This section describes the different types of events that VietMap GL JS can raise.</p>
-</li>
-</ul>
-<p>Each section describes classes or objects as well as their properties, parameters, instance members, and associated events. Many sections also include inline code examples and related resources.</p>
+<h3 id="2-add-the-map-container">2. Add the Map Container<a class="headerlink" href="#2-add-the-map-container" title="Permanent link">&para;</a></h3>
+<p>Insert a <code>&lt;div&gt;</code> element in the <code>&lt;body&gt;</code> section to serve as the container for your map. Specify its dimensions using inline styles:  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;map&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width: 400px; height: 300px;&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="3-initialize-the-map">3. Initialize the Map<a class="headerlink" href="#3-initialize-the-map" title="Permanent link">&para;</a></h3>
+<p>Include the following JavaScript code to initialize and configure your map:  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">vietmapgl</span><span class="p">.</span><span class="nb">Map</span><span class="p">({</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nx">container</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;map&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// ID of the map container</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nx">style</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://maps.vietmap.vn/mt/tm/style.json?apikey=your-apikey&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Map style URL (replace &quot;your-apikey&quot; with your actual API key)</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nx">center</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">106</span><span class="p">],</span><span class="w"> </span><span class="c1">// Initial map center coordinates [longitude, latitude]</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nx">zoom</span><span class="o">:</span><span class="w"> </span><span class="mf">9</span><span class="p">,</span><span class="w"> </span><span class="c1">// Initial zoom level</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="p">});</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Once the above steps are complete, your map will render on the page, ready for interaction.  </p>
+<hr />
+<h2 id="detailed-documentation">Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permanent link">&para;</a></h2>
+<p>This documentation provides an in-depth guide to VietMap GL JS and is divided into the following sections:  </p>
+<h3 id="1-map">1. <strong>Map</strong><a class="headerlink" href="#1-map" title="Permanent link">&para;</a></h3>
+<p>This section explains the core <code>Map</code> object, which represents the map instance on your page. It allows you to:<br />
+- <strong>Manipulate Styles</strong>: Modify map styles and layers dynamically.<br />
+- <strong>Handle Events</strong>: Respond to user interactions such as clicks, drags, or zooms.<br />
+- <strong>Adjust the Camera</strong>: Change the user's perspective with animations and transitions.  </p>
+<hr />
+<h3 id="2-markers-and-controls">2. <strong>Markers and Controls</strong><a class="headerlink" href="#2-markers-and-controls" title="Permanent link">&para;</a></h3>
+<p>Explains how to add interactive elements and controls to the map, including:<br />
+- <strong>Markers</strong>: Highlight specific points on the map.<br />
+- <strong>Controls</strong>: Add zoom, rotation, or custom UI controls outside the map's canvas.<br />
+- <strong>Popups</strong>: Display information or details when users interact with markers or features.
+- <strong>Polylines and Polygons</strong>: Draw lines and shapes on the map for visual representation.</p>
+<hr />
+<h3 id="3-geography-and-geometry">3. <strong>Geography and Geometry</strong><a class="headerlink" href="#3-geography-and-geometry" title="Permanent link">&para;</a></h3>
+<p>Covers utilities for working with geographic data, such as:<br />
+- Converting coordinates.<br />
+- Creating or editing shapes like polygons and lines.  </p>
+<hr />
+<h3 id="4-events">4. <strong>Events</strong><a class="headerlink" href="#4-events" title="Permanent link">&para;</a></h3>
+<p>Explains the event system in VietMap GL JS, enabling interaction with the map, such as:<br />
+- <strong>Map Load</strong>: Detect when the map has fully loaded.<br />
+- <strong>Click Events</strong>: Respond to user clicks on features or markers.<br />
+- <strong>Zoom and Drag</strong>: Trigger custom logic when users interact with the map.  </p>
+<hr />
+<h2 id="additional-notes">Additional Notes<a class="headerlink" href="#additional-notes" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>API Key Requirement</strong>: Ensure you replace <code>"your-apikey"</code> in the style URL with a valid API key obtained from VietMap's developer portal.   </li>
+</ol>
+<p>For additional examples, detailed configuration options, and advanced usage, refer to the official documentation.</p>
 
 
 
@@ -1601,13 +2408,13 @@ Include the following code in the of your HTML file.
         
         
           
-          <a href="../map/example-map/simple-map/" class="md-footer__link md-footer__link--next" aria-label="Next: Simple map" rel="next">
+          <a href="../docs/classes/Map/" class="md-footer__link md-footer__link--next" aria-label="Next: Map" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Simple map
+                Map
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1648,7 +2455,7 @@ Include the following code in the of your HTML file.
     
     
   
-      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   <script src="../../assets/javascripts/custom.a4a4fac0.min.js"></script>

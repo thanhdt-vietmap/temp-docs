@@ -1,0 +1,1125 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://maps.vietmap.vn/docs/sdk-web-gl/docs/documentation/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+    
+    
+      
+        <title>Vietmap GL JS - MAPS API DOCS</title>
+      
+    
+    
+  
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.3e8bd608.min.css">
+  
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vietmap-gl-js" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MAPS API DOCS" class="md-header__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MAPS API DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vietmap GL JS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../map-api/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  MAPS API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../overview/" class="md-tabs__link">
+          
+  
+    
+  
+  SDK WEB GL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../sdk-mobile/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  SDK MOBILE
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MAPS API DOCS" class="md-nav__button md-logo" aria-label="MAPS API DOCS" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    MAPS API DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../map-api/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MAPS API
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    SDK WEB GL
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../sdk-mobile/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    SDK MOBILE
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markers-and-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markers and Controls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geography-and-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geography and Geometry
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handlers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-related" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Related
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enumerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Events
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type Aliases
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="vietmap-gl-js">Vietmap GL JS<a class="headerlink" href="#vietmap-gl-js" title="Permanent link">&para;</a></h1>
+<h2 id="main">Main<a class="headerlink" href="#main" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../classes/Map/">Map</a></li>
+</ul>
+<h2 id="markers-and-controls">Markers and Controls<a class="headerlink" href="#markers-and-controls" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../classes/AttributionControl/">AttributionControl</a></li>
+<li><a href="../classes/FullscreenControl/">FullscreenControl</a></li>
+<li><a href="../classes/GeolocateControl/">GeolocateControl</a></li>
+<li><a href="../classes/Hash/">Hash</a></li>
+<li><a href="../classes/LogoControl/">LogoControl</a></li>
+<li><a href="../classes/Marker/">Marker</a></li>
+<li><a href="../classes/NavigationControl/">NavigationControl</a></li>
+<li><a href="../classes/Popup/">Popup</a></li>
+<li><a href="../classes/ScaleControl/">ScaleControl</a></li>
+<li><a href="../classes/TerrainControl/">TerrainControl</a></li>
+</ul>
+<h2 id="geography-and-geometry">Geography and Geometry<a class="headerlink" href="#geography-and-geometry" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../classes/EdgeInsets/">EdgeInsets</a></li>
+<li><a href="../classes/LngLat/">LngLat</a></li>
+<li><a href="../classes/LngLatBounds/">LngLatBounds</a></li>
+<li><a href="../classes/MercatorCoordinate/">MercatorCoordinate</a></li>
+<li><a href="../types/LngLatBoundsLike/">LngLatBoundsLike</a></li>
+<li><a href="../types/LngLatLike/">LngLatLike</a></li>
+<li><a href="../types/PaddingOptions/">PaddingOptions</a></li>
+<li><a href="../types/PointLike/">PointLike</a></li>
+</ul>
+<h2 id="handlers">Handlers<a class="headerlink" href="#handlers" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../classes/BoxZoomHandler/">BoxZoomHandler</a></li>
+<li><a href="../classes/CooperativeGesturesHandler/">CooperativeGesturesHandler</a></li>
+<li><a href="../classes/DoubleClickZoomHandler/">DoubleClickZoomHandler</a></li>
+<li><a href="../classes/DragPanHandler/">DragPanHandler</a></li>
+<li><a href="../classes/DragRotateHandler/">DragRotateHandler</a></li>
+<li><a href="../classes/KeyboardHandler/">KeyboardHandler</a></li>
+<li><a href="../classes/ScrollZoomHandler/">ScrollZoomHandler</a></li>
+<li><a href="../classes/TwoFingersTouchPitchHandler/">TwoFingersTouchPitchHandler</a></li>
+<li><a href="../classes/TwoFingersTouchRotateHandler/">TwoFingersTouchRotateHandler</a></li>
+<li><a href="../classes/TwoFingersTouchZoomHandler/">TwoFingersTouchZoomHandler</a></li>
+<li><a href="../classes/TwoFingersTouchZoomRotateHandler/">TwoFingersTouchZoomRotateHandler</a></li>
+</ul>
+<h2 id="sources">Sources<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../classes/CanvasSource/">CanvasSource</a></li>
+<li><a href="../classes/GeoJSONSource/">GeoJSONSource</a></li>
+<li><a href="../classes/ImageSource/">ImageSource</a></li>
+<li><a href="../classes/RasterDEMTileSource/">RasterDEMTileSource</a></li>
+<li><a href="../classes/RasterTileSource/">RasterTileSource</a></li>
+<li><a href="../classes/VectorTileSource/">VectorTileSource</a></li>
+<li><a href="../classes/VideoSource/">VideoSource</a></li>
+<li><a href="../interfaces/Source/">Source</a></li>
+</ul>
+<h2 id="event-related">Event Related<a class="headerlink" href="#event-related" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../classes/Evented/">Evented</a></li>
+<li><a href="../classes/MapMouseEvent/">MapMouseEvent</a></li>
+<li><a href="../classes/MapTouchEvent/">MapTouchEvent</a></li>
+<li><a href="../classes/MapWheelEvent/">MapWheelEvent</a></li>
+<li><a href="../types/MapContextEvent/">MapContextEvent</a></li>
+<li><a href="../types/MapDataEvent/">MapDataEvent</a></li>
+<li><a href="../types/MapEventType/">MapEventType</a></li>
+<li><a href="../types/MapLayerEventType/">MapLayerEventType</a></li>
+<li><a href="../types/MapLayerMouseEvent/">MapLayerMouseEvent</a></li>
+<li><a href="../types/MapLayerTouchEvent/">MapLayerTouchEvent</a></li>
+<li><a href="../types/MapSourceDataEvent/">MapSourceDataEvent</a></li>
+<li><a href="../types/MapStyleDataEvent/">MapStyleDataEvent</a></li>
+<li><a href="../types/MapStyleImageMissingEvent/">MapStyleImageMissingEvent</a></li>
+<li><a href="../types/MapTerrainEvent/">MapTerrainEvent</a></li>
+<li><a href="../types/VietMapEvent/">VietMapEvent</a></li>
+<li><a href="../types/VietMapZoomEvent/">VietMapZoomEvent</a></li>
+</ul>
+<h2 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../classes/AJAXError/">AJAXError</a></li>
+<li><a href="../classes/Actor/">Actor</a></li>
+<li><a href="../classes/AlphaImage/">AlphaImage</a></li>
+<li><a href="../classes/CanonicalTileID/">CanonicalTileID</a></li>
+<li><a href="../classes/CircleStyleLayer/">CircleStyleLayer</a></li>
+<li><a href="../classes/ClickZoomHandler/">ClickZoomHandler</a></li>
+<li><a href="../classes/DEMData/">DEMData</a></li>
+<li><a href="../classes/Dispatcher/">Dispatcher</a></li>
+<li><a href="../classes/Event/">Event</a></li>
+<li><a href="../classes/FeatureIndex/">FeatureIndex</a></li>
+<li><a href="../classes/GeoJSONFeature/">GeoJSONFeature</a></li>
+<li><a href="../classes/HeatmapStyleLayer/">HeatmapStyleLayer</a></li>
+<li><a href="../classes/ImageAtlas/">ImageAtlas</a></li>
+<li><a href="../classes/ImageManager/">ImageManager</a></li>
+<li><a href="../classes/Layout/">Layout</a></li>
+<li><a href="../classes/OverscaledTileID/">OverscaledTileID</a></li>
+<li><a href="../classes/RGBAImage/">RGBAImage</a></li>
+<li><a href="../classes/Style/">Style</a></li>
+<li><a href="../classes/StyleLayer/">StyleLayer</a></li>
+<li><a href="../classes/TapDragZoomHandler/">TapDragZoomHandler</a></li>
+<li><a href="../classes/TapZoomHandler/">TapZoomHandler</a></li>
+<li><a href="../classes/ThrottledInvoker/">ThrottledInvoker</a></li>
+<li><a href="../classes/Tile/">Tile</a></li>
+<li><a href="../classes/TouchPanHandler/">TouchPanHandler</a></li>
+<li><a href="../classes/TwoFingersTouchHandler/">TwoFingersTouchHandler</a></li>
+<li><a href="../classes/WorkerPool/">WorkerPool</a></li>
+</ul>
+<h2 id="enumerations">Enumerations<a class="headerlink" href="#enumerations" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../enums/MessageType/">MessageType</a></li>
+<li><a href="../enums/ResourceType/">ResourceType</a></li>
+</ul>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../classes/FullscreenControl/">FullscreenControl</a></li>
+<li><a href="../classes/GeolocateControl/">GeolocateControl</a></li>
+<li><a href="../classes/Marker/">Marker</a></li>
+<li><a href="../classes/Popup/">Popup</a></li>
+<li><a href="../interfaces/Source/">Source</a></li>
+</ul>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../functions/addProtocol/">addProtocol</a></li>
+<li><a href="../functions/addSourceType/">addSourceType</a></li>
+<li><a href="../functions/clearPrewarmedResources/">clearPrewarmedResources</a></li>
+<li><a href="../functions/getMaxParallelImageRequests/">getMaxParallelImageRequests</a></li>
+<li><a href="../functions/getRTLTextPluginStatus/">getRTLTextPluginStatus</a></li>
+<li><a href="../functions/getVersion/">getVersion</a></li>
+<li><a href="../functions/getWorkerCount/">getWorkerCount</a></li>
+<li><a href="../functions/getWorkerUrl/">getWorkerUrl</a></li>
+<li><a href="../functions/importScriptInWorkers/">importScriptInWorkers</a></li>
+<li><a href="../functions/prewarm/">prewarm</a></li>
+<li><a href="../functions/removeProtocol/">removeProtocol</a></li>
+<li><a href="../functions/setMaxParallelImageRequests/">setMaxParallelImageRequests</a></li>
+<li><a href="../functions/setRTLTextPlugin/">setRTLTextPlugin</a></li>
+<li><a href="../functions/setWorkerCount/">setWorkerCount</a></li>
+<li><a href="../functions/setWorkerUrl/">setWorkerUrl</a></li>
+</ul>
+<h2 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../interfaces/ActorTarget/">ActorTarget</a></li>
+<li><a href="../interfaces/AttributeBinder/">AttributeBinder</a></li>
+<li><a href="../interfaces/Bucket/">Bucket</a></li>
+<li><a href="../interfaces/CustomLayerInterface/">CustomLayerInterface</a></li>
+<li><a href="../interfaces/Handler/">Handler</a></li>
+<li><a href="../interfaces/IActor/">IActor</a></li>
+<li><a href="../interfaces/IControl/">IControl</a></li>
+<li><a href="../interfaces/MousePanHandler/">MousePanHandler</a></li>
+<li><a href="../interfaces/MousePitchHandler/">MousePitchHandler</a></li>
+<li><a href="../interfaces/MouseRotateHandler/">MouseRotateHandler</a></li>
+<li><a href="../interfaces/StyleImageInterface/">StyleImageInterface</a></li>
+</ul>
+<h2 id="type-aliases">Type Aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../types/ActorMessage/">ActorMessage</a></li>
+<li><a href="../types/AddLayerObject/">AddLayerObject</a></li>
+<li><a href="../types/AddProtocolAction/">AddProtocolAction</a></li>
+<li><a href="../types/Alignment/">Alignment</a></li>
+<li><a href="../types/AnimationOptions/">AnimationOptions</a></li>
+<li><a href="../types/AroundCenterOptions/">AroundCenterOptions</a></li>
+<li><a href="../types/AttributionControlOptions/">AttributionControlOptions</a></li>
+<li><a href="../types/CameraForBoundsOptions/">CameraForBoundsOptions</a></li>
+<li><a href="../types/CameraOptions/">CameraOptions</a></li>
+<li><a href="../types/CameraUpdateTransformFunction/">CameraUpdateTransformFunction</a></li>
+<li><a href="../types/CanvasSourceSpecification/">CanvasSourceSpecification</a></li>
+<li><a href="../types/CenterZoomBearing/">CenterZoomBearing</a></li>
+<li><a href="../types/ClusterIDAndSource/">ClusterIDAndSource</a></li>
+<li><a href="../types/Config/">Config</a></li>
+<li><a href="../types/ControlPosition/">ControlPosition</a></li>
+<li><a href="../types/Coordinates/">Coordinates</a></li>
+<li><a href="../types/CrossFaded/">CrossFaded</a></li>
+<li><a href="../types/CustomRenderMethod/">CustomRenderMethod</a></li>
+<li><a href="../types/DEMEncoding/">DEMEncoding</a></li>
+<li><a href="../types/DashEntry/">DashEntry</a></li>
+<li><a href="../types/DistributiveKeys/">DistributiveKeys</a></li>
+<li><a href="../types/DistributiveOmit/">DistributiveOmit</a></li>
+<li><a href="../types/DragPanOptions/">DragPanOptions</a></li>
+<li><a href="../types/DragRotateHandlerOptions/">DragRotateHandlerOptions</a></li>
+<li><a href="../types/ExpiryData/">ExpiryData</a></li>
+<li><a href="../types/FeatureIdentifier/">FeatureIdentifier</a></li>
+<li><a href="../types/FitBoundsOptions/">FitBoundsOptions</a></li>
+<li><a href="../types/FlyToOptions/">FlyToOptions</a></li>
+<li><a href="../types/FullscreenControlOptions/">FullscreenControlOptions</a></li>
+<li><a href="../types/GeoJSONFeatureDiff/">GeoJSONFeatureDiff</a></li>
+<li><a href="../types/GeoJSONFeatureId/">GeoJSONFeatureId</a></li>
+<li><a href="../types/GeoJSONSourceDiff/">GeoJSONSourceDiff</a></li>
+<li><a href="../types/GeoJSONSourceOptions/">GeoJSONSourceOptions</a></li>
+<li><a href="../types/GeoJSONWorkerOptions/">GeoJSONWorkerOptions</a></li>
+<li><a href="../types/GeoJSONWorkerSourceLoadDataResult/">GeoJSONWorkerSourceLoadDataResult</a></li>
+<li><a href="../types/GeolocateControlOptions/">GeolocateControlOptions</a></li>
+<li><a href="../types/GestureOptions/">GestureOptions</a></li>
+<li><a href="../types/GetClusterLeavesParams/">GetClusterLeavesParams</a></li>
+<li><a href="../types/GetGlyphsParamerters/">GetGlyphsParamerters</a></li>
+<li><a href="../types/GetGlyphsResponse/">GetGlyphsResponse</a></li>
+<li><a href="../types/GetImagesParamerters/">GetImagesParamerters</a></li>
+<li><a href="../types/GetImagesResponse/">GetImagesResponse</a></li>
+<li><a href="../types/GetResourceResponse/">GetResourceResponse</a></li>
+<li><a href="../types/GlyphMetrics/">GlyphMetrics</a></li>
+<li><a href="../types/GlyphPosition/">GlyphPosition</a></li>
+<li><a href="../types/GlyphPositions/">GlyphPositions</a></li>
+<li><a href="../types/GridKey/">GridKey</a></li>
+<li><a href="../types/HandlerResult/">HandlerResult</a></li>
+<li><a href="../types/JumpToOptions/">JumpToOptions</a></li>
+<li><a href="../types/Listener/">Listener</a></li>
+<li><a href="../types/LoadGeoJSONParameters/">LoadGeoJSONParameters</a></li>
+<li><a href="../types/LogoControlOptions/">LogoControlOptions</a></li>
+<li><a href="../types/MapGeoJSONFeature/">MapGeoJSONFeature</a></li>
+<li><a href="../types/MapOptions/">MapOptions</a></li>
+<li><a href="../types/MapSourceDataType/">MapSourceDataType</a></li>
+<li><a href="../types/MarkerOptions/">MarkerOptions</a></li>
+<li><a href="../types/MessageData/">MessageData</a></li>
+<li><a href="../types/NavigationControlOptions/">NavigationControlOptions</a></li>
+<li><a href="../types/Offset/">Offset</a></li>
+<li><a href="../types/OverlapMode/">OverlapMode</a></li>
+<li><a href="../types/PluginState/">PluginState</a></li>
+<li><a href="../types/PositionAnchor/">PositionAnchor</a></li>
+<li><a href="../types/PossiblyEvaluatedValue/">PossiblyEvaluatedValue</a></li>
+<li><a href="../types/QueryRenderedFeaturesOptions/">QueryRenderedFeaturesOptions</a></li>
+<li><a href="../types/QuerySourceFeatureOptions/">QuerySourceFeatureOptions</a></li>
+<li><a href="../types/RTLPluginStatus/">RTLPluginStatus</a></li>
+<li><a href="../types/Rect/">Rect</a></li>
+<li><a href="../types/RemoveSourceParams/">RemoveSourceParams</a></li>
+<li><a href="../types/RequestParameters/">RequestParameters</a></li>
+<li><a href="../types/RequestResponseMessageMap/">RequestResponseMessageMap</a></li>
+<li><a href="../types/RequestTransformFunction/">RequestTransformFunction</a></li>
+<li><a href="../types/RequireAtLeastOne/">RequireAtLeastOne</a></li>
+<li><a href="../types/ScaleControlOptions/">ScaleControlOptions</a></li>
+<li><a href="../types/Serialized/">Serialized</a></li>
+<li><a href="../types/SerializedObject/">SerializedObject</a></li>
+<li><a href="../types/SerializedStructArray/">SerializedStructArray</a></li>
+<li><a href="../types/SetClusterOptions/">SetClusterOptions</a></li>
+<li><a href="../types/SourceClass/">SourceClass</a></li>
+<li><a href="../types/SpriteOnDemandStyleImage/">SpriteOnDemandStyleImage</a></li>
+<li><a href="../types/StyleGlyph/">StyleGlyph</a></li>
+<li><a href="../types/StyleImage/">StyleImage</a></li>
+<li><a href="../types/StyleImageData/">StyleImageData</a></li>
+<li><a href="../types/StyleImageMetadata/">StyleImageMetadata</a></li>
+<li><a href="../types/StyleOptions/">StyleOptions</a></li>
+<li><a href="../types/StyleSetterOptions/">StyleSetterOptions</a></li>
+<li><a href="../types/StyleSwapOptions/">StyleSwapOptions</a></li>
+<li><a href="../types/SymbolQuad/">SymbolQuad</a></li>
+<li><a href="../types/TileParameters/">TileParameters</a></li>
+<li><a href="../types/TileState/">TileState</a></li>
+<li><a href="../types/TransformStyleFunction/">TransformStyleFunction</a></li>
+<li><a href="../types/Unit/">Unit</a></li>
+<li><a href="../types/UpdateImageOptions/">UpdateImageOptions</a></li>
+<li><a href="../types/UpdateLayersParamaeters/">UpdateLayersParamaeters</a></li>
+<li><a href="../types/WorkerDEMTileParameters/">WorkerDEMTileParameters</a></li>
+<li><a href="../types/WorkerTileParameters/">WorkerTileParameters</a></li>
+<li><a href="../types/WorkerTileResult/">WorkerTileResult</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 VIETMAP
+    </div>
+  
+  
+    Made with
+    <a href="https://www.vietmap.vn" target="_blank" rel="noopener">
+      VIETMAP
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.path", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+  
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  <script src="../../../assets/javascripts/custom.a4a4fac0.min.js"></script>
+  <style>
+    .support-online {
+      position: fixed;
+      z-index: 999;
+      right: 30px;
+      bottom: 40%;
+      top: auto !important;
+      left: auto;
+    }
+    .support-online a {
+      position: relative;
+      margin: 10px;
+      text-align: left;
+      width: 40px;
+      height: 40px
+    }
+  
+    .support-online a.call-now span{
+      line-height: 22px;
+    }
+  
+    .support-online a.call-now span b{
+      font-size: 16px;
+      color: #fff700;
+    }
+  
+    .support-online i {
+      width: 40px;
+      height: 40px;
+      background: #2a5dff;
+      color: #fff;
+      border-radius: 100%;
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px;
+      position: relative;
+      z-index: 999
+    }
+
+    .support-content{
+      
+    }
+  
+    .support-online a {
+      display: block
+    }
+  
+    .support-online a span {
+      border-radius: 2px;
+      text-align: center;
+      background: #2a5dff;
+      padding: 10px;
+      display: none;
+      width: 150px;
+      margin-right: 12px;
+      position: absolute;
+      color: #ffffff;
+      z-index: 999;
+      top: 0px;
+      right: 41px;
+      font-size: 13pt;
+      transition: all 0.2s ease-in-out 0s;
+      -moz-animation: headerAnimation 0.7s 1;
+      -webkit-animation: headerAnimation 0.7s 1;
+      -o-animation: headerAnimation 0.7s 1;
+      animation: headerAnimation 0.7s 1;
+    }
+
+    .support-online img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .support-online a:hover span {
+      display: block
+    }
+  
+    .support-online a span::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #2a5dff;
+      position: absolute;
+      right: -10px;
+      top: 10px
+    }
+  
+    .kenit-alo-circle {
+      width: 50px;
+      height: 50px;
+      top: -5px;
+      right: -5px;
+      position: absolute;
+      background-color: transparent;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      border: 2px solid rgba(30, 30, 30, 0.4);
+      opacity: .1;
+      border-color: lighten(#2a5dff, 5);
+      opacity: .5
+    }
+  
+    .support-online .btn-support {
+      cursor: pointer
+    }
+  
+  
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+  
+    .animated.infinite {
+      animation-iteration-count: infinite;
+    }
+  
+    .animated.hinge {
+      animation-duration: 2s;
+    }
+  
+    .animated.flipOutX,
+    .animated.flipOutY,
+    .animated.bounceIn,
+    .animated.bounceOut {
+      animation-duration: .75s;
+    }
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+      }
+  
+      50% {
+        opacity: 1;
+      }
+    }
+  
+    .zoomIn {
+      animation-name: zoomIn;
+    }
+    @keyframes rubberBand {
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+  
+      30% {
+        transform: scale3d(1.25, 0.75, 1);
+      }
+  
+      40% {
+        transform: scale3d(0.75, 1.25, 1);
+      }
+  
+      50% {
+        transform: scale3d(1.15, 0.85, 1);
+      }
+  
+      65% {
+        transform: scale3d(.95, 1.05, 1);
+      }
+  
+      75% {
+        transform: scale3d(1.05, .95, 1);
+      }
+  
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  </style>
+  <div class="support-online">
+    <div class="support-content">		
+      <a href="tel:0896164567" class="call-now" rel="nofollow">
+        <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+        <img src="/docs/assets/phone.png" width="50" height="50" alt="facebook">
+        <div class="animated infinite zoomIn kenit-alo-circle"></div>			
+        <span>Tổng đài hỗ trợ<br><b>089.616.4567</b></span>
+      </a>
+      <a href="https://m.me/VietmapMappingSolutions" target="_blank">
+        <img src="/docs/assets/messenger.png" width="50" height="50" alt="facebook">
+        <span>Chat Facebook</span>
+      </a>
+      <a href="https://zalo.me/vietmapmapsapi" target="_blank">
+        <img src="//bizweb.dktcdn.net/100/415/690/files/icon-zalo.png" alt="zalo" width="50" height="50">
+        <span>Chat Zalo</span>
+      </a>
+    </div>	
+  </div>
+
+  </body>
+</html>

@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
@@ -27,7 +27,7 @@
     
     
   
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -185,7 +185,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -374,14 +374,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
       
         
       
@@ -1876,8 +1868,8 @@ Define below necessary variables
 <a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="w">    </span><span class="c1">/// init the map route and add some listener</span>
 <a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">    </span><span class="kr">private</span><span class="w"> </span><span class="nx">fun</span><span class="w"> </span><span class="nx">initMapRoute</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">vietmapGL</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">            </span><span class="c1">/// add &quot;vmadmin_province&quot; layer to map to show the route below the roadname, this layer is provided by Vietmap tile map.</span>
-<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="w">            </span><span class="nx">navigationMapRoute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">NavigationMapRoute</span><span class="p">(</span><span class="nx">mapView</span><span class="o">!!</span><span class="p">,</span><span class="w"> </span><span class="nx">vietmapGL</span><span class="o">!!</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;vmadmin_province&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">            </span><span class="c1">/// add &quot;boundary_province&quot; layer to map to show the route below the roadname, this layer is provided by Vietmap tile map.</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="w">            </span><span class="nx">navigationMapRoute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">NavigationMapRoute</span><span class="p">(</span><span class="nx">mapView</span><span class="o">!!</span><span class="p">,</span><span class="w"> </span><span class="nx">vietmapGL</span><span class="o">!!</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;boundary_province&quot;</span><span class="p">)</span>
 <a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="w">        </span><span class="p">}</span>
 <a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>
 <a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a><span class="w">        </span><span class="c1">/// callback when user click on another route, this function will be called and show the new route on the map</span>
@@ -2286,7 +2278,7 @@ Define below necessary variables
 <a id="__codelineno-17-34" name="__codelineno-17-34" href="#__codelineno-17-34"></a><span class="w">                    </span><span class="nx">navigationMapRoute</span><span class="o">?</span><span class="p">.</span><span class="nx">removeRoute</span><span class="p">()</span>
 <a id="__codelineno-17-35" name="__codelineno-17-35" href="#__codelineno-17-35"></a><span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-17-36" name="__codelineno-17-36" href="#__codelineno-17-36"></a><span class="w">                    </span><span class="nx">navigationMapRoute</span><span class="w"> </span><span class="o">=</span>
-<a id="__codelineno-17-37" name="__codelineno-17-37" href="#__codelineno-17-37"></a><span class="w">                        </span><span class="nx">NavigationMapRoute</span><span class="p">(</span><span class="nx">mapView</span><span class="o">!!</span><span class="p">,</span><span class="w"> </span><span class="nx">vietmapGL</span><span class="o">!!</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;vmadmin_province&quot;</span><span class="p">)</span>
+<a id="__codelineno-17-37" name="__codelineno-17-37" href="#__codelineno-17-37"></a><span class="w">                        </span><span class="nx">NavigationMapRoute</span><span class="p">(</span><span class="nx">mapView</span><span class="o">!!</span><span class="p">,</span><span class="w"> </span><span class="nx">vietmapGL</span><span class="o">!!</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;boundary_province&quot;</span><span class="p">)</span>
 <a id="__codelineno-17-38" name="__codelineno-17-38" href="#__codelineno-17-38"></a>
 <a id="__codelineno-17-39" name="__codelineno-17-39" href="#__codelineno-17-39"></a><span class="w">                </span><span class="p">}</span>
 <a id="__codelineno-17-40" name="__codelineno-17-40" href="#__codelineno-17-40"></a>
@@ -2568,7 +2560,7 @@ All information about navigation will response in <code>onProgressChange</code><
     
     
   
-      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   <script src="../../../assets/javascripts/custom.a4a4fac0.min.js"></script>

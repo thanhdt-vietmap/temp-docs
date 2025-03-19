@@ -2,662 +2,1607 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://maps.vietmap.vn/docs/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/FRT-TRACK-API/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/boundary/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/geocode/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/geocodev3/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/geofencing/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/isochrone/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/match-tolls/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/matching/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/matrix/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/overview/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/place/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/reverse-batch/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/reverse/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/route-tolls/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/route/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/tilemap/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/traffic/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/tsp/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/vrp/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/autocomplete-version/autocomplete-ver1.1/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/autocomplete-version/autocomplete-ver3.0/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/geocode-version/geocode-ver1.1/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/geocode-version/geocode-ver3.0/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/reverse-version/reverse-ver1.1/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/map-api/reverse-version/reverse-ver3.0/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/overview/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/sdk-android/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/sdk-ios/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/Flutter/api-plugin/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/Flutter/map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/Flutter/navigation/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/expo-map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/navigation/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/react-plugin/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/Annotation/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/Annotations/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/BackgroundLayer/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/Callout/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/Camera/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/CircleLayer/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/CustomHttpHeaders/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/FillExtrusionLayer/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/FillLayer/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/GettingStarted/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/HeadingIndicator/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/HeatmapLayer/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/ImageSource/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/Images/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/Light/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/LineLayer/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/Logger/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/MapView/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/MarkerView/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/NativeUserLocation/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/NavigationSample/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/OfflineManager/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/PointAnnotation/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/RasterLayer/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/RasterSource/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/SetUserTrackingMode/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/ShapeSource/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/ShowMapSample/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/Style/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/StyleSheet/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/SymbolLayer/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/UserLocation/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/VectorSource/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/Vietmap/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/coordinates/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/location/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/react-native/docs/snapshotManager/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/sdk-android/map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/sdk-android/navigation/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/sdk-android/sdk-android-ver1.1/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/sdk-android/sdk-android-ver2.0/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/sdk-ios/map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/sdk-ios/navigation/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/sdk-ios/sdk-ios-ver1.1/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/sdk-ios/sdk-ios-ver2.0/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/waste/map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-mobile/waste/navigation/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/demo/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/events/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/geography-and-geometry/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/markers-and-controls/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/overview/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/properties-and-options/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/sources/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/user-interaction-handlers/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/camera/animate-along-a-route/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/camera/animate-camera/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/camera/fit-camera-to-bounds/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/camera/fit-camera-to-line/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/camera/rotate-camera/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/documentation/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/AJAXError/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Actor/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/AlphaImage/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/AttributionControl/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/BoxZoomHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/CanonicalTileID/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/CanvasSource/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/CircleStyleLayer/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/ClickZoomHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/CooperativeGesturesHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/DEMData/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Dispatcher/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/DoubleClickZoomHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/DragPanHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/DragRotateHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/EdgeInsets/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Event/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Evented/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/FeatureIndex/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/FullscreenControl/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/GeoJSONFeature/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/GeoJSONSource/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/GeolocateControl/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Hash/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/HeatmapStyleLayer/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/ImageAtlas/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/ImageManager/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/ImageSource/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/KeyboardHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Layout/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/LngLat/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/LngLatBounds/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/LogoControl/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Map/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/MapMouseEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/MapTouchEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/MapWheelEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Marker/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/MercatorCoordinate/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/NavigationControl/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/OverscaledTileID/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Popup/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/RGBAImage/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/RasterDEMTileSource/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/RasterTileSource/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/ScaleControl/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/ScrollZoomHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Style/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/StyleLayer/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/TapDragZoomHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/TapZoomHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/TerrainControl/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/ThrottledInvoker/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/Tile/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/TouchPanHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/TwoFingersTouchHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/TwoFingersTouchPitchHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/TwoFingersTouchRotateHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/TwoFingersTouchZoomHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/TwoFingersTouchZoomRotateHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/VectorTileSource/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/VideoSource/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/classes/WorkerPool/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/enums/MessageType/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/enums/ResourceType/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/addProtocol/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/addSourceType/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/clearPrewarmedResources/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/getMaxParallelImageRequests/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/getRTLTextPluginStatus/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/getVersion/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/getWorkerCount/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/getWorkerUrl/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/importScriptInWorkers/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/prewarm/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/removeProtocol/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/setMaxParallelImageRequests/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/setRTLTextPlugin/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/setWorkerCount/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/functions/setWorkerUrl/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/ActorTarget/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/AttributeBinder/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/Bucket/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/CustomLayerInterface/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/Handler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/IActor/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/IControl/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/MousePanHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/MousePitchHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/MouseRotateHandler/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/Source/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/interfaces/StyleImageInterface/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/ActorMessage/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/AddLayerObject/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/AddProtocolAction/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/Alignment/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/AnimationOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/AroundCenterOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/AttributionControlOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/CameraForBoundsOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/CameraOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/CameraUpdateTransformFunction/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/CanvasSourceSpecification/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/CenterZoomBearing/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/ClusterIDAndSource/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/Config/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/ControlPosition/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/Coordinates/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/CrossFaded/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/CustomRenderMethod/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/DEMEncoding/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/DashEntry/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/DistributiveKeys/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/DistributiveOmit/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/DragPanOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/DragRotateHandlerOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/ExpiryData/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/FeatureIdentifier/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/FitBoundsOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/FlyToOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/FullscreenControlOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GeoJSONFeatureDiff/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GeoJSONFeatureId/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GeoJSONSourceDiff/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GeoJSONSourceOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GeoJSONWorkerOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GeoJSONWorkerSourceLoadDataResult/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GeolocateControlOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GestureOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GetClusterLeavesParams/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GetGlyphsParamerters/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GetGlyphsResponse/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GetImagesParamerters/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GetImagesResponse/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GetResourceResponse/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GlyphMetrics/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GlyphPosition/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GlyphPositions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/GridKey/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/HandlerResult/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/JumpToOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/Listener/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/LngLatBoundsLike/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/LngLatLike/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/LoadGeoJSONParameters/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/LogoControlOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapContextEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapDataEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapEventType/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapGeoJSONFeature/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapLayerEventType/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapLayerMouseEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapLayerTouchEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapSourceDataEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapSourceDataType/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapStyleDataEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapStyleImageMissingEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MapTerrainEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MarkerOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/MessageData/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/NavigationControlOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/Offset/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/OverlapMode/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/PaddingOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/PluginState/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/PointLike/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/PositionAnchor/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/PossiblyEvaluatedValue/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/QueryRenderedFeaturesOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/QuerySourceFeatureOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/RTLPluginStatus/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/Rect/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/RemoveSourceParams/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/RequestParameters/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/RequestResponseMessageMap/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/RequestTransformFunction/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/RequireAtLeastOne/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/ScaleControlOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/Serialized/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/SerializedObject/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/SerializedStructArray/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/SetClusterOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/SourceClass/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/SpriteOnDemandStyleImage/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/StyleGlyph/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/StyleImage/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/StyleImageData/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/StyleImageMetadata/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/StyleOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/StyleSetterOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/StyleSwapOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/SymbolQuad/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/TileParameters/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/TileState/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/TransformStyleFunction/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/Unit/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/UpdateImageOptions/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/UpdateLayersParamaeters/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/VietMapEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/VietMapZoomEvent/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/WorkerDEMTileParameters/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/WorkerTileParameters/</loc>
+         <lastmod>2025-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/docs/types/WorkerTileResult/</loc>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/line/example-line/animated-a-line/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/line/example-line/animated-gradient-line/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/line/example-line/gradient-line/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/line/example-line/line/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/map/example-map/bearing-map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/map/example-map/control-map/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/map/example-map/interactive-map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/map/example-map/locate-user/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/map/example-map/map-interaction/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/map/example-map/pitch-map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/map/example-map/simple-map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/map/example-map/style-map/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl/map/example-map/zoom-map/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/marker/example-marker/add-a-marker/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/marker/example-marker/cluster-marker/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/marker/example-marker/draggable-marker/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/marker/example-marker/draw-a-circle/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/marker/example-marker/methods-marker/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/polygon/polygon/polygon/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/popup/example-popup/popup-hover/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/popup/example-popup/popup-marker/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://maps.vietmap.vn/docs/sdk-web-gl/popup/example-popup/popup/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/demo/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/introduction/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/map/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/markers-and-controls/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/overview/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/properties-and-options/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/docs/controlOptions/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/docs/coordinatesReferences/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/docs/line/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/docs/mapType/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/docs/marker/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/docs/markerType/</loc>
-         <lastmod>2024-11-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://maps.vietmap.vn/docs/sdk-web-gl-v2/docs/popup/</loc>
-         <lastmod>2024-11-25</lastmod>
+         <lastmod>2025-03-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
