@@ -1,13 +1,498 @@
-.md-nav__item--section>.md-nav__link {
-    font-weight: 900;
-    pointer-events: none;
-    font-size:18px !important;
+/* Import Nunito Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* CSS Variables for consistent spacing and smooth transitions */
+:root {
+  --transition-standard: all 0.2s ease;
+  --transition-fast: all 0.15s ease;
+  --border-radius: 8px;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  
+  /* Light mode colors */
+  --text-primary: #374151;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f3f4f6;
+  --border-light: #e5e7eb;
+  --border-medium: #d1d5db;
+  --accent-blue: #2196f3;
+  --accent-blue-dark: #1976d2;
+  
+  /* Table specific colors */
+  --table-row-even: #fefefe;
+  --table-row-hover: #f8f9fa;
+  
+  /* Header specific colors */
+  --header-text: #ffffff;
+  --search-icon-color: #9ca3af;
 }
-.md-nav__list>.md-nav__item--active>.md-nav__link:not(.md-nav__link--index) {
-    pointer-events: none;
-    font-size: 22px;
-    font-weight: 900;
+
+/* Dark mode colors */
+[data-md-color-scheme="slate"] {
+  --text-primary: #e2e8f0;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --bg-primary: #1e293b;
+  --bg-secondary: #334155;
+  --bg-tertiary: #475569;
+  --border-light: #475569;
+  --border-medium: #64748b;
+  --accent-blue: #60a5fa;
+  --accent-blue-dark: #3b82f6;
+  
+  /* Table specific colors for dark mode */
+  --table-row-even: #2d3748;
+  --table-row-hover: #2a3441;
+  
+  /* Header specific colors for dark mode */
+  --header-text: #e2e8f0;
+  --search-icon-color: #94a3b8;
 }
-.md-nav__item>.md-nav__link--active{
-    font-size: .7rem !important;
+
+/* Enhanced body typography */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Simple navigation styling */
+.md-nav__item--section > .md-nav__link {
+  font-weight: 600;
+  pointer-events: none;
+  font-size: 14px !important;
+  padding: var(--spacing-sm) 0;
+  margin-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-primary);
+}
+
+.md-nav__list > .md-nav__item--active > .md-nav__link:not(.md-nav__link--index) {
+  pointer-events: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.md-nav__item > .md-nav__link--active {
+  font-size: 0.75rem !important;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--bg-secondary);
+  border-left: 2px solid var(--border-medium);
+  margin: 2px 0;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Simple navigation links */
+.md-nav__link {
+  border-radius: 4px;
+  margin: 1px 2px;
+  padding: 6px 10px;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.md-nav__link:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+/* Modern header */
+.md-header {
+  backdrop-filter: blur(10px);
+  transition: var(--transition-standard);
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.md-header__title {
+  font-weight: 700;
+  color: white !important;
+  transition: none;
+}
+
+/* Remove hover effects from header logo/title */
+.md-header__title:hover {
+  color: white !important;
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.md-header-nav__title:hover {
+  color: white !important;
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.md-header .md-ellipsis:hover {
+  color: white !important;
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+/* Header navigation links */
+.md-header-nav__title {
+  color: var(--header-text);
+}
+
+.md-header .md-nav__link {
+  color: var(--header-text);
+}
+
+.md-header .md-nav__link:hover {
+  color: var(--header-text);
+  opacity: 0.8;
+}
+
+/* Header title and tabs styling */
+.md-header-nav__title {
+  color: white !important;
+}
+
+.md-tabs__link {
+  color: white !important;
+}
+
+.md-tabs__link:hover {
+  color: white !important;
+  opacity: 0.9;
+}
+
+/* Enhanced content area */
+.md-content__inner {
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  background: var(--bg-primary);
+  margin: var(--spacing-md);
+  transition: var(--transition-standard);
+}
+
+/* Modern typography with animations */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-blue-dark));
+  border-radius: 2px;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+  transition: var(--transition-standard);
+  color: var(--text-primary);
+}
+
+h2:hover {
+  border-bottom-color: var(--accent-blue);
+}
+
+/* Enhanced tables with professional styling */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin: var(--spacing-lg) 0;
+  width: 100%;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+}
+
+th {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: var(--spacing-md);
+  font-size: 0.65rem;
+  position: relative;
+  border-bottom: 2px solid var(--border-light);
+}
+
+td {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-light);
+  transition: var(--transition-fast);
+  color: var(--text-primary);
+}
+
+tr {
+  transition: var(--transition-fast);
+}
+
+tr:hover {
+  background-color: var(--table-row-hover);
+}
+
+tr:nth-child(even) {
+  background-color: var(--table-row-even);
+}
+
+tr:nth-child(even):hover {
+  background-color: var(--table-row-hover);
+}
+
+/* Modern code blocks with professional styling */
+pre, code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  border-radius: var(--border-radius);
+  transition: var(--transition-standard);
+}
+
+pre {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background: var(--bg-secondary);
+}
+
+code {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: var(--transition-fast);
+  border: 1px solid var(--border-light);
+}
+
+code:hover {
+  background: var(--bg-secondary);
+  border-color: var(--border-medium);
+}
+
+/* Enhanced links with professional styling */
+a {
+  transition: var(--transition-fast);
+  position: relative;
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-blue-dark);
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent-blue);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* Special styling for URL/code links */
+a code {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+a:hover code {
+  background: var(--bg-secondary);
+  border-color: var(--border-medium);
+  color: var(--text-primary);
+}
+
+/* Remove the underline effect for code links */
+a:has(code)::after {
+  display: none;
+}
+
+/* Simple sidebar */
+.md-sidebar {
+  background: var(--bg-primary);
+  border-right: 1px solid var(--border-light);
+}
+
+/* Simple search */
+.md-search__input {
+  border-radius: 6px;
+  border: 1px solid var(--border-medium);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.md-search__input:focus {
+  border-color: var(--text-muted);
+  outline: none;
+}
+
+.md-search__input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Search icon styling */
+.md-search__icon {
+  color: var(--search-icon-color);
+}
+
+.md-search__icon:hover {
+  color: var(--text-secondary);
+}
+
+/* Light mode specific search icon */
+:root .md-search__icon.md-icon {
+  color: #9ca3af !important;
+}
+
+/* Dark mode search icon */
+[data-md-color-scheme="slate"] .md-search__icon.md-icon {
+  color: #94a3b8 !important;
+}
+
+/* Header ellipsis and topic styling */
+.md-header__ellipsis,
+.md-header__topic,
+.md-header__ellipsis .md-ellipsis,
+.md-header__topic .md-ellipsis {
+  color: white !important;
+}
+
+/* Additional specificity for header text */
+.md-header .md-ellipsis {
+  color: white !important;
+}
+
+/* Enhanced scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 3px;
+  transition: var(--transition-fast);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Dark mode specific adjustments */
+[data-md-color-scheme="slate"] {
+  /* Ensure proper text contrast in dark mode */
+  --md-default-bg-color: var(--bg-primary);
+  --md-default-fg-color: var(--text-primary);
+  --md-code-bg-color: var(--bg-secondary);
+  --md-code-fg-color: var(--text-primary);
+}
+
+[data-md-color-scheme="slate"] .md-typeset {
+  color: var(--text-primary);
+}
+
+[data-md-color-scheme="slate"] .md-nav__title {
+  color: var(--text-primary);
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background-color: var(--bg-primary);
+}
+
+/* Ensure consistent styling across all components */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Typography adjustments for dark mode */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+p, li, span {
+  color: var(--text-primary);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .md-content__inner {
+    margin: var(--spacing-sm);
+    padding: var(--spacing-md);
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .md-nav__item--section > .md-nav__link {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .md-content__inner {
+    margin: var(--spacing-sm);
+    padding: var(--spacing-md);
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .md-nav__item--section > .md-nav__link {
+    font-size: 12px !important;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
